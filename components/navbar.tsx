@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen, GraduationCap, Menu, UserRound, X } from "lucide-react";
+import { PiUser, PiArticleMedium, PiGraduationCap } from "react-icons/pi";
+import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -9,17 +10,17 @@ const navigationItems = [
   {
     label: "About",
     href: "/#about",
-    icon: UserRound,
+    icon: PiUser,
   },
   {
     label: "Journal",
     href: "/journal",
-    icon: BookOpen,
+    icon: PiArticleMedium,
   },
   {
     label: "Mentorship",
     href: "/mentorship",
-    icon: GraduationCap,
+    icon: PiGraduationCap,
   },
 ];
 
@@ -35,20 +36,16 @@ export function Navbar() {
       <nav
         aria-label="Main navigation"
         className="
-          border-b
-          border-black/10
           bg-white/90
           px-4
-          py-3
+          py-10
           backdrop-blur-xl
-          dark:border-white/10
-          dark:bg-black/90
+          dark:bg-[#121314]
           sm:px-6
           lg:px-8
         "
       >
-        <div className="mx-auto flex max-w-[2048px] items-center justify-between">
-          {/* Brand */}
+        <div className="mx-auto flex max-w-7xl items-center justify-between">
           <Link
             href="/"
             aria-label="Stanley Chukwuma home"
@@ -57,9 +54,7 @@ export function Navbar() {
             <p
               className="
                 text-sm
-                font-semibold
                 leading-none
-                tracking-tight
                 text-black
                 dark:text-white
                 sm:text-base
@@ -70,14 +65,11 @@ export function Navbar() {
 
             <p
               className="
-                mt-1
-                font-mono
+                mt-2
                 text-[10px]
-                font-medium
                 leading-none
-                tracking-[0.08em]
                 text-black/55
-                dark:text-white/55
+                dark:text-(--color-muted)
                 sm:text-xs
               "
             >
@@ -85,7 +77,6 @@ export function Navbar() {
             </p>
           </Link>
 
-          {/* Desktop navigation */}
           <div className="hidden items-center gap-2 md:flex">
             {navigationItems.map((item) => {
               const Icon = item.icon;
@@ -97,23 +88,17 @@ export function Navbar() {
                   className="
                     group
                     inline-flex
-                    h-12
                     items-center
-                    gap-3
+                    gap-2
+                    py-2
+                    px-3
                     rounded-full
-                    border
-                    border-black/5
-                    bg-black/4
-                    px-5
-                    text-sm
-                    font-medium
+                    text-xs
                     text-black/60
                     transition-colors
                     hover:bg-black/8
                     hover:text-black
-                    dark:border-white/5
-                    dark:bg-white/5
-                    dark:text-white/60
+                    dark:text-(--color-muted)
                     dark:hover:bg-white/10
                     dark:hover:text-white
                   "
@@ -151,32 +136,29 @@ export function Navbar() {
               }
               className="
                 flex
-                size-12
+                size-9
                 items-center
                 justify-center
                 rounded-full
-                border
-                border-black/10
                 bg-black/4
                 text-black/70
                 transition-colors
                 hover:bg-black/8
                 dark:border-white/10
-                dark:bg-white/5
-                dark:text-white/70
+                dark:bg-(--color-surface-dark)
+                dark:text-white
                 dark:hover:bg-white/10
               "
             >
               {mobileMenuOpen ? (
-                <X aria-hidden="true" className="size-5 stroke-[1.5]" />
+                <IoClose aria-hidden="true" className="size-4 stroke-[1.5]" />
               ) : (
-                <Menu aria-hidden="true" className="size-5 stroke-[1.5]" />
+                <IoMenu aria-hidden="true" className="size-4 stroke-[1.5]" />
               )}
             </button>
           </div>
         </div>
 
-        {/* Mobile menu */}
         <div
           id="mobile-navigation"
           className={`
@@ -184,11 +166,12 @@ export function Navbar() {
             transition-[max-height,opacity]
             duration-300
             md:hidden
+            pt-3
             ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
           `}
         >
           <div className="mx-auto max-w-[2048px] border-t border-black/10 pt-3 dark:border-white/10">
-            <div className="flex flex-col gap-1 pb-2">
+            <div className="flex flex-col gap-0.5 pb-2">
               {navigationItems.map((item) => {
                 const Icon = item.icon;
 
@@ -200,17 +183,16 @@ export function Navbar() {
                     className="
                       flex
                       items-center
-                      gap-3
-                      rounded-xl
-                      px-4
-                      py-3
-                      text-sm
-                      font-medium
+                      gap-2
+                      py-2
+                      px-3
+                      rounded-full
+                      text-xs
                       text-black/65
                       transition-colors
                       hover:bg-black/5
                       hover:text-black
-                      dark:text-white/65
+                      dark:text-(--color-muted)
                       dark:hover:bg-white/6
                       dark:hover:text-white
                     "
