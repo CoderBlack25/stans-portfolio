@@ -66,18 +66,18 @@ export function Navbar() {
             <p
               className="
                 mt-2
-                text-[10px]
+                text-xs
                 leading-none
-                text-black/55
+                text-black/65
                 dark:text-(--color-muted)
-                sm:text-xs
+                sm:text-sm
               "
             >
-              Product Designer & Design Engineer
+              Product & Design Engineer
             </p>
           </Link>
 
-          <div className="hidden items-center gap-2 md:flex">
+          <div className="hidden items-center gap-3 md:flex">
             {navigationItems.map((item) => {
               const Icon = item.icon;
 
@@ -93,8 +93,8 @@ export function Navbar() {
                     py-2
                     px-3
                     rounded-full
-                    text-xs
-                    text-black/60
+                    text-sm
+                    text-black/65
                     transition-colors
                     hover:bg-black/8
                     hover:text-black
@@ -118,6 +118,11 @@ export function Navbar() {
                 </Link>
               );
             })}
+
+            <div
+              aria-hidden="true"
+              className="h-6 w-px bg-neutral-300 dark:bg-[#343438]"
+            />
 
             <ThemeToggle />
           </div>
