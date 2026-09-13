@@ -73,7 +73,7 @@ export function Navbar() {
                 sm:text-sm
               "
             >
-              Product & Design Engineer
+              Product Designer & Design Engineer
             </p>
           </Link>
 

@@ -127,7 +127,7 @@ const year = date.getFullYear();
 export default function Home() {
   return (
     <main className="bg-white text-neutral-950 transition-colors duration-300 dark:bg-(--color-background-dark) dark:text-white">
-      <div className="mx-auto w-full max-w-2xl px-4 py-5 sm:px-8 sm:py-8 lg:px-12 lg:py-12 mt-30 sm:mt-50">
+      <div className="mx-auto w-full max-w-xl px-4 sm:px-0 py-40 sm:py-45">
         <section
           aria-labelledby="hero-heading"
           className="flex flex-col sm:flex-row items-center sm:items-start gap-8"
@@ -146,7 +146,7 @@ export default function Home() {
               id="hero-heading"
               className="max-w-5xl text-3xl sm:text-[32px] font-medium uppercase leading-snug"
             >
-              Product &amp;
+              Product Designer &amp;
               <br />
               Design Engineer
             </h1>
