@@ -87,8 +87,8 @@ export function BottomNavigation() {
                     sm:text-sm
                     ${
                       isActive
-                        ? "bg-(--color-accent) text-white hover:bg-violet-700"
-                        : "text-black/65 dark:text-(--color-muted) hover:bg-neutral-600 hover:text-white"
+                        ? "bg-(--color-accent) text-white"
+                        : "text-black/65 dark:text-(--color-muted) hover:text-black hover:bg-neutral-300 dark:hover:bg-white/10 dark:hover:text-white"
                     }
                   `}
                 >

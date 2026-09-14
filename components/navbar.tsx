@@ -96,7 +96,7 @@ export function Navbar() {
                     text-sm
                     text-black/65
                     transition-colors
-                    hover:bg-black/8
+                    hover:bg-neutral-300
                     hover:text-black
                     dark:text-(--color-muted)
                     dark:hover:bg-white/10

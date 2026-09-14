@@ -179,7 +179,7 @@ export default function Home() {
                 nativeButton={false}
                 render={<Link href="mailto:example@gmail.com" />}
                 size="lg"
-                className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-violet-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
+                className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
               >
                 Let&apos;s Talk
               </Button>
@@ -188,7 +188,7 @@ export default function Home() {
                 nativeButton={false}
                 render={<Link href="/resume.pdf" download />}
                 size="lg"
-                className="rounded-lg bg-(--color-surface-dark) text-xs sm:text-sm text-white transition-colors hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800 dark:focus-visible:ring-offset-black"
+                className="rounded-lg bg-neutral-200 text-xs sm:text-sm text-black/65 transition-colors hover:bg-neutral-300 hover:text-black dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800 dark:focus-visible:ring-offset-black"
               >
                 Download Resume
               </Button>

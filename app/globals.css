@@ -11,6 +11,7 @@
   --color-background-dark: #121314;
   --color-surface-dark: #18191b;
   --color-accent: #6854ff;
+  --color-accent-hover: #5945e6;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
