@@ -68,9 +68,9 @@ export function TechStackGrid({
   return (
     <section
       aria-labelledby="tech-stack-heading"
-      className={`flex w-full items-center justify-center px-5  py-40 sm:py-45 sm:px-8 lg:px-12 ${className}`}
+      className={`flex w-full items-center justify-center px-5 py-40 sm:py-45 sm:px-8 lg:px-12 ${className}`}
     >
-      <div className="flex w-full max-w-105 flex-col items-center">
+      <div className="flex w-full max-w-md flex-col items-center">
         <div className="text-center">
           <h1
             id="tech-stack-heading"

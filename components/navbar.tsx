@@ -9,7 +9,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const navigationItems = [
   {
     label: "About",
-    href: "/#about",
+    href: "/about",
     icon: PiUser,
   },
   {
@@ -40,7 +40,7 @@ export function Navbar() {
           px-4
           py-10
           backdrop-blur-xl
-          dark:bg-[#121314]
+          dark:bg-(--color-background-dark)
           sm:px-6
           lg:px-8
         "
