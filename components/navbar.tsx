@@ -35,15 +35,7 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50">
       <nav
         aria-label="Main navigation"
-        className="
-          bg-white/90
-          px-4
-          py-10
-          backdrop-blur-xl
-          dark:bg-(--color-background-dark)
-          sm:px-6
-          lg:px-8
-        "
+        className="bg-white px-4 py-10 backdrop-blur-xl dark:bg-(--color-background-dark) sm:px-6 lg:px-8"
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <Link
@@ -51,28 +43,11 @@ export function Navbar() {
             aria-label="Stanley Chukwuma home"
             className="shrink-0"
           >
-            <p
-              className="
-                text-sm
-                leading-none
-                text-black
-                dark:text-white
-                sm:text-base
-              "
-            >
+            <p className="text-sm leading-none text-black dark:text-white sm:text-base">
               Stanley Chukwuma
             </p>
 
-            <p
-              className="
-                mt-2
-                text-xs
-                leading-none
-                text-black/65
-                dark:text-(--color-muted)
-                sm:text-sm
-              "
-            >
+            <p className="mt-2 text-xs leading-none text-black/65 dark:text-(--color-muted) sm:text-sm">
               Product Designer & Design Engineer
             </p>
           </Link>
@@ -85,33 +60,11 @@ export function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="
-                    group
-                    inline-flex
-                    items-center
-                    gap-2
-                    py-2
-                    px-3
-                    rounded-full
-                    text-sm
-                    text-black/65
-                    transition-colors
-                    hover:bg-neutral-300
-                    hover:text-black
-                    dark:text-(--color-muted)
-                    dark:hover:bg-white/10
-                    dark:hover:text-white
-                  "
+                  className="group inline-flex items-center gap-2 py-2 px-3 rounded-full text-sm text-black/65 transition-colors hover:bg-neutral-300 hover:text-black dark:text-(--color-muted) dark:hover:bg-white/10 dark:hover:text-white"
                 >
                   <Icon
                     aria-hidden="true"
-                    className="
-                      size-4.5
-                      stroke-[1.6]
-                      transition-transform
-                      duration-200
-                      group-hover:scale-105
-                    "
+                    className="size-4.5 stroke-[1.6] transition-transform duration-200 group-hover:scale-105"
                   />
 
                   <span>{item.label}</span>
@@ -139,21 +92,7 @@ export function Navbar() {
               aria-label={
                 mobileMenuOpen ? "Close navigation" : "Open navigation"
               }
-              className="
-                flex
-                size-9
-                items-center
-                justify-center
-                rounded-full
-                bg-black/4
-                text-black/70
-                transition-colors
-                hover:bg-black/8
-                dark:border-white/10
-                dark:bg-(--color-surface-dark)
-                dark:text-white
-                dark:hover:bg-white/10
-              "
+              className="flex size-9 items-center justify-center rounded-full bg-black/4 text-black/70 transition-colors hover:bg-black/8 dark:border-white/10 dark:bg-(--color-surface-dark) dark:text-white dark:hover:bg-white/10"
             >
               {mobileMenuOpen ? (
                 <IoClose aria-hidden="true" className="size-4 stroke-[1.5]" />
@@ -166,14 +105,7 @@ export function Navbar() {
 
         <div
           id="mobile-navigation"
-          className={`
-            overflow-hidden
-            transition-[max-height,opacity]
-            duration-300
-            md:hidden
-            pt-3
-            ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
-          `}
+          className={`overflow-hidden transition-[max-height,opacity] duration-300 md:hidden pt-3 ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
         >
           <div className="mx-auto max-w-[2048px] border-t border-black/10 pt-3 dark:border-white/10">
             <div className="flex flex-col gap-0.5 pb-2">
@@ -185,22 +117,7 @@ export function Navbar() {
                     key={item.label}
                     href={item.href}
                     onClick={closeMobileMenu}
-                    className="
-                      flex
-                      items-center
-                      gap-2
-                      py-2
-                      px-3
-                      rounded-full
-                      text-xs
-                      text-black/65
-                      transition-colors
-                      hover:bg-black/5
-                      hover:text-black
-                      dark:text-(--color-muted)
-                      dark:hover:bg-white/6
-                      dark:hover:text-white
-                    "
+                    className="flex items-center gap-2 py-2 px-3 rounded-full text-xs text-black/65 transition-colors hover:bg-black/5 hover:text-black dark:text-(--color-muted) dark:hover:bg-white/6 dark:hover:text-white"
                   >
                     <Icon
                       aria-hidden="true"

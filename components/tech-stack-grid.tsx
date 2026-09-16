@@ -70,7 +70,7 @@ export function TechStackGrid({
       aria-labelledby="tech-stack-heading"
       className={`flex w-full items-center justify-center px-5 py-40 sm:py-45 sm:px-8 lg:px-12 ${className}`}
     >
-      <div className="flex w-full max-w-md flex-col items-center">
+      <div className="flex w-full max-w-xl flex-col items-center">
         <div className="text-center">
           <h1
             id="tech-stack-heading"
@@ -84,7 +84,7 @@ export function TechStackGrid({
           </p>
         </div>
 
-        <div className="mt-12 grid w-full grid-cols-2 gap-x-8 gap-y-6 sm:grid-cols-4 sm:gap-x-6 sm:gap-y-6">
+        <div className="mt-12 grid w-full grid-cols-3 gap-x-8 gap-y-6 sm:grid-cols-4 sm:gap-x-2 sm:gap-y-6">
           {tools.map((tool) => (
             <div
               key={tool.name}
