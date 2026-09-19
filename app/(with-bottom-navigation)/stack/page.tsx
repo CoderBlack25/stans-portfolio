@@ -318,7 +318,7 @@ const tools = [
 
 export default function Stack() {
   return (
-    <main>
+    <main className="">
       <TechStackGrid tools={tools} />
     </main>
   );

@@ -1,3 +1,3 @@
 export default function WorksPage() {
-  return <main></main>;
+  return <main className=""></main>;
 }

@@ -11,6 +11,8 @@
   --color-surface-muted: #343438;
   --color-background-dark: #121314;
   --color-surface-dark: #18191b;
+  --color-surface-elevated: #4c4c52;
+  --color-surface-strong: #222225;
   --color-accent: #6854ff;
   --color-accent-hover: #5945e6;
   --background: oklch(1 0 0);

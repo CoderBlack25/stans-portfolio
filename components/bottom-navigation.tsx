@@ -43,10 +43,8 @@ export function BottomNavigation() {
           w-full
           max-w-sm
           rounded-full
-          bg-neutral-200
+          bg-input
           p-2
-          shadow-2xl
-          shadow-black/10
           dark:bg-(--color-surface-dark)
         "
       >
@@ -88,7 +86,7 @@ export function BottomNavigation() {
                     ${
                       isActive
                         ? "bg-(--color-accent) text-white"
-                        : "text-black/65 dark:text-(--color-muted) hover:text-black hover:bg-neutral-300 dark:hover:bg-white/10 dark:hover:text-white"
+                        : "text-(--color-surface-muted) dark:text-(--color-muted) hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white"
                     }
                   `}
                 >

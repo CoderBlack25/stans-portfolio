@@ -47,11 +47,11 @@ const capabilities: Capability[] = [
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="shrink-0 text-xs uppercase text-black/65 dark:text-(--color-muted) sm:text-sm">
+      <span className="shrink-0 text-xs uppercase text-(--color-surface-muted) dark:text-(--color-muted) sm:text-sm">
         {children}
       </span>
 
-      <div className="h-[0.5px] flex-1 bg-(--color-surface-muted)" />
+      <div className="h-[0.5px] flex-1 bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)" />
     </div>
   );
 }
@@ -60,16 +60,16 @@ export function About() {
   return (
     <section
       id="about"
-      className="mx-auto w-full max-w-xl bg-white dark:bg-(--color-background-dark) px-4 mt-40 sm:mt-45 mb-15 sm:mb-20 text-neutral-950 dark:text-white sm:px-6"
+      className="mx-auto w-full max-w-xl px-4 mt-40 sm:mt-45 mb-15 sm:mb-20 bg-background text-foreground"
     >
       <div className="flex flex-col gap-16 sm:gap-20 py-4">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-5">
-            <h1 className="text-2xl sm:text-3xl font-medium leading-snug">
+            <h1 className="text-2xl sm:text-3xl font-medium">
               I DESIGN PRODUCTS THAT MAKE COMPLEX THINGS FEEL SIMPLE.
             </h1>
 
-            <div className="flex flex-col gap-5 text-xs sm:text-sm text-black/65 dark:text-(--color-muted)">
+            <div className="flex flex-col gap-5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
               <p>
                 I&apos;m a Senior Product Designer who loves figuring out how
                 things work, finding the messy parts, and turning them into
@@ -92,7 +92,7 @@ export function About() {
             </div>
           </div>
 
-          <blockquote className="rounded-2xl bg-neutral-200 dark:bg-(--color-surface-dark) p-4 text-xs text-black/65 dark:text-(--color-muted) sm:text-sm">
+          <blockquote className="rounded-2xl bg-input dark:bg-(--color-surface-dark) p-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted) sm:text-sm">
             <p>
               &ldquo;The best products I&apos;ve worked on weren&apos;t
               necessarily the ones with the simplest underlying systems. They
@@ -120,7 +120,7 @@ export function About() {
               nativeButton={false}
               render={<Link href="/resume.pdf" download />}
               size="lg"
-              className="rounded-lg bg-neutral-200 text-xs sm:text-sm text-black/65 transition-colors hover:bg-neutral-300 hover:text-black dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800 dark:focus-visible:ring-offset-black"
+              className="rounded-lg bg-input text-xs sm:text-sm text-foreground transition-colors hover:bg-chart-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
             >
               Download Resume
             </Button>
@@ -141,11 +141,11 @@ export function About() {
                     {experience.company}
                   </span>
 
-                  <span className="text-xs sm:text-sm text-black/65 dark:text-(--color-muted)">
+                  <span className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                     {experience.role}
                   </span>
 
-                  <div className="h-[0.5px] flex-1 bg-(--color-surface-muted)" />
+                  <div className="h-[0.5px] flex-1 bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)" />
                 </div>
 
                 <span className="text-xs sm:text-sm sm:text-right">
@@ -161,11 +161,11 @@ export function About() {
 
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-4">
-              <h2 className="text-xl sm:text-2xl font-medium leading-snug">
+              <h2 className="text-xl sm:text-2xl font-medium">
                 I WORK ACROSS THE WHOLE PRODUCT.
               </h2>
 
-              <p className="text-xs sm:text-sm text-black/65 dark:text-(--color-muted)">
+              <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                 I&apos;m comfortable moving between the big picture and the
                 details, defining what should be built, mapping the experience,
                 designing the interface, building prototypes, and working with
@@ -177,9 +177,9 @@ export function About() {
               {capabilities.map((capability) => (
                 <div
                   key={capability.number}
-                  className="flex h-12 items-center gap-3 rounded-full bg-neutral-200 dark:bg-(--color-surface-dark) px-4 py-3"
+                  className="flex h-12 items-center gap-3 rounded-full bg-input dark:bg-(--color-surface-dark) px-4 py-3"
                 >
-                  <span className="shrink-0 text-xs sm:text-sm text-black/65 dark:text-(--color-muted)">
+                  <span className="shrink-0 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                     {capability.number}
                   </span>
 
@@ -196,11 +196,11 @@ export function About() {
           <SectionLabel>Beyond the work</SectionLabel>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl sm:text-2xl font-medium leading-snug">
+            <h2 className="text-xl sm:text-2xl font-medium">
               I&apos;M MORE THAN JUST A DESIGNER
             </h2>
 
-            <div className="flex flex-col gap-5 text-xs sm:text-sm text-black/65 dark:text-(--color-muted)">
+            <div className="flex flex-col gap-5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
               <p>
                 I&apos;m naturally curious, so I&apos;m usually learning
                 something, building something, or going down an unnecessary

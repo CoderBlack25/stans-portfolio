@@ -1,9 +1,9 @@
-import { About } from "@/components/about";
+import { ArticlesSection } from "@/components/articles-section";
 
 export default function AboutPage() {
   return (
     <main className="">
-      <About />
+      <ArticlesSection />
     </main>
   );
 }

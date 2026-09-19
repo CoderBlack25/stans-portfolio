@@ -25,22 +25,20 @@ export function ThemeToggle() {
         items-center
         justify-center
         rounded-full
-        bg-black/4
-        text-black/70
+        bg-input
+        text-(--color-surface-dark)
         transition-colors
-        hover:bg-black/8
-        hover:text-black
+        hover:bg-chart-1
+        hover:text-(--color-background-dark)
         focus-visible:outline-none
         focus-visible:ring-2
         focus-visible:ring-black/30
         dark:bg-(--color-surface-dark)
-        dark:text-white
-        dark:hover:bg-white/10
+        dark:text-(--color-muted)
+        dark:hover:bg-(--color-surface-strong)
         dark:hover:text-white
-        dark:focus-visible:ring-white/30
       "
     >
-      {/* Sun icon is visible in dark mode */}
       <PiSun
         aria-hidden="true"
         className="
@@ -54,7 +52,6 @@ export function ThemeToggle() {
         "
       />
 
-      {/* Moon icon is visible in light mode */}
       <PiMoon
         aria-hidden="true"
         className="

@@ -1,3 +1,3 @@
 export default function Playground() {
-  return <main></main>;
+  return <main className=""></main>;
 }

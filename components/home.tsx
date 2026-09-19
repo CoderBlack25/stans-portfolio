@@ -26,7 +26,7 @@ const aboutItems: AboutItem[] = [
     content: (
       <>
         Proficient with design tools like Adobe Illustrator, Photoshop, Rive{" "}
-        <span className="italic text-black/65 dark:text-(--color-muted)">
+        <span className="italic text-(--color-surface-muted) dark:text-(--color-muted)">
           & More
         </span>
       </>
@@ -37,7 +37,7 @@ const aboutItems: AboutItem[] = [
     icon: PiBriefcase,
     content: (
       <>
-        <span className="text-black/65 dark:text-(--color-muted)">
+        <span className="text-(--color-surface-muted) dark:text-(--color-muted)">
           Currently Building{" "}
         </span>
         @ Fairmoney Digital Payment Platform
@@ -50,7 +50,7 @@ const aboutItems: AboutItem[] = [
     content: (
       <>
         Exploring my creative desires -{" "}
-        <span className="italic text-black/65 dark:text-(--color-muted)">
+        <span className="italic text-(--color-surface-muted) dark:text-(--color-muted)">
           Learning, Building Digital and Physical products
         </span>
       </>
@@ -110,7 +110,7 @@ function SocialLinks() {
                   rel: "noopener noreferrer",
                 }
               : {})}
-            className="group inline-flex items-center text-xs sm:text-sm text-neutral-800 underline decoration-1 underline-offset-4 transition-colors hover:text-black/65 dark:text-white dark:hover:text-neutral-400"
+            className="group inline-flex items-center text-xs sm:text-sm underline decoration-1 underline-offset-4 transition-colors hover:text-primary"
           >
             {link.label}
             {isExternal && <ExternalLinkIcon />}
@@ -126,7 +126,7 @@ const year = date.getFullYear();
 
 export default function Home() {
   return (
-    <main className="bg-white text-neutral-950 transition-colors duration-300 dark:bg-(--color-background-dark) dark:text-white">
+    <main className="bg-background text-foreground transition-colors duration-300">
       <div className="mx-auto w-full max-w-xl px-4 sm:px-0 my-40 sm:my-45">
         <section
           aria-labelledby="hero-heading"
@@ -144,32 +144,25 @@ export default function Home() {
           <div className="flex min-w-0 flex-col gap-3 text-center sm:text-left">
             <h1
               id="hero-heading"
-              className="max-w-5xl text-2xl sm:text-3xl font-medium uppercase leading-snug"
+              className="max-w-5xl text-2xl sm:text-3xl font-medium uppercase"
             >
               Product Designer &amp; Design Engineer
             </h1>
 
-            <p className="text-neutral-500 dark:text-(--color-muted) text-xs sm:text-sm max-w-sm">
+            <p className="text-(--color-surface-muted) dark:text-(--color-muted) text-xs sm:text-sm max-w-sm">
               I help startups and enterprise businesses turn{" "}
-              <span className="text-neutral-950 dark:text-white">
-                complex ideas
-              </span>{" "}
-              into{" "}
-              <span className="text-neutral-950 dark:text-white">
+              <span className="text-foreground">complex ideas</span> into{" "}
+              <span className="text-foreground">
                 simple, scalable digital products.
               </span>{" "}
               With{" "}
-              <span className="text-neutral-950 dark:text-white">
-                5 years of experience,
-              </span>{" "}
+              <span className="text-foreground">5 years of experience,</span>{" "}
               I&apos;ve designed across{" "}
-              <span className="text-neutral-950 dark:text-white">
+              <span className="text-foreground">
                 AI, B2B SaaS, fintech, digital banking, lending, healthcare,
               </span>{" "}
               and{" "}
-              <span className="text-neutral-950 dark:text-white">
-                emerging technologies.
-              </span>
+              <span className="text-foreground">emerging technologies.</span>
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 mt-2">
@@ -186,7 +179,7 @@ export default function Home() {
                 nativeButton={false}
                 render={<Link href="/resume.pdf" download />}
                 size="lg"
-                className="rounded-lg bg-neutral-200 text-xs sm:text-sm text-black/65 transition-colors hover:bg-neutral-300 hover:text-black dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800 dark:focus-visible:ring-offset-black"
+                className="rounded-lg bg-input text-xs sm:text-sm text-foreground transition-colors hover:bg-chart-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
               >
                 Download Resume
               </Button>
@@ -198,14 +191,14 @@ export default function Home() {
           <div className="flex items-center gap-5">
             <h2
               id="about-heading"
-              className="shrink-0 text-xs sm:text-sm uppercase text-black/65 dark:text-(--color-muted)"
+              className="shrink-0 text-xs sm:text-sm uppercase text-(--color-surface-muted) dark:text-(--color-muted)"
             >
               More About Me
             </h2>
 
             <div
               aria-hidden="true"
-              className="h-[0.5px] flex-1 bg-neutral-300 dark:bg-[#343438]"
+              className="h-[0.5px] flex-1 bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)"
             />
           </div>
 
@@ -232,15 +225,15 @@ export default function Home() {
 
         <footer
           id="contact"
-          className="flex flex-col gap-6 mt-10 sm:mt-12 rounded-lg bg-neutral-200 p-6 dark:bg-(--color-surface-dark)"
+          className="flex flex-col gap-6 mt-10 sm:mt-12 rounded-lg bg-input p-6 dark:bg-(--color-surface-dark)"
         >
           <SocialLinks />
 
-          <p className="text-xs sm:text-sm text-black/65 dark:text-(--color-muted)">
+          <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
             Last Update: January 12, 2026, 3:34 PM (GMT +2)
           </p>
 
-          <p className="text-xs sm:text-sm text-neutral-800 dark:text-white">
+          <p className="text-xs sm:text-sm">
             ©{year} Stanley Chukwuma. All rights reserved
           </p>
         </footer>

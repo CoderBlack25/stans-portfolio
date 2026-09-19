@@ -68,18 +68,18 @@ export function TechStackGrid({
   return (
     <section
       aria-labelledby="tech-stack-heading"
-      className={`flex w-full items-center justify-center px-5 py-40 sm:py-45 sm:px-8 lg:px-12 ${className}`}
+      className={`bg-background text-foreground flex w-full items-center justify-center px-5 py-40 sm:py-45 sm:px-8 lg:px-12 ${className}`}
     >
-      <div className="flex w-full max-w-xl flex-col items-center">
+      <div className="flex w-full max-w-md flex-col items-center">
         <div className="text-center">
           <h1
             id="tech-stack-heading"
-            className="text-xl font-medium text-neutral-950 dark:text-white sm:text-2xl"
+            className="text-xl font-medium sm:text-2xl"
           >
             STACK
           </h1>
 
-          <p className="mt-1.5 text-xs sm:text-sm text-black/65 dark:text-(--color-muted)">
+          <p className="mt-1.5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
             Tools I&apos;m proficient with are as follows:
           </p>
         </div>
@@ -90,7 +90,7 @@ export function TechStackGrid({
               key={tool.name}
               className="group flex min-w-0 flex-col items-center"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-(--color-surface-dark) transition-all duration-200 ease-out group-hover:scale-105 group-hover:bg-[#1d1e22]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-chart-4 dark:bg-(--color-surface-dark) transition-all duration-200 ease-out group-hover:scale-105 group-hover:bg-chart-5 dark:group-hover:bg-(--color-surface-strong)">
                 {tool.icon ?? (
                   <ToolMark
                     shortName={tool.shortName}
@@ -99,7 +99,7 @@ export function TechStackGrid({
                 )}
               </div>
 
-              <span className="mt-2.5 text-center font-medium text-xs sm:text-sm text-black/65 dark:text-[#9F9F9F]">
+              <span className="mt-2.5 text-center font-medium text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                 {tool.name}
               </span>
             </div>
