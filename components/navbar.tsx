@@ -107,7 +107,7 @@ export function Navbar() {
           id="mobile-navigation"
           className={`overflow-hidden transition-[max-height,opacity] duration-300 md:hidden pt-3 ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
         >
-          <div className="mx-auto max-w-[2048px] border-t border-(--color-surface-elevated) pt-3 dark:border-(--color-surface-muted)">
+          <div className="mx-auto max-w-[2048px] border-t border-(--color-muted) pt-3 dark:border-(--color-surface-muted)">
             <div className="flex flex-col gap-0.5">
               {navigationItems.map((item) => {
                 const Icon = item.icon;

@@ -1,3 +1,9 @@
+import Works from "@/components/works";
+
 export default function WorksPage() {
-  return <main className=""></main>;
+  return (
+    <main className="">
+      <Works />
+    </main>
+  );
 }
