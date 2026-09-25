@@ -48,6 +48,7 @@ const WorksFolder = ({
             src={src}
             width={width}
             height={height}
+            loading="eager"
             sizes="(max-width: 768px) 100vw, 33vw"
             alt={alt}
             className="w-full"

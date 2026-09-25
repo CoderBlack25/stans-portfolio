@@ -6,7 +6,7 @@ const works = [
     title: "Fairmoney Micro Finance",
     description:
       "Business Banking system that gives businesses access to tools, funding and support to scale",
-    src: "/images/works/fairmoney.png",
+    src: "/images/works/fairmoneyV2.png",
     width: 1200,
     height: 800,
   },
@@ -15,7 +15,7 @@ const works = [
     title: "Prune Payment",
     description:
       "Fintech platform for international money transfers and remittances, plus business payouts, virtual accounts, & SaaS offerings",
-    src: "/images/works/prune.png",
+    src: "/images/works/pruneV2.png",
     width: 1200,
     height: 800,
   },
@@ -24,7 +24,7 @@ const works = [
     title: "Clime Payment Ltd",
     description:
       "Remittance-focused fintech enabling fast, low/no-fee GBP-to-Naira transfers (personal and business) to Nigeria",
-    src: "/images/works/clime.png",
+    src: "/images/works/climeV2.png",
     width: 1200,
     height: 800,
   },

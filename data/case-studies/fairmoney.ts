@@ -160,6 +160,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       }),
     },
 
+    /**PROBLEM STATEMENT */
     {
       type: "text",
       id: "problem-statement",
