@@ -5,21 +5,23 @@ type Article = {
   title: string;
   description: string;
   href: string;
+  image?: string;
 };
 
 const articles: Article[] = [
   {
-    title: "How I Reframed Impostor Syndrome into a Motivator for Growth",
+    title: "If AI Can Design the Product, What Is a Product Designer For?",
     description:
-      "Impostor syndrome used to stop me cold. It showed up as self-doubt and the feeling that I wasn’t “good enough.”",
-    href: "https://medium.com/@yourusername/how-i-reframed-impostor-syndrome",
+      "AI is making interfaces, prototypes and even code cheaper to produce. The real question is where a product designer should create value next.",
+    href: "https://medium.com/@stanchiqa/if-ai-can-design-the-product-what-is-a-product-designer-for-5e87062dbb33?sharedUserId=stanchiqa",
+    image: "/images/journal/image1.svg",
   },
   {
-    title:
-      "Type is a beautiful group of letters, not a group of beautiful letters",
+    title: "Stop Trying to Get Rid of Impostor Syndrome",
     description:
-      "Early in my career I remember a day i was viewing a product designed by top professional on Behance and thinking",
-    href: "https://medium.com/@yourusername/type-is-a-beautiful-group-of-letters",
+      "The biggest thing standing between you and the next level of your growth may not be a lack of confidence.",
+    href: "https://medium.com/@stanchiqa/stop-trying-to-get-rid-of-impostor-syndrome-bb019acddd34?sharedUserId=stanchiqa",
+    image: "/images/journal/image2.svg",
   },
   {
     title: "Keep skipping these resources, if you’d rather stay stuck",
@@ -30,6 +32,8 @@ const articles: Article[] = [
 ];
 
 function ArticleCard({ article }: { article: Article }) {
+  const hasImage = Boolean(article.image);
+
   return (
     <li>
       <Link
@@ -39,12 +43,20 @@ function ArticleCard({ article }: { article: Article }) {
         className="group flex gap-3.5 py-6 outline-none sm:gap-4"
         aria-label={`Read "${article.title}" on Medium`}
       >
-        <div
-          aria-hidden="true"
-          className="flex size-21 shrink-0 items-center justify-center rounded-lg bg-input dark:bg-(--color-surface-dark) text-(--color-surface-muted) dark:text-(--color-surface-elevated) transition-colors duration-200 group-hover:bg-chart-1 dark:group-hover:bg-(--color-surface-strong) group-hover:text-black dark:group-hover:text-white"
-        >
-          <PiArticleMedium className="size-7.5" />
-        </div>
+        {hasImage ? (
+          <img
+            src={article.image}
+            alt=""
+            className="size-21 shrink-0 rounded-lg object-cover"
+          />
+        ) : (
+          <div
+            aria-hidden="true"
+            className="flex size-21 shrink-0 items-center justify-center rounded-lg bg-input dark:bg-(--color-surface-dark) text-(--color-surface-muted) dark:text-(--color-surface-elevated) transition-colors duration-200 group-hover:bg-chart-1 dark:group-hover:bg-(--color-surface-strong) group-hover:text-black dark:group-hover:text-white"
+          >
+            <PiArticleMedium className="size-7.5" />
+          </div>
+        )}
 
         <div className="min-w-0 flex-1">
           <h3 className="text-sm font-medium transition-colors duration-200 sm:text-base">
