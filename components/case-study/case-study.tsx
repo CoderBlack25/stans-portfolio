@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import type { ReactNode } from "react";
 //import { CaseStudyGallery, type GalleryImage } from "./case-study-gallery";
 import { CaseStudyImage } from "./case-study-image";
@@ -112,31 +111,9 @@ function CaseStudyHeroMedia({
 }: {
   hero: NonNullable<CaseStudyData["hero"]>;
 }) {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video || hero.type !== "video") return;
-
-    const start = 1;
-    const end = 12;
-
-    const handleTimeUpdate = () => {
-      if (video.currentTime >= end) {
-        video.currentTime = start;
-      }
-    };
-
-    video.addEventListener("timeupdate", handleTimeUpdate);
-    return () => {
-      video.removeEventListener("timeupdate", handleTimeUpdate);
-    };
-  }, [hero.type]);
-
   if (hero.type === "video") {
     return (
       <video
-        ref={videoRef}
         src={hero.src}
         autoPlay
         muted

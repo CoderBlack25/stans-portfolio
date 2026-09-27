@@ -117,7 +117,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       }),
     },
 
-    /**INTRODUCTION AND IMAGE */
+    /**INTRODUCTION */
     {
       type: "text",
       id: "introduction",
@@ -511,10 +511,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           parts: [
-            { text: "• " },
-
             {
-              text: "Redesign the Home dashboard with clear information hierarchy: balance, quick actions, primary banner(s), and recent transactions.⁠⁠⁠",
+              text: "• Redesign the Home dashboard with clear information hierarchy: balance, quick actions, primary banner(s), and recent transactions.⁠⁠⁠",
             },
           ],
           className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
@@ -1014,7 +1012,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     /**KEY LEARNINGS */
     {
       type: "text",
-      id: "learnings",
+      id: "fairmoney-learnings",
       title: "Key Learnings",
       lines: [
         {
