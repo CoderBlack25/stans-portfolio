@@ -79,7 +79,7 @@ export function TechStackGrid({
             STACK
           </h1>
 
-          <p className="mt-1.5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="mt-1.5 text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
             Tools I&apos;m proficient with are as follows:
           </p>
         </div>
@@ -99,7 +99,7 @@ export function TechStackGrid({
                 )}
               </div>
 
-              <span className="mt-2.5 text-center font-medium text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+              <span className="mt-2.5 text-center font-medium text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
                 {tool.name}
               </span>
             </div>

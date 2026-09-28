@@ -32,7 +32,7 @@ export function Footer() {
         <div className="flex flex-col gap-2">
           <p className="text-sm sm:text-base font-medium">Stanley Chukwuma</p>
 
-          <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
             © {currentYear} Stanley Chukwuma. All rights reserved
           </p>
         </div>
@@ -54,7 +54,7 @@ export function Footer() {
                       rel: "noopener noreferrer",
                     }
                   : {})}
-                className="text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted) underline decoration-(--color-surface-muted) dark:decoration-(--color-muted) underline-offset-4 transition-colors hover:text-black dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted) underline decoration-(--color-surface-muted) dark:decoration-(--color-muted) underline-offset-4 transition-colors hover:text-black dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 {link.label}
               </Link>

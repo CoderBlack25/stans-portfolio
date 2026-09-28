@@ -31,7 +31,9 @@ const WorksFolder = ({
       >
         <div className="rounded-t-lg bg-input dark:bg-(--color-surface-dark) px-6 pt-6 transition-colors duration-300 ease-out group-hover:bg-(--color-accent)">
           <div className="flex flex-col gap-2">
-            <h2 className="font-medium uppercase">{title}</h2>
+            <h2 className="text-sm sm:text-base font-medium uppercase">
+              {title}
+            </h2>
 
             <p className="max-w-xs text-xs">{description}</p>
           </div>

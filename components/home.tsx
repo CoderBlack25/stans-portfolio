@@ -110,7 +110,7 @@ function SocialLinks() {
                   rel: "noopener noreferrer",
                 }
               : {})}
-            className="group inline-flex items-center text-xs sm:text-sm underline decoration-1 underline-offset-4 transition-colors hover:text-primary"
+            className="group inline-flex items-center text-xs underline decoration-1 underline-offset-4 transition-colors hover:text-primary"
           >
             {link.label}
             {isExternal && <ExternalLinkIcon />}
@@ -149,7 +149,7 @@ export default function Home() {
               Product Designer &amp; Design Engineer
             </h1>
 
-            <p className="text-(--color-surface-muted) dark:text-(--color-muted) text-xs sm:text-sm max-w-sm">
+            <p className="text-(--color-surface-muted) dark:text-(--color-muted) text-xs max-w-sm">
               I help startups and enterprise businesses turn{" "}
               <span className="text-foreground">complex ideas</span> into{" "}
               <span className="text-foreground">
@@ -170,7 +170,7 @@ export default function Home() {
                 nativeButton={false}
                 render={<Link href="mailto:example@gmail.com" />}
                 size="lg"
-                className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
+                className="rounded-lg bg-(--color-accent) text-xs text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
               >
                 Let&apos;s Talk
               </Button>
@@ -179,7 +179,7 @@ export default function Home() {
                 nativeButton={false}
                 render={<Link href="/resume.pdf" download />}
                 size="lg"
-                className="rounded-lg bg-input text-xs sm:text-sm text-foreground transition-colors hover:bg-chart-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
+                className="rounded-lg bg-input text-xs text-foreground transition-colors hover:bg-chart-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
               >
                 Download Resume
               </Button>
@@ -191,7 +191,7 @@ export default function Home() {
           <div className="flex items-center gap-5">
             <h2
               id="about-heading"
-              className="shrink-0 text-xs sm:text-sm uppercase text-(--color-surface-muted) dark:text-(--color-muted)"
+              className="shrink-0 text-xs uppercase text-(--color-surface-muted) dark:text-(--color-muted)"
             >
               More About Me
             </h2>
@@ -207,10 +207,7 @@ export default function Home() {
               const Icon = item.icon;
 
               return (
-                <li
-                  key={item.id}
-                  className="flex items-center gap-2 text-xs sm:text-sm"
-                >
+                <li key={item.id} className="flex items-center gap-2 text-xs">
                   <Icon
                     aria-hidden="true"
                     className="h-5 w-5 shrink-0 stroke-[1.5]"
@@ -229,11 +226,11 @@ export default function Home() {
         >
           <SocialLinks />
 
-          <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
             Last Update: January 12, 2026, 3:34 PM (GMT +2)
           </p>
 
-          <p className="text-xs sm:text-sm">
+          <p className="text-xs">
             ©{year} Stanley Chukwuma. All rights reserved
           </p>
         </footer>

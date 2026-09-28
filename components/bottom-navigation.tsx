@@ -82,7 +82,6 @@ export function BottomNavigation() {
                     duration-200
                     sm:min-h-8
                     sm:px-4
-                    sm:text-sm
                     ${
                       isActive
                         ? "bg-(--color-accent) text-white"

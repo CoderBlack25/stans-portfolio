@@ -32,7 +32,7 @@ const works = [
 
 export default function Works() {
   return (
-    <main className="mx-auto w-full max-w-5xl my-40 sm:my-45 flex flex-col items-center">
+    <main className="mx-auto w-full max-w-5xl my-35 sm:my-45 flex flex-col items-center">
       <div className="text-center mb-10 sm:mb-20 px-10">
         <h1
           id="tech-stack-heading"
@@ -41,7 +41,7 @@ export default function Works() {
           Selected Works
         </h1>
 
-        <p className="mt-1.5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted) max-w-md">
+        <p className="mt-1.5 text-xs text-(--color-surface-muted) dark:text-(--color-muted) max-w-md">
           A small selection of my work since 2021. Currently, I'm a senior
           product designer at FairMoney Micro Finance Bank
         </p>

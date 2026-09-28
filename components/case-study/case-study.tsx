@@ -100,7 +100,7 @@ type CaseStudyProps = {
 
 function SectionTitle({ title }: { title: string }) {
   return (
-    <h2 className="mb-5 text-base font-semibold tracking-tight text-foreground">
+    <h2 className="mb-3 text-sm sm:text-base font-medium text-foreground">
       {title}
     </h2>
   );
@@ -116,6 +116,7 @@ function CaseStudyHeroMedia({
       <video
         src={hero.src}
         autoPlay
+        loop
         muted
         playsInline
         controls={false}
@@ -235,7 +236,7 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
   return (
     <main
       className={cn(
-        "mx-auto w-full max-w-6xl mt-40 sm:mt-45 mb-15 sm:mb-20 px-4",
+        "mx-auto w-full max-w-5xl mt-40 sm:mt-45 mb-15 sm:mb-20 px-4",
         className,
       )}
     >
@@ -250,29 +251,29 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
               {project.description &&
                 (typeof project.description === "string" ? (
-                  <p className="max-w-3xl text-xs text-(--color-muted) sm:text-sm">
+                  <p className="max-w-3xl text-xs text-(--color-muted)">
                     {project.description}
                   </p>
                 ) : (
                   <CaseStudyText
                     lines={project.description}
-                    className="max-w-3xl text-xs leading-6 text-(--color-muted) sm:text-sm"
+                    className="max-w-3xl text-xs leading-6 text-(--color-muted)"
                   />
                 ))}
             </div>
 
             {project.meta && project.meta.length > 0 && (
-              <dl className="divide-y divide-border border-y border-border">
+              <dl className="divide-y divide-(--color-surface-1) border-y border-(--color-surface-1)">
                 {project.meta.map((item) => (
                   <div
                     key={`${item.label}-${item.value}`}
                     className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] gap-6 py-6"
                   >
-                    <dt className="text-xs text-(--color-muted) sm:text-sm">
+                    <dt className="text-xs text-(--color-muted)">
                       {item.label}
                     </dt>
 
-                    <dd className="text-xs text-foreground sm:text-sm">
+                    <dd className="text-xs text-foreground">
                       {item.href ? (
                         <a
                           href={item.href}
@@ -293,19 +294,19 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
             {project.productVertical && (
               <section className="space-y-5">
-                <h2 className="text-xs sm:text-sm uppercase text-foreground">
+                <h2 className="text-xs uppercase text-foreground">
                   Product Vertical
                 </h2>
-                <p className="text-xs text-(--color-muted) sm:text-sm">
+                <p className="text-xs text-(--color-muted)">
                   {project.productVertical.description}
                 </p>
                 <ul className="space-y-6 pt-2">
                   {project.productVertical.items.map((item, index) => (
                     <li key={`${item.label}-${index}`}>
                       {item.disabled ? (
-                        <span className="inline-flex items-center gap-3 text-xs text-(--color-muted) sm:text-sm">
+                        <span className="inline-flex items-center gap-3 text-xs text-(--color-muted)">
                           {item.label}
-                          <span className="rounded-full bg-(--color-surface-1) px-2 py-1 text-xs text-(--color-muted) sm:text-sm">
+                          <span className="rounded-full bg-(--color-surface-1) px-2 py-1 text-[10px] text-(--color-muted)">
                             Coming soon
                           </span>
                         </span>
@@ -314,7 +315,7 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
                           href={item.href ?? "#"}
                           className={cn(
                             buttonVariants({ variant: "default", size: "lg" }),
-                            "rounded-lg bg-(--color-accent) text-xs text-white hover:bg-(--color-accent-hover) sm:text-sm",
+                            "rounded-lg bg-(--color-accent) text-xs text-white hover:bg-(--color-accent-hover)",
                           )}
                         >
                           {item.label}
@@ -330,7 +331,7 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
         {/* Main case-study content */}
         <article className="min-w-0">
-          <div className="mx-auto max-w-3xl space-y-16">
+          <div className="mx-auto max-w-3xl space-y-10">
             {project.heroIntro && (
               <header className="space-y-3">
                 {project.heroIntro.title && (
