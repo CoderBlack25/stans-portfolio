@@ -13,5 +13,15 @@
     "Voiceflow",
     "Webflow",
     "weren"
-  ]
+  ],
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "foreground": "#FF5C5C"
+        }
+      }
+    ]
+  }
 }

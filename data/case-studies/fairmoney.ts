@@ -110,7 +110,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
   sections: [
     {
       type: "custom",
-      id: "hero-divider",
+      id: "fairmoney-custom-1",
       content: createElement("div", {
         className:
           "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -120,7 +120,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     /**INTRODUCTION */
     {
       type: "text",
-      id: "introduction",
+      id: "fairmoney-text-1",
       title: "Introduction",
       lines: [
         {
@@ -144,7 +144,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "fairmoney1",
+      id: "fairmoney-image-1",
       src: "/images/fairmoney/image1.png",
       alt: "",
       width: 1400,
@@ -153,7 +153,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "solution-divider5",
+      id: "fairmoney-custom-2",
       content: createElement("div", {
         className:
           "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -163,7 +163,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     /**PROBLEM STATEMENT */
     {
       type: "text",
-      id: "problem-statement",
+      id: "fairmoney-text-2",
       title: "Challenge / Problem Statement",
       lines: [
         {
@@ -236,7 +236,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "fairmoney2",
+      id: "fairmoney-image-2",
       src: "/images/fairmoney/image2.png",
       alt: "",
       width: 1400,
@@ -245,7 +245,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "solution-divider4",
+      id: "fairmoney-custom-3",
       content: createElement("div", {
         className:
           "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -255,7 +255,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     /**DISCOVERY & STAKEHOLDER ALIGNMENT AND IMAGE */
     {
       type: "text",
-      id: "stakeholder-alignment",
+      id: "fairmoney-text-3",
       title: "Discovery and Stakeholder Alignment",
       lines: [
         {
@@ -328,7 +328,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "fairmoney3",
+      id: "fairmoney-image-3",
       src: "/images/fairmoney/image3.png",
       alt: "",
       width: 1400,
@@ -337,7 +337,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "solution-divider3",
+      id: "fairmoney-custom-4",
       content: createElement("div", {
         className:
           "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -347,7 +347,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     /**RESEARCH & INSIGHT */
     {
       type: "text",
-      id: "research",
+      id: "fairmoney-text-4",
       title: "Research & Insights",
       lines: [
         {
@@ -434,7 +434,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "fairmoney4",
+      id: "fairmoney-image-4",
       src: "/images/fairmoney/image4.png",
       alt: "",
       width: 1400,
@@ -443,7 +443,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "solution-divider2",
+      id: "fairmoney-custom-5",
       content: createElement("div", {
         className:
           "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -453,7 +453,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     /**THE SOLUTION */
     {
       type: "text",
-      id: "solution",
+      id: "fairmoney-text-5",
       title: "The Solution (what the redesign delivers)",
       lines: [
         {
@@ -1002,7 +1002,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "solution-divider",
+      id: "fairmoney-custom-6",
       content: createElement("div", {
         className:
           "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -1012,7 +1012,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     /**KEY LEARNINGS */
     {
       type: "text",
-      id: "fairmoney-learnings",
+      id: "fairmoney-text-6",
       title: "Key Learnings",
       lines: [
         {

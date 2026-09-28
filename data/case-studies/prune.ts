@@ -69,7 +69,7 @@ export const pruneCaseStudy: CaseStudyData = {
   sections: [
     {
       type: "custom",
-      id: "hero-divider",
+      id: "prune-custom-1",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -79,7 +79,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**INTRODUCTION */
     {
       type: "text",
-      id: "introduction",
+      id: "prune-text-1",
       title: "Introduction",
       lines: [
         {
@@ -168,7 +168,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "prune1",
+      id: "prune-image-1",
       src: "/images/prune/image1.png",
       alt: "",
       width: 1400,
@@ -177,7 +177,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "prune-divider1",
+      id: "prune-custom-2",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
@@ -187,7 +187,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**ONBOARDING */
     {
       type: "text",
-      id: "onboarding",
+      id: "prune-text-2",
       title: "Streamlining Onboarding for the Prune payment API",
       lines: [
         {
@@ -320,7 +320,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "prune-divider2",
+      id: "prune-custom-3",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -330,7 +330,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**ACCOUNT SERVICE */
     {
       type: "text",
-      id: "account-service",
+      id: "prune-text-3",
       title: "Account Service",
       lines: [
         {
@@ -626,7 +626,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "prune-divider3",
+      id: "prune-custom-4",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -636,7 +636,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**API KEY GENERATION */
     {
       type: "text",
-      id: "api-key",
+      id: "prune-text-4",
       title: "API Key Generation & Management",
       lines: [
         {
@@ -700,7 +700,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "prune6",
+      id: "prune-image-2",
       src: "/images/prune/image6.png",
       alt: "",
       width: 1400,
@@ -709,7 +709,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "prune-divider4",
+      id: "prune-custom-5",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -719,7 +719,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**PRUNE PAYOUT */
     {
       type: "text",
-      id: "payout",
+      id: "prune-text-5",
       title: "Prune Payout API Service",
       lines: [
         {
@@ -830,7 +830,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "prune7",
+      id: "prune-image-3",
       src: "/images/prune/image7.png",
       alt: "",
       width: 1400,
@@ -839,7 +839,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "prune-divider5",
+      id: "prune-custom-6",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -849,7 +849,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**SANDBOX TESTING */
     {
       type: "text",
-      id: "sandbox",
+      id: "prune-text-6",
       title: "Sandbox Testing Interface",
       lines: [
         {
@@ -957,7 +957,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "image",
-      id: "prune8",
+      id: "prune-image-4",
       src: "/images/prune/image8.png",
       alt: "",
       width: 1400,
@@ -966,7 +966,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "prune-divider6",
+      id: "prune-custom-7",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -976,7 +976,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**USER MANAGEMENT */
     {
       type: "text",
-      id: "user-management",
+      id: "prune-text-7",
       title: "User Management (Roles and permission)",
       lines: [
         {
@@ -1042,7 +1042,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
     {
       type: "custom",
-      id: "prune-divider7",
+      id: "prune-custom-8",
       content: createElement("div", {
         className:
           "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
@@ -1052,7 +1052,7 @@ export const pruneCaseStudy: CaseStudyData = {
     /**KEY LEARNINGS */
     {
       type: "text",
-      id: "prune-learnings",
+      id: "prune-text-8",
       title: "Key Learnings",
       lines: [
         {
