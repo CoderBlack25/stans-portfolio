@@ -55,7 +55,7 @@ export const pruneCaseStudy: CaseStudyData = {
             text: "Prune Payment API is a developer-first, API-as-a-Service platform that enables businesses to create and manage multi-currency virtual bank accounts at scale.",
           },
         ],
-        className: "text-xs text-(--color-muted) sm:text-sm",
+        className: "text-xs text-(--color-muted)",
       },
     ],
   },
@@ -72,7 +72,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "hero-divider",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -88,7 +88,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Prune Payment API is a developer-first, API-as-a-Service platform that enables businesses to create and manage multi-currency virtual bank accounts at scale. Built for fintechs, marketplaces, and digital banks operating across emerging and global markets, the platform currently supports Euro (EUR) and British Pound (GBP), Nigerian Naira (NGN), US Dollar (USD), Ghanaian Cedi (GHS), Canadian Dollar (CAD), with Australian Dollar (AUD), Indian Rupee (INR), and Swiss Franc (CHF) already in active development and rollout.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -99,6 +99,7 @@ export const pruneCaseStudy: CaseStudyData = {
               underline: true,
             },
           ],
+          className: "text-xs",
         },
         {
           parts: [
@@ -107,7 +108,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Virtual bank account issuance for individuals and businesses",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -116,7 +117,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Seamless cross-border payments and payouts",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -125,7 +126,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Real-time web-hooks for deposits, transaction updates, and account activity",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -134,7 +135,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "A full developer dashboard for API key management, environment control, and monitoring",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -143,7 +144,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Region-specific KYC and compliance workflows",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -152,7 +153,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "A production-grade sandbox for safe, rapid integration",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -160,7 +161,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Prune bridges regulated banking infrastructure with modern developer experience, helping companies launch compliant financial products faster and with greater confidence.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
       ],
     },
@@ -179,7 +180,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-divider1",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -195,7 +196,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Our objective was to design an intuitive and compliant onboarding experience for new businesses utilizing the Prunepayment API.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
 
         {
@@ -211,7 +212,7 @@ export const pruneCaseStudy: CaseStudyData = {
         /**SOLUTION */
         {
           parts: [{ text: "Solution:" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-8 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -219,7 +220,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "We designed a structured, step-by-step onboarding flow for the Prunepayment API, focusing on:",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -233,7 +234,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: `Breaking down "Business Information", "Documents", "Directors", and "Shareholders" into distinct, manageable stages.`,
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -247,7 +248,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Implementing clear drag-and-drop zones for essential documents (e.g., CAC Certificate, AML Framework), reducing confusion.",
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -261,7 +262,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: `Integrating "Quick Tips" directly within the interface to guide users on optimal data entry and document preparation.`,
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -275,7 +276,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Allowing businesses to proactively select desired API services (e.g., Account, Payout, Lookup) from the onset.",
             },
           ],
-          className: "tmt-4 ext-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -289,12 +290,12 @@ export const pruneCaseStudy: CaseStudyData = {
               text: `Clear presentation of "Terms of Use" and real-time application status updates.`,
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
 
         {
           parts: [{ text: "Impact:" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-8 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -302,7 +303,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "This design aims to significantly improve the user's first impression and completion rate for the Prune payment API, transforming a potentially daunting task into a straightforward and efficient process.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
 
         {
@@ -322,7 +323,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-divider2",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -338,15 +339,15 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "The account service provides endpoints that allow for creating and managing accounts. There are two types of accounts that can be created.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [{ text: "1. Individual/user account and" }],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 text-xs text-(--color-muted)",
         },
         {
           parts: [{ text: "2. Organizational/ Cooperate account" }],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -354,7 +355,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Financial account management, especially for businesses, involves a multitude of critical functions from account creation and status tracking to transaction monitoring and fund transfers. The challenge was to consolidate these complex functionalities into a user-friendly and efficient interface that caters to both individual and corporate account needs.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
 
         {
@@ -369,7 +370,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "My Approach & Key Contributions" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-8 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -377,11 +378,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "As the Lead UI/UX designer for the Prunepayment API Account Service, we translated a broad set of backend API functionalities into a clean, functional, and intuitive user interface. My objective was to make complex financial operations simple, actionable, and efficient for end users.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [{ text: "Centralized Account Overview" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-6 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -389,11 +390,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "We designed a comprehensive Accounts dashboard that provides a high-level summary of all issued accounts, including key data points like account type, balance, creation date, and recent activity. This allows users to quickly assess their financial standing at a glance.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [{ text: "Modular and Granular Insights" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-6 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -401,7 +402,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Each account expands into a detailed view featuring distinct sections for:",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -409,7 +410,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Account Details⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -417,7 +418,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Transactions⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -425,7 +426,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Statistics⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -433,7 +434,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Documents⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -441,12 +442,12 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "This modular layout ensures that users can access deep insights without being overwhelmed by information.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
 
         {
           parts: [{ text: "Intuitive Navigation for Core Functions" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-6 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -454,7 +455,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "I structured the left-hand navigation panel to streamline access to all critical features:",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -462,7 +463,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Accounts – List and manage issued accounts⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -470,7 +471,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Account Requests – Track individual and corporate account creation workflows⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -478,7 +479,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Payouts & Debt Requests – View and manage outgoing or incoming fund requests⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -486,12 +487,12 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Transactions – Monitor all account-related financial activities⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
 
         {
           parts: [{ text: "Financial Visualization" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-6 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -499,12 +500,12 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "The Statistics section uses charts and visual indicators to present transaction metrics and trends in an easily digestible format, supporting fast decision-making for business users.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
 
         {
           parts: [{ text: "Action-Oriented Design" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-6 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -512,12 +513,12 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Prominent placement of high-utility features like the Send Money button enables users to execute core actions directly from the account view, reducing friction and improving workflow efficiency.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
 
         {
           parts: [{ text: "Full API Endpoint Coverage" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-6 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -525,11 +526,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "The UI was carefully mapped to support and reflect the full spectrum of backend API capabilities, including:",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Account Creation and Management: ",
               bold: true,
@@ -539,11 +540,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Request Individual/Corporate Account, Track and Update Requests⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Issued Accounts: ",
               bold: true,
@@ -553,11 +554,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "List and View Accounts⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Financial Transactions: ",
               bold: true,
@@ -567,11 +568,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Check Balances, Initiate Transfers, Validate IBANs⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Transaction Oversight: ",
               bold: true,
@@ -581,11 +582,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "View and Track Transactions⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Compliance Support: ",
               bold: true,
@@ -595,12 +596,12 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Fetch Acceptable IDs for KYC⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
 
         {
           parts: [{ text: "Outcome" }],
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className: "mt-6 text-sm font-medium text-foreground",
         },
         {
           parts: [
@@ -608,7 +609,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "The final interface empowers businesses to manage their financial operations with clarity, speed, and confidence. By transforming complex backend services into a streamlined, user-friendly frontend experience, I contributed to a product that elevates financial management while supporting scalability and user growth.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
 
         {
@@ -628,7 +629,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-divider3",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -644,7 +645,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "We also designed a secure and user-friendly interface for managing Live and Test API keys within the Prune payment dashboard. Key features include:",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -652,7 +653,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Separate sections for live and test environments⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -660,7 +661,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Masked keys with one-click view, copy, and reset options⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -668,7 +669,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Real-time feedback and error handling⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -676,7 +677,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• Web-hook URL configuration for event and callback notifications⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -684,7 +685,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "• API usage tracking with total API call display⁠⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -692,7 +693,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "This feature empowers developers to manage integrations efficiently while maintaining high security standards",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
       ],
     },
@@ -711,7 +712,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-divider4",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -723,7 +724,7 @@ export const pruneCaseStudy: CaseStudyData = {
       lines: [
         {
           parts: [{ text: "Detailed Transaction reports." }],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -738,15 +739,17 @@ export const pruneCaseStudy: CaseStudyData = {
               color: "text-foreground",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
-        },
-        {
-          parts: [{ text: "Core Capabilities", color: "text-foreground" }],
-          className: "text-xs sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "Core Capabilities", bold: true, color: "text-foreground" },
+          ],
+          className: "text-xs",
+        },
+        {
+          parts: [
+            { text: "• ", color: "text-foreground" },
             {
               text: "Fund Disbursement: ",
               bold: true,
@@ -756,25 +759,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Initiate payouts from virtual accounts using the endpoint⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
-            {
-              text: "Fund Disbursement: ",
-              bold: true,
-              color: "text-foreground",
-            },
-            {
-              text: "Initiate payouts from virtual accounts using the endpoint⁠⁠",
-            },
-          ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
-        },
-        {
-          parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Live Tracking: ",
               bold: true,
@@ -784,11 +773,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Check disbursement status via API or dashboard.⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Account Overview: ",
               bold: true,
@@ -798,11 +787,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "View account balance, transaction history, and beneficiary details.⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Go Live Option: ",
               bold: true,
@@ -812,11 +801,11 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Schedule a go-live date post-integration testing.⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            { text: "• ", color: "text-foreground" },
             {
               text: "Secure & Scalable: ",
               bold: true,
@@ -826,7 +815,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Designed for business-grade financial operations with real-time visibility and access control.⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -834,7 +823,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Perfect for companies needing fast, cross-border fund transfers in a secure and developer-friendly environment.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-4 text-xs text-(--color-muted)",
         },
       ],
     },
@@ -853,7 +842,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-divider5",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -869,7 +858,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "The Sandbox Environment provides developers with a safe, isolated space to test API functionality without impacting real data or transactions.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -880,6 +869,7 @@ export const pruneCaseStudy: CaseStudyData = {
               underline: true,
             },
           ],
+          className: "text-xs",
         },
         {
           parts: [
@@ -893,7 +883,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Test adding funds to an issued account.⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -907,7 +897,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Test successful transaction processing.⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -921,7 +911,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Test failed or rejected transactions.⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -932,6 +922,7 @@ export const pruneCaseStudy: CaseStudyData = {
               underline: true,
             },
           ],
+          className: "text-xs",
         },
         {
           parts: [
@@ -945,7 +936,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Test account approval flow.⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -959,7 +950,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Test rejection scenarios for account requests.⁠⁠",
             },
           ],
-          className: "ml-4 mt-4 text-xs text-(--color-muted) sm:text-sm",
+          className: "ml-2 mt-4 text-xs text-(--color-muted)",
         },
       ],
     },
@@ -978,7 +969,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-divider6",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -992,6 +983,7 @@ export const pruneCaseStudy: CaseStudyData = {
           parts: [
             { text: "The Challenge:", bold: true, color: "text-foreground" },
           ],
+          className: "text-sm",
         },
         {
           parts: [
@@ -999,7 +991,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "In a financial SaaS environment, granular control over user access is paramount for security, compliance, and efficient team collaboration. The primary challenge was to design an intuitive interface that allows administrators to easily create custom roles and assign specific permissions across various API functionalities without overwhelming complexity.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -1009,6 +1001,7 @@ export const pruneCaseStudy: CaseStudyData = {
               color: "text-foreground",
             },
           ],
+          className: "text-sm",
         },
         {
           parts: [
@@ -1016,7 +1009,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "I designed the user interface for the Prune payment API's User Management module, focusing on clarity, control, and ease of administration for business users.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -1033,7 +1026,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "The designed User Management and Roles & Permissions interface provides a robust and user-friendly solution for organizations to control and secure access within the Prunepayment API. By simplifying the creation and assignment of roles with granular permissions, I contributed to a more secure, compliant, and efficiently managed financial platform.",
             },
           ],
-          className: "mt-8 text-xs text-(--color-muted) sm:text-sm",
+          className: "mt-8 text-xs text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -1052,7 +1045,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-divider7",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)",
+          "my-10 h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -1068,7 +1061,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "Designing the Prune payment API platform was an opportunity to translate complex financial operations into a seamless, intuitive user experience. I focused on building a scalable, developer-friendly interface that simplifies everything from account creation and transaction monitoring to API key management and web-hook configuration.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
         {
           parts: [
@@ -1076,7 +1069,7 @@ export const pruneCaseStudy: CaseStudyData = {
               text: "By aligning design with technical functionality, I created a dashboard that empowers both developers and business users to confidently manage their financial workflows. This project reflects my ability to design for clarity, efficiency, and real-world usability in the fintech space.",
             },
           ],
-          className: "text-xs text-(--color-muted) sm:text-sm",
+          className: "text-xs text-(--color-muted)",
         },
       ],
     },
