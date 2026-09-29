@@ -6,7 +6,9 @@ import { CaseStudyImage } from "./case-study-image";
 import { CaseStudyText, type TextLine } from "./case-study-text";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export type ProjectMeta = {
   label: string;
@@ -232,11 +234,78 @@ function renderSection(section: CaseStudySection) {
   }
 }
 
+const projectNavigation = [
+  { title: "FairMoney", href: "/works/fairmoney" },
+  { title: "Prune Payment", href: "/works/prune" },
+  { title: "Clime Payment", href: "/works/clime" },
+] as const;
+
+function ProjectNavigation() {
+  const pathname = usePathname();
+  const currentIndex = projectNavigation.findIndex(
+    (project) => project.href === pathname,
+  );
+
+  if (currentIndex === -1) return null;
+
+  const previousProject =
+    projectNavigation[
+      (currentIndex - 1 + projectNavigation.length) % projectNavigation.length
+    ];
+  const nextProject =
+    projectNavigation[(currentIndex + 1) % projectNavigation.length];
+
+  return (
+    <nav
+      aria-label="Project navigation"
+      className="mx-auto mt-16 grid w-full max-w-3xl grid-cols-2 sm:mt-30"
+    >
+      <Link
+        href={previousProject.href}
+        aria-label={`Previous project: ${previousProject.title}`}
+        className="group flex min-h-16 min-w-0 items-center gap-3 rounded-md px-3 py-3 text-left transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
+      >
+        <ArrowLeft
+          aria-hidden="true"
+          className="size-4 shrink-0 text-(--color-muted) transition-transform group-hover:-translate-x-1"
+        />
+        <span className="min-w-0">
+          <span className="block text-[10px] text-(--color-muted)">
+            Previous project
+          </span>
+          <span className="block truncate text-xs font-medium text-foreground">
+            {previousProject.title}
+          </span>
+        </span>
+      </Link>
+
+      <Link
+        href={nextProject.href}
+        aria-label={`Next project: ${nextProject.title}`}
+        className="group flex min-h-16 min-w-0 items-center justify-end gap-3 rounded-md px-3 py-3 text-right transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
+      >
+        <span className="min-w-0">
+          <span className="block text-[10px] text-(--color-muted)">
+            Next project
+          </span>
+          <span className="block truncate text-xs font-medium text-foreground">
+            {nextProject.title}
+          </span>
+        </span>
+        <ArrowRight
+          aria-hidden="true"
+          className="size-4 shrink-0 text-(--color-muted) transition-transform group-hover:translate-x-1"
+        />
+      </Link>
+    </nav>
+  );
+}
+
 export function CaseStudy({ project, className = "" }: CaseStudyProps) {
   return (
     <main
       className={cn(
-        "mx-auto w-full max-w-5xl mt-40 sm:mt-45 mb-15 sm:mb-20 px-4",
+        "mx-auto w-full max-w-5xl mt-30 sm:mt-45 mb-15 sm:mb-20 px-4",
         className,
       )}
     >
@@ -347,6 +416,8 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
             {project.sections.map(renderSection)}
           </div>
+
+          <ProjectNavigation />
         </article>
       </div>
     </main>
