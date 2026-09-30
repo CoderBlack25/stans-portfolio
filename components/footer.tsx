@@ -3,23 +3,23 @@ import Link from "next/link";
 const footerLinks = [
   {
     label: "Email",
-    href: "mailto:hello@example.com",
+    href: "mailto:stanchiqa@gmail.com",
   },
   {
     label: "GitHub",
-    href: "https://github.com/yourusername",
+    href: "https://github.com/Chiqa-Design",
   },
   {
     label: "Twitter (X)",
-    href: "https://x.com/yourusername",
+    href: "https://x.com/chiqastanley",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/stanley-chukwuma-89a9b8202/",
   },
   {
     label: "Medium",
-    href: "https://medium.com/@yourusername",
+    href: "https://medium.com/@stanchiqa",
   },
 ] as const;
 
