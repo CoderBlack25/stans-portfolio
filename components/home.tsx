@@ -61,26 +61,26 @@ const aboutItems: AboutItem[] = [
 const socialLinks: SocialLink[] = [
   {
     label: "Email",
-    href: "mailto:hello@example.com",
+    href: "mailto:stanchiqa@gmail.com",
   },
   {
     label: "GitHub",
-    href: "https://github.com/yourusername",
+    href: "https://github.com/Chiqa-Design",
     external: true,
   },
   {
     label: "Twitter (X)",
-    href: "https://x.com/yourusername",
+    href: "https://x.com/chiqastanley",
     external: true,
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/stanley-chukwuma-89a9b8202/",
     external: true,
   },
   {
     label: "Medium",
-    href: "https://medium.com/@yourusername",
+    href: "https://medium.com/@stanchiqa",
     external: true,
   },
 ];
@@ -110,7 +110,7 @@ function SocialLinks() {
                   rel: "noopener noreferrer",
                 }
               : {})}
-            className="group inline-flex items-center text-xs underline decoration-1 underline-offset-4 transition-colors hover:text-primary"
+            className="group inline-flex items-center text-xs underline decoration-1 underline-offset-4 transition-colors hover:text-(--color-accent)"
           >
             {link.label}
             {isExternal && <ExternalLinkIcon />}
@@ -126,27 +126,27 @@ const year = date.getFullYear();
 
 export default function Home() {
   return (
-    <main className="bg-background text-foreground transition-colors duration-300">
-      <div className="mx-auto w-full max-w-xl px-4 sm:px-0 my-40 sm:my-45">
+    <main className="flex min-h-svh items-center justify-center bg-background px-4 py-32 text-foreground transition-colors duration-300">
+      <div className="w-full max-w-xl">
         <section
           aria-labelledby="hero-heading"
-          className="flex flex-col sm:flex-row items-center sm:items-start gap-8"
+          className="flex flex-col sm:flex-row items-center sm:items-start gap-6"
         >
           <Image
             src="/images/home/profile-image.png"
             alt="Portrait of Stanley Chukwuma"
-            width={180}
-            height={180}
+            width={150}
+            height={150}
             priority
             className="object-cover object-center grayscale"
           />
 
           <div className="flex min-w-0 flex-col gap-3 text-center sm:text-left">
-            <h1
-              id="hero-heading"
-              className="max-w-5xl text-2xl sm:text-3xl font-medium uppercase"
-            >
-              Product Designer &amp; Design Engineer
+            <h1 className="text-2xl sm:text-[32px] font-medium uppercase leading-6">
+              Product Designer &amp;
+            </h1>
+            <h1 className="text-2xl sm:text-[32px] font-medium uppercase">
+              Design Engineer
             </h1>
 
             <p className="text-(--color-surface-muted) dark:text-(--color-muted) text-xs max-w-sm">
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section aria-labelledby="about-heading" className="mt-12">
+        <section aria-labelledby="about-heading" className="mt-4 sm:mt-6">
           <div className="flex items-center gap-5">
             <h2
               id="about-heading"
@@ -198,20 +198,17 @@ export default function Home() {
 
             <div
               aria-hidden="true"
-              className="h-[0.5px] flex-1 bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)"
+              className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)"
             />
           </div>
 
-          <ul className="mt-8 space-y-4 sm:mt-10">
+          <ul className="mt-4 space-y-4 sm:mt-6">
             {aboutItems.map((item) => {
               const Icon = item.icon;
 
               return (
                 <li key={item.id} className="flex items-center gap-2 text-xs">
-                  <Icon
-                    aria-hidden="true"
-                    className="h-5 w-5 shrink-0 stroke-[1.5]"
-                  />
+                  <Icon aria-hidden="true" className="h-4.5 w-4.5 shrink-0" />
 
                   <span className="min-w-0">{item.content}</span>
                 </li>
@@ -222,7 +219,7 @@ export default function Home() {
 
         <footer
           id="contact"
-          className="flex flex-col gap-6 mt-10 sm:mt-12 rounded-lg bg-input p-6 dark:bg-(--color-surface-dark)"
+          className="flex flex-col gap-4 mt-6 sm:mt-8 rounded-lg bg-input p-4 dark:bg-(--color-surface-dark)"
         >
           <SocialLinks />
 

@@ -320,25 +320,25 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
               {project.description &&
                 (typeof project.description === "string" ? (
-                  <p className="max-w-3xl text-xs text-(--color-muted)">
+                  <p className="max-w-3xl text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
                     {project.description}
                   </p>
                 ) : (
                   <CaseStudyText
                     lines={project.description}
-                    className="max-w-3xl text-xs leading-6 text-(--color-muted)"
+                    className="max-w-3xl text-xs leading-6 text-(--color-surface-muted) dark:text-(--color-muted)"
                   />
                 ))}
             </div>
 
             {project.meta && project.meta.length > 0 && (
-              <dl className="divide-y divide-(--color-surface-1) border-y border-(--color-surface-1)">
+              <dl className="divide-y divide-(--color-muted) dark:divide-(--color-surface-1) border-y border-(--color-muted) dark:border-(--color-surface-1)">
                 {project.meta.map((item) => (
                   <div
                     key={`${item.label}-${item.value}`}
                     className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] gap-6 py-6"
                   >
-                    <dt className="text-xs text-(--color-muted)">
+                    <dt className="text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
                       {item.label}
                     </dt>
 
@@ -348,7 +348,7 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
                           href={item.href}
                           target="_blank"
                           rel="noreferrer"
-                          className="underline underline-offset-4"
+                          className="underline underline-offset-4 hover:text-(--color-accent)"
                         >
                           {item.value}
                         </a>
@@ -366,16 +366,16 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
                 <h2 className="text-xs uppercase text-foreground">
                   Product Vertical
                 </h2>
-                <p className="text-xs text-(--color-muted)">
+                <p className="text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
                   {project.productVertical.description}
                 </p>
                 <ul className="space-y-6 pt-2">
                   {project.productVertical.items.map((item, index) => (
                     <li key={`${item.label}-${index}`}>
                       {item.disabled ? (
-                        <span className="inline-flex items-center gap-3 text-xs text-(--color-muted)">
+                        <span className="inline-flex items-center gap-3 text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
                           {item.label}
-                          <span className="rounded-full bg-(--color-surface-1) px-2 py-1 text-[10px] text-(--color-muted)">
+                          <span className="rounded-full bg-input dark:bg-(--color-surface-1) px-2 py-1 text-[10px] text-(--color-surface-muted) dark:text-(--color-muted)">
                             Coming soon
                           </span>
                         </span>

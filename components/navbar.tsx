@@ -72,7 +72,7 @@ export function Navbar() {
 
             <div
               aria-hidden="true"
-              className="h-6 w-px bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)"
+              className="h-6 w-px bg-(--color-muted) dark:bg-(--color-surface-muted)"
             />
 
             <ThemeToggle />

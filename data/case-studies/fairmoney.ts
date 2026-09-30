@@ -61,7 +61,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       label: "Important Links",
       value: "View Live Website",
-      href: "https://fairmoney.io",
+      href: "https://fairmoney.io/",
     },
   ],
 
@@ -95,7 +95,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             text: " enabling them to manage and carry out their business activities seamlessly, wherever they are.",
           },
         ],
-        className: "text-xs text-(--color-muted)",
+        className:
+          "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
       },
     ],
   },
@@ -113,7 +114,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-1",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -137,7 +138,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "As capabilities expanded over time, the experience became less cohesive across modules. The redesign initiative was launched to modernize the app and create a consistent, intuitive, scalable experience that improves usability, engagement, and retention while strengthening competitive positioning.⁠",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -156,7 +158,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-2",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -172,7 +174,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Despite offering a broad suite of services, the current app experience created friction that made it harder for merchants to complete everyday banking tasks quickly and confidently. Key problems included:",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -187,7 +190,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "caused by inconsistent UI patterns, navigation, layouts, interaction models, and visual styling across modules (built at different times), resulting in a disconnected product experience.",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -201,7 +205,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "including an approximate 11% MAU decline over the last 5 months (per the redesign document), suggesting usability and experience issues may be contributing to disengagement.",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -215,7 +220,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "a survey of churned users found 68% cited “better user experience” as the major reason for switching to competitors.",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -229,7 +235,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "where competitor apps offered experience patterns and features FairMoney lacked (e.g., stronger interactivity, clearer summaries, and more consistent design systems), raising the bar for “expected” usability.",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -248,7 +255,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-3",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -264,7 +271,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Discovery focused on building shared clarity on what is broken, where, and why it matters, and aligning Product/Design/Engineering plus go-to-market stakeholders on scope and success metrics. This alignment included:",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -279,7 +287,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "to identify core pain points (e.g., inconsistent patterns, navigation friction, transaction-history usability issues, outdated UI).⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -293,7 +302,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "(what will change vs what won’t) and explicit exclusions (e.g., not introducing new financial products, not rebuilding backend services unless required).⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -307,7 +317,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "across Product, Engineering, QA, Design for rollout phases, exit criteria, and monitoring requirements.",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -321,7 +332,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "(Marketing/Comms/Support) that communications should begin only after the redesigned app reaches full rollout and passes stability checks; plus defining segmentation, suppression rules, and contact policy principles.⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -340,7 +352,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-4",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -356,7 +368,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "The Research was done by the research team. The research inputs and insights used to justify and shape the redesign included:",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -371,7 +384,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "declining MAU/usage trends and the need to improve retention and engagement.⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -385,7 +399,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "customer issues associated with UX friction, plus churn survey insight showing UX as a major switching reason.⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -413,7 +428,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
             { text: "was a major subject for analysis." },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -427,7 +443,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "the plan acknowledges the risk of users being unfamiliar with the new UI and mitigates via beta/pilot, phased rollout, onboarding modals, and comms/education.⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -446,7 +463,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-5",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -462,7 +479,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "A comprehensive redesign to create a more consistent, intuitive, and scalable experience across the FairMoney Business app, with emphasis on usability and discoverability—without changing core product logic.⁠ Solution scope highlights include:",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         /**SOLUTION 1 */
         {
@@ -483,7 +501,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "We standardized core components, layouts, navigation, typography, spacing, and interaction patterns into a unified design system, creating a consistent experience across existing modules while providing a scalable foundation for future features.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -515,7 +534,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "• Redesign the Home dashboard with clear information hierarchy: balance, quick actions, primary banner(s), and recent transactions.⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -525,7 +545,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Consolidate multiple banners (KYC, Loans, etc.) into a consistent banner component with prioritization and scrolling.⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -535,7 +556,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Add personalization: business name display and customizable shortcuts/top features.⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -571,7 +593,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Improve readability and navigation: clearer credit vs debit distinction, better descriptions, fee visibility on cards, grouping by day.⁠⁠​⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -581,7 +604,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Add stronger search and filter patterns and better browsing of activity.⁠⁠⁠​⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -591,7 +615,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Introduce a transaction summary concept (inflows/outflows over a period) to help merchants understand performance quickly.⁠⁠⁠​⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         { parts: [{ text: "Transaction Details / Receipts" }] },
 
@@ -603,7 +628,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Improve information hierarchy (what matters first).⁠⁠​⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -613,7 +639,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Add clarity features like balance before/after, transaction breakdown, and more copyable details.⁠⁠⁠​⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -623,7 +650,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Enable quick repeat actions like Repeat transfer where relevant.⁠⁠⁠⁠​⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -656,7 +684,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Redesign transfer flow with progressive disclosure and stronger information hierarchy (show the right fields at the right time).⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -674,7 +703,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Automatic bank matching after account input⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -682,7 +712,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Beneficiary name display⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -690,7 +721,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Suggested beneficiaries where appropriate⁠⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -708,7 +740,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Clearer status on receipts⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -716,7 +749,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Better error messages and inline validation⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -724,7 +758,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Visibility into relevant network/status information⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -734,7 +769,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Reduce friction (fewer unnecessary steps) and make narration/inputs more usable (e.g., character limits, numeric keyboard behavior where needed).⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -775,7 +811,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Pre-filled phone number where applicable⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -783,7 +820,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Better contact display⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -791,7 +829,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Persisting numeric keyboards for number-heavy inputs⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -799,7 +838,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "“Recent bills” to repurchase quickly⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -807,7 +847,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Cash-back visibility where applicable⁠⁠",
             },
           ],
-          className: "ml-4 text-xs text-(--color-muted)",
+          className:
+            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -817,7 +858,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Improve bill-payment history/logs and states so users can confirm outcomes and resolve failures faster.⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -850,7 +892,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Improve savings information architecture and discoverability (so savings isn’t hidden behind navigation complexity).⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -860,7 +903,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Provide more complete history and clearer lifecycle actions (create/top up/withdraw).⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -870,7 +914,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Incorporate autosave flows during savings creation where relevant.⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -907,7 +952,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
             { text: "by:" },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -917,7 +963,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Using Home banners/entry points to make loan actions and prompts more discoverable and consistent with other modules.⁠⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -927,7 +974,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Applying consistent UI patterns (states, hierarchy, messaging) so loan-related steps feel clearer and less “different” from transfers/bills/savings.⁠⁠⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -942,7 +990,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: ", so the redesign supports the goal of improving how merchants apply, track, and repay by reducing UX friction across the app experience.",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -975,7 +1024,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Add first-launch onboarding modals to highlight improvements (home, transactions, transfers, bills) and reduce confusion after upgrade.⁠⁠⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -985,7 +1035,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Rollout plan supports adoption via beta → readiness review → phased rollout → migration → force upgrade, to ensure stability and smooth user transition.⁠⁠⁠⁠⁠⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-(--color-muted)",
+          className:
+            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -1005,7 +1056,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-6",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -1028,7 +1079,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Inconsistencies across navigation, layouts, and interactions made the product feel fragmented. A unified experience is not just visual polish—it can directly influence usability, trust, and retention.",
             },
           ],
-          className: "ml-2 text-xs font-medium text-(--color-muted)",
+          className:
+            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1043,7 +1095,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Customer feedback showed that users were willing to switch products because competitors offered a better experience. This reinforced the importance of treating UX as a core product and business concern.",
             },
           ],
-          className: "ml-2 text-xs font-medium text-(--color-muted)",
+          className:
+            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1058,7 +1111,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Competitive research showed that users bring expectations from leading fintech products. Clearer interactions, stronger information hierarchy, and consistent patterns increasingly define the baseline for a good banking experience.",
             },
           ],
-          className: "ml-2 text-xs font-medium text-(--color-muted)",
+          className:
+            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1073,7 +1127,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Improving the product is only half the job. Beta testing, education, phased rollout, and clear communication were necessary to help users understand and adopt the new experience.",
             },
           ],
-          className: "ml-2 text-xs font-medium text-(--color-muted)",
+          className:
+            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1088,7 +1143,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "The most useful validation came from testing everyday banking journeys rather than simply asking users whether they liked the redesign. Task-based feedback exposed usability gaps and areas where expectations weren't being met.",
             },
           ],
-          className: "ml-2 text-xs font-medium text-(--color-muted)",
+          className:
+            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1103,7 +1159,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "The biggest long-term value was establishing reusable patterns and components that could keep the product consistent and make future features faster and easier to scale.",
             },
           ],
-          className: "ml-2 text-xs font-medium text-(--color-muted)",
+          className:
+            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },

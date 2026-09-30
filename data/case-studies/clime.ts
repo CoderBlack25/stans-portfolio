@@ -14,7 +14,7 @@ export const climeCaseStudy: CaseStudyData = {
     {
       label: "Important Links",
       value: "View Live Website",
-      href: "https://climepayment.com",
+      href: "https://climeltd.com/",
     },
     { label: "Scope", value: "End-to-end product experience" },
   ],
@@ -36,7 +36,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-1",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -52,7 +52,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Clime is a global financial platform built around fast cross-border payments. I designed the mobile product and supporting web experience across the complete customer journey — from discovering Clime and opening an account to verifying identity, sending money, managing recipients, tracking transactions, earning rewards, and managing account security.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -71,7 +72,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-2",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -95,7 +96,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Sending money across borders introduces a lot of complexity. Users have to think about currencies, exchange rates, fees, recipient banking details, verification, payment methods, and whether their money has actually arrived.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -103,7 +105,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "At the same time, financial products have very little room for ambiguity. When people move money, they need to know exactly what they are doing, what it costs, and what happens next.",
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -111,7 +114,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "The challenge was therefore bigger than designing a transfer flow.",
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -135,7 +139,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Users shouldn't need to understand the financial infrastructure behind a transfer.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -151,7 +156,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Rates, fees, recipient information and transaction status should never feel hidden.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -167,7 +173,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Verification and authentication need to protect users without making every interaction feel difficult.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -183,7 +190,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Users need tools to manage recipients, track transfers, resolve problems and control their accounts.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -220,7 +228,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-3",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -236,7 +244,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "I approached Clime as a complete financial ecosystem, mapping the moments where users could experience uncertainty or friction. Five principles guided the design:",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -249,7 +258,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Users don't need to understand how transfers work; they need to confidently answer send, receive, rate, cost.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -262,7 +272,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Rates, charges, and transaction status are surfaced exactly when users need them, not buried.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -275,7 +286,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "A single long form becomes focused steps (email → phone → OTP → details → password → identity → address → passcode), each with one clear action.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -288,7 +300,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Saved recipients mean the product gets faster to use as a user's network grows.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -301,7 +314,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Every state — in progress, failed, reversed — gets a clear meaning and next step, across transfers, onboarding, and verification.",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -320,7 +334,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-4",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -336,7 +350,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "We designed to create a more consistent, intuitive, and scalable experience across the Clime Payment application, with emphasis on usability and discoverability. Solution scope highlights include:",
             },
           ],
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "1. A Consistent Design Language",
@@ -346,7 +361,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "We built the design system ensuring reusable patterns for inputs, cards, modals, status indicators, and financial summaries meant users never had to relearn the product moving between Send Money, Recipients, or Security.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -365,7 +381,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "The transfer experience sits at the centre of Clime, designed to reduce the cognitive load of currencies, exchange rates, fees, and recipient details.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -377,15 +394,18 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Choose amount → Select recipient → Choose payment method → Review → Authenticate → Complete",
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "The Home screen doubles as a lightweight currency calculator, letting users gauge value before committing. The transfer summary then keeps all critical info together, amount sent, amount received, currencies, exchange rate, and charges, so users never have to do the math themselves.",
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "KYC is woven into the product rather than feeling like a separate compliance detour. Identity and address verification each have their own guided flow, and successful verification is reflected back through notifications and account status — making compliance feel connected, not bolted on.",
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -404,7 +424,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "The transfer experience sits at the centre of Clime, designed to reduce the cognitive load of currencies, exchange rates, fees, and recipient details.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -416,11 +437,13 @@ export const climeCaseStudy: CaseStudyData = {
               text: "Choose amount → Select recipient → Choose payment method → Review → Authenticate → Complete",
             },
           ],
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "The Home screen doubles as a lightweight currency calculator, letting users gauge value before committing. The transfer summary then keeps all critical info together, amount sent, amount received, currencies, exchange rate, and charges, so users never have to do the math themselves.",
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -439,7 +462,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "Recipients aren't just details for one transfer, they're a reusable network. Users can add, search, and manage beneficiaries, view their history, and reuse them for future transfers. The principle: the more you use Clime, the less work each transfer takes.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -458,7 +482,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "A transfer doesn't end at Send. Every transaction has a clear status (successful, in progress, failed, reversed) and a detailed view with sender/recipient info, fees, reference number, and processing timeline — so users always know where their money is, not just that it was sent.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -477,7 +502,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-5",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -489,15 +514,18 @@ export const climeCaseStudy: CaseStudyData = {
       lines: [
         {
           text: "I created a marketing experience built around clarity, confidence and conversion.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "The homepage introduces Clime through a simple proposition, then progressively communicates the product's benefits, features and value before leading users toward creating an account.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "The supporting About experience gives the brand more context, helping users understand the company behind the product and reinforcing credibility.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "From discovery to product",
@@ -505,7 +533,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "The website wasn't designed as a standalone marketing asset. It was designed as the front door to the Clime ecosystem",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement("video", {
@@ -563,7 +592,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-6",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-surface-elevated) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -575,11 +604,13 @@ export const climeCaseStudy: CaseStudyData = {
       lines: [
         {
           text: "Simplicity is not about removing information. It is about removing unnecessary decisions.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "Designing Clime reinforced how important clarity and control are in financial products. A cross-border payment can involve significant complexity behind the scenes, but users shouldn't have to navigate that complexity to complete a simple task.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "Throughout the project, I kept coming back to one question:",
@@ -597,7 +628,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "That question shaped key decisions across the product, from the transfer calculator and onboarding flow to transaction states, recipient management, verification, and security.",
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "The key takeaway",
@@ -605,11 +637,13 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "Hide the complexity, not the control.",
-          className: "text-xs text-(--color-muted)",
+          className:
+            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           text: "Clime taught me that good financial UX doesn't necessarily mean showing users less. It means giving them the right information at the right moment, so they can move money with confidence while still feeling in control of what is happening.",
-          className: "mt-4 text-xs text-(--color-muted)",
+          className:
+            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },

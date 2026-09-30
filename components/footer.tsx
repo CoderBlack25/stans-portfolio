@@ -54,7 +54,7 @@ export function Footer() {
                       rel: "noopener noreferrer",
                     }
                   : {})}
-                className="text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted) underline decoration-(--color-surface-muted) dark:decoration-(--color-muted) underline-offset-4 transition-colors hover:text-black dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted) underline underline-offset-4 transition-colors hover:text-(--color-accent)   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 {link.label}
               </Link>

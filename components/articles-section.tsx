@@ -59,7 +59,7 @@ function ArticleCard({ article }: { article: Article }) {
         )}
 
         <div className="min-w-0 flex-1">
-          <h3 className="text-sm font-medium transition-colors duration-200 sm:text-base">
+          <h3 className="text-sm font-medium transition-all duration-200 sm:text-base hover:underline">
             {article.title}
           </h3>
 
@@ -95,13 +95,13 @@ export function ArticlesSection() {
           href="https://medium.com/@yourusername"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-block text-xs underline underline-offset-2 transition-colors hover:text-(--color-surface-muted) dark:hover:text-(--color-muted) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111214]"
+          className="mt-2 inline-block text-xs underline underline-offset-4 transition-colors hover:text-(--color-accent) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111214]"
         >
           Head over to Medium
         </Link>
       </div>
 
-      <ul className="mt-10 divide-y divide-(--color-surface-elevated) dark:divide-(--color-surface-muted) sm:mt-20">
+      <ul className="mt-10 divide-y divide-(--color-muted) dark:divide-(--color-surface-muted) sm:mt-20">
         {articles.map((article) => (
           <ArticleCard key={article.href} article={article} />
         ))}

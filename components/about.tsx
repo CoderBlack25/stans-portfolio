@@ -51,7 +51,7 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
         {children}
       </span>
 
-      <div className="h-[0.5px] flex-1 bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)" />
+      <div className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)" />
     </div>
   );
 }
@@ -60,16 +60,16 @@ export function About() {
   return (
     <section
       id="about"
-      className="mx-auto w-full max-w-xl px-4 mt-25 sm:mt-45 mb-10 sm:mb-20 bg-background text-foreground"
+      className="mx-auto w-full max-w-xl px-4 mt-25 sm:mt-40 mb-10 sm:mb-20 bg-background text-foreground"
     >
       <div className="flex flex-col gap-8 sm:gap-10 py-4">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-5">
-            <h1 className="text-2xl sm:text-3xl font-medium">
+            <h1 className="text-2xl sm:text-[32px] font-medium">
               I DESIGN PRODUCTS THAT MAKE COMPLEX THINGS FEEL SIMPLE.
             </h1>
 
-            <div className="flex flex-col gap-5 text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+            <div className="flex flex-col max-w-lg gap-5 text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
               <p>
                 I&apos;m a Senior Product Designer who loves figuring out how
                 things work, finding the messy parts, and turning them into
@@ -143,7 +143,7 @@ export function About() {
                     {experience.role}
                   </span>
 
-                  <div className="h-[0.5px] flex-1 bg-(--color-surface-elevated) dark:bg-(--color-surface-muted)" />
+                  <div className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)" />
                 </div>
 
                 <span className="text-xs sm:text-right">
