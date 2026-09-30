@@ -96,7 +96,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
           },
         ],
         className:
-          "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+          "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
       },
     ],
   },
@@ -139,7 +139,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -175,7 +175,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -191,7 +191,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -206,7 +206,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -221,7 +221,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -236,7 +236,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -272,7 +272,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -288,7 +288,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -303,7 +303,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -318,7 +318,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -333,7 +333,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -369,7 +369,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -385,7 +385,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -400,7 +400,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -429,7 +429,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             { text: "was a major subject for analysis." },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -444,7 +444,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -480,7 +480,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         /**SOLUTION 1 */
         {
@@ -502,7 +502,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -535,7 +535,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -546,7 +546,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -557,7 +557,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -594,7 +594,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -605,7 +605,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -616,7 +616,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         { parts: [{ text: "Transaction Details / Receipts" }] },
 
@@ -629,7 +629,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -640,7 +640,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -651,7 +651,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -685,7 +685,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -695,7 +695,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Improve beneficiary experience:⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -704,7 +704,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -713,7 +713,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -722,7 +722,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -732,7 +732,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Strengthen trust and clarity:⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -741,7 +741,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -750,7 +750,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -759,7 +759,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -770,7 +770,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -803,7 +803,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Redesign bill-pay journeys (airtime/data/utilities/etc.) with:⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -812,7 +812,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -821,7 +821,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -830,7 +830,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -839,7 +839,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -848,7 +848,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -859,7 +859,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -893,7 +893,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -904,7 +904,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -915,7 +915,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -953,7 +953,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             { text: "by:" },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -964,7 +964,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -975,7 +975,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -991,7 +991,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -1025,7 +1025,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1036,7 +1036,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -1071,7 +1071,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             { text: "1. " },
             { text: "UX consistency is a business lever" },
           ],
-          className: "ml-2 text-xs text-foreground",
+          className: "ml-2 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -1080,14 +1080,14 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "2. " },
             { text: "UX can be a significant churn driver" },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -1096,14 +1096,14 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "3. " },
             { text: "Users benchmark experiences, not just features" },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -1112,14 +1112,14 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "4. " },
             { text: "A redesign is also a change-management exercise" },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -1128,14 +1128,14 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "5. " },
             { text: "Real tasks reveal more than opinions" },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -1144,14 +1144,14 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "6. " },
             { text: "Design systems create leverage beyond the redesign" },
           ],
-          className: "ml-2 mt-4 text-xs text-foreground",
+          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
         },
         {
           parts: [
@@ -1160,7 +1160,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },

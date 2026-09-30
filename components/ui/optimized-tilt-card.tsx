@@ -7,27 +7,37 @@ export interface TiltCardProps {
   className?: string;
   style?: React.CSSProperties;
   isActive?: boolean;
-  onHoverChange?: (hovering: boolean) => void;
 }
 
 const MAX_TILT = 11;
 const HOVER_SCALE = 1.045;
-const TOUCH_HOLD_MS = 400;
 
 export const OptimizedTiltCard: React.FC<TiltCardProps> = ({
   children,
   className = "",
   style,
-  onHoverChange,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef<number | null>(null);
-  const touchHideTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
-    null,
-  );
+  const canTiltRef = useRef(false);
 
-  const [isTouchActive, setIsTouchActive] = useState(false);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(
+      "(min-width: 768px) and (hover: hover) and (pointer: fine)",
+    );
+    const updateCanTilt = () => {
+      canTiltRef.current = mediaQuery.matches;
+    };
+
+    updateCanTilt();
+    mediaQuery.addEventListener("change", updateCanTilt);
+
+    return () => {
+      mediaQuery.removeEventListener("change", updateCanTilt);
+    };
+  }, []);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -50,10 +60,6 @@ export const OptimizedTiltCard: React.FC<TiltCardProps> = ({
       if (rafRef.current !== null) {
         cancelAnimationFrame(rafRef.current);
       }
-
-      if (touchHideTimeoutRef.current !== null) {
-        clearTimeout(touchHideTimeoutRef.current);
-      }
     };
   }, []);
 
@@ -74,7 +80,9 @@ export const OptimizedTiltCard: React.FC<TiltCardProps> = ({
 
   const updateFromPoint = useCallback(
     (clientX: number, clientY: number) => {
-      if (!cardRef.current || prefersReducedMotion) return;
+      if (!cardRef.current || prefersReducedMotion || !canTiltRef.current) {
+        return;
+      }
 
       const rect = cardRef.current.getBoundingClientRect();
 
@@ -129,46 +137,6 @@ export const OptimizedTiltCard: React.FC<TiltCardProps> = ({
     resetTilt();
   }, [resetTilt]);
 
-  const handleTouchStart = useCallback(
-    (event: React.TouchEvent<HTMLDivElement>) => {
-      const touch = event.touches[0];
-
-      if (!touch) return;
-
-      if (touchHideTimeoutRef.current !== null) {
-        clearTimeout(touchHideTimeoutRef.current);
-        touchHideTimeoutRef.current = null;
-      }
-
-      updateFromPoint(touch.clientX, touch.clientY);
-
-      setIsTouchActive(true);
-      onHoverChange?.(true);
-    },
-    [updateFromPoint, onHoverChange],
-  );
-
-  const handleTouchMove = useCallback(
-    (event: React.TouchEvent<HTMLDivElement>) => {
-      const touch = event.touches[0];
-
-      if (!touch) return;
-
-      updateFromPoint(touch.clientX, touch.clientY);
-    },
-    [updateFromPoint],
-  );
-
-  const handleTouchEnd = useCallback(() => {
-    resetTilt();
-
-    touchHideTimeoutRef.current = setTimeout(() => {
-      setIsTouchActive(false);
-      onHoverChange?.(false);
-      touchHideTimeoutRef.current = null;
-    }, TOUCH_HOLD_MS);
-  }, [resetTilt, onHoverChange]);
-
   const cardStyle: React.CSSProperties = {
     ...style,
     transform:
@@ -187,10 +155,6 @@ export const OptimizedTiltCard: React.FC<TiltCardProps> = ({
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-      onTouchCancel={handleTouchEnd}
       className={`relative overflow-hidden touch-manipulation ${className}`}
       style={cardStyle}
     >
@@ -198,9 +162,7 @@ export const OptimizedTiltCard: React.FC<TiltCardProps> = ({
 
       {/* Main pointer-following light */}
       <div
-        className={`pointer-events-none absolute inset-0 z-20 opacity-0 mix-blend-overlay transition-opacity duration-300 group-hover:opacity-100 ${
-          isTouchActive ? "opacity-100" : ""
-        }`}
+        className="pointer-events-none absolute inset-0 z-20 opacity-0 mix-blend-overlay transition-opacity duration-300 group-hover:opacity-100"
         style={{
           background:
             "radial-gradient(circle at var(--pointer-x) var(--pointer-y), rgba(167,139,250,0.35) 0%, transparent 80%)",
@@ -209,9 +171,7 @@ export const OptimizedTiltCard: React.FC<TiltCardProps> = ({
 
       {/* Smaller pointer highlight */}
       <div
-        className={`pointer-events-none absolute inset-0 z-21 opacity-0 transition-opacity duration-200 group-hover:opacity-100 ${
-          isTouchActive ? "opacity-100" : ""
-        }`}
+        className="pointer-events-none absolute inset-0 z-21 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
         style={{
           background:
             "radial-gradient(circle 90px at var(--pointer-x) var(--pointer-y), rgba(167,139,250,0.05), transparent 70%)",

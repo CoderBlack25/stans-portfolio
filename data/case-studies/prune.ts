@@ -56,7 +56,7 @@ export const pruneCaseStudy: CaseStudyData = {
           },
         ],
         className:
-          "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+          "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
       },
     ],
   },
@@ -90,7 +90,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -101,7 +101,7 @@ export const pruneCaseStudy: CaseStudyData = {
               underline: true,
             },
           ],
-          className: "text-xs",
+          className: "text-xs sm:text-sm sm:text-sm",
         },
         {
           parts: [
@@ -111,7 +111,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -121,7 +121,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -131,7 +131,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -141,7 +141,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -151,7 +151,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -161,7 +161,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -170,7 +170,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -206,7 +206,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -231,7 +231,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -246,7 +246,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -261,7 +261,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -276,7 +276,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -291,7 +291,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -306,7 +306,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -320,7 +320,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -357,17 +357,17 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [{ text: "1. Individual/user account and" }],
           className:
-            "ml-2 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [{ text: "2. Organizational/ Cooperate account" }],
           className:
-            "ml-2 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -376,7 +376,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -400,7 +400,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [{ text: "Centralized Account Overview" }],
@@ -413,7 +413,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [{ text: "Modular and Granular Insights" }],
@@ -426,7 +426,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -435,7 +435,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -444,7 +444,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -453,7 +453,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -462,7 +462,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -471,7 +471,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -485,7 +485,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -494,7 +494,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -503,7 +503,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -512,7 +512,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -521,7 +521,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -535,7 +535,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -549,7 +549,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -563,7 +563,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -578,7 +578,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -593,7 +593,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -608,7 +608,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -623,7 +623,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -638,7 +638,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -652,7 +652,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
 
         {
@@ -689,7 +689,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -698,7 +698,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -707,7 +707,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -716,7 +716,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -725,7 +725,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -734,7 +734,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -743,7 +743,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -775,7 +775,7 @@ export const pruneCaseStudy: CaseStudyData = {
         {
           parts: [{ text: "Detailed Transaction reports." }],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -791,13 +791,13 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "Core Capabilities", bold: true, color: "text-foreground" },
           ],
-          className: "text-xs",
+          className: "text-xs sm:text-sm sm:text-sm",
         },
         {
           parts: [
@@ -812,7 +812,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -827,7 +827,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -842,7 +842,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -857,7 +857,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -872,7 +872,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -881,7 +881,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -917,7 +917,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -928,7 +928,7 @@ export const pruneCaseStudy: CaseStudyData = {
               underline: true,
             },
           ],
-          className: "text-xs",
+          className: "text-xs sm:text-sm sm:text-sm",
         },
         {
           parts: [
@@ -943,7 +943,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -958,7 +958,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -973,7 +973,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -984,7 +984,7 @@ export const pruneCaseStudy: CaseStudyData = {
               underline: true,
             },
           ],
-          className: "text-xs",
+          className: "text-xs sm:text-sm sm:text-sm",
         },
         {
           parts: [
@@ -999,7 +999,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1014,7 +1014,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 mt-4 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "ml-2 mt-4 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },
@@ -1056,7 +1056,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1075,7 +1075,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -1093,7 +1093,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "mt-8 text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "mt-8 text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           content: createElement(CaseStudyImage, {
@@ -1129,7 +1129,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
         {
           parts: [
@@ -1138,7 +1138,7 @@ export const pruneCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "text-xs text-(--color-surface-muted) dark:text-(--color-muted)",
+            "text-xs sm:text-sm sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)",
         },
       ],
     },

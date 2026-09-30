@@ -63,7 +63,7 @@ function ArticleCard({ article }: { article: Article }) {
             {article.title}
           </h3>
 
-          <p className="mt-2 line-clamp-2 text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="mt-2 line-clamp-2 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
             {article.description}
           </p>
         </div>
@@ -76,7 +76,7 @@ export function ArticlesSection() {
   return (
     <section
       aria-labelledby="articles-heading"
-      className="mx-auto w-full max-w-xl px-5 sm:px-6 mt-35 sm:mt-45 mb-10 sm:mb-20 bg-background text-foreground"
+      className="mx-auto w-full max-w-xl px-8 sm:px-0 mt-30 sm:mt-45 mb-10 sm:mb-20 bg-background text-foreground"
     >
       <div className="text-center">
         <h2
@@ -86,7 +86,7 @@ export function ArticlesSection() {
           Articles and Insights
         </h2>
 
-        <p className="mx-auto mt-2 max-w-md text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+        <p className="mx-auto mt-2 max-w-md text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
           Thoughts on design process, inclusive UX, design systems, and the
           craft of building products people love.
         </p>
@@ -95,7 +95,7 @@ export function ArticlesSection() {
           href="https://medium.com/@yourusername"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-block text-xs underline underline-offset-4 transition-colors hover:text-(--color-accent) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111214]"
+          className="mt-2 inline-block text-xs sm:text-sm underline underline-offset-4 transition-colors hover:text-(--color-accent) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111214]"
         >
           Head over to Medium
         </Link>

@@ -45,7 +45,7 @@ export function Navbar() {
           >
             <p className="text-sm sm:text-base">Stanley Chukwuma</p>
 
-            <p className="mt-2 text-xs leading-none text-(--color-surface-muted) dark:text-(--color-muted)">
+            <p className="mt-2 text-xs sm:text-sm leading-none text-(--color-surface-muted) dark:text-(--color-muted)">
               Product Designer & Design Engineer
             </p>
           </Link>
@@ -58,11 +58,11 @@ export function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="group inline-flex items-center gap-2 py-2 px-3 rounded-full text-xs text-(--color-surface-muted) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:bg-chart-5 dark:hover:text-white"
+                  className="group inline-flex items-center gap-2 py-2 px-3 rounded-full text-sm text-(--color-surface-muted) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:bg-chart-5 dark:hover:text-white"
                 >
                   <Icon
                     aria-hidden="true"
-                    className="size-4.5 stroke-[1.6] transition-transform duration-200 group-hover:scale-105"
+                    className="size-4.5 transition-transform duration-200 group-hover:scale-105"
                   />
 
                   <span>{item.label}</span>
@@ -93,9 +93,9 @@ export function Navbar() {
               className="flex size-9 items-center justify-center rounded-full bg-input text-(--color-surface-dark) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:text-white dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-(--color-surface-strong)"
             >
               {mobileMenuOpen ? (
-                <IoClose aria-hidden="true" className="size-4 stroke-[1.5]" />
+                <IoClose aria-hidden="true" className="size-4" />
               ) : (
-                <IoMenu aria-hidden="true" className="size-4 stroke-[1.5]" />
+                <IoMenu aria-hidden="true" className="size-4" />
               )}
             </button>
           </div>
@@ -117,10 +117,7 @@ export function Navbar() {
                     onClick={closeMobileMenu}
                     className="flex items-center gap-2 py-2 px-3 rounded-full text-xs text-(--color-surface-muted) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:bg-chart-5 dark:hover:text-white"
                   >
-                    <Icon
-                      aria-hidden="true"
-                      className="size-4.5 stroke-[1.6]"
-                    />
+                    <Icon aria-hidden="true" className="size-4.5" />
 
                     <span>{item.label}</span>
                   </Link>

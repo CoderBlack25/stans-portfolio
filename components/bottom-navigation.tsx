@@ -77,7 +77,7 @@ export function BottomNavigation() {
                     rounded-full
                     px-2
                     text-center
-                    text-xs
+                    text-xs sm:text-sm
                     transition-colors
                     duration-200
                     sm:min-h-8

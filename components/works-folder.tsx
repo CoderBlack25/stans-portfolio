@@ -35,7 +35,7 @@ const WorksFolder = ({
               {title}
             </h2>
 
-            <p className="max-w-xs text-xs">{description}</p>
+            <p className="max-w-xs text-xs sm:text-sm">{description}</p>
           </div>
 
           <div className="my-6 h-[0.5px] bg-(--color-muted) dark:bg-(--color-surface-2) transition-colors duration-300 ease-out group-hover:bg-(--color-accent-light)" />

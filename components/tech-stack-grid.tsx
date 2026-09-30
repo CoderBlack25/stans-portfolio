@@ -68,7 +68,7 @@ export function TechStackGrid({
   return (
     <section
       aria-labelledby="tech-stack-heading"
-      className={`bg-background text-foreground flex w-full items-center justify-center px-5 py-40 sm:py-45 sm:px-8 lg:px-12 ${className}`}
+      className={`bg-background text-foreground flex w-full items-center justify-center px-4 my-30 sm:my-45 sm:px-0 ${className}`}
     >
       <div className="flex w-full max-w-md flex-col items-center">
         <div className="text-center">
@@ -79,7 +79,7 @@ export function TechStackGrid({
             STACK
           </h1>
 
-          <p className="mt-1.5 text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="mt-1.5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
             Tools I&apos;m proficient with are as follows:
           </p>
         </div>
@@ -99,7 +99,7 @@ export function TechStackGrid({
                 )}
               </div>
 
-              <span className="mt-2.5 text-center font-medium text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+              <span className="mt-2.5 text-center font-medium text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                 {tool.name}
               </span>
             </div>

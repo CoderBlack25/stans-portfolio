@@ -273,7 +273,7 @@ function ProjectNavigation() {
           <span className="block text-[10px] text-(--color-muted)">
             Previous project
           </span>
-          <span className="block truncate text-xs font-medium text-foreground">
+          <span className="block truncate text-xs sm:text-sm font-medium text-foreground">
             {previousProject.title}
           </span>
         </span>
@@ -288,7 +288,7 @@ function ProjectNavigation() {
           <span className="block text-[10px] text-(--color-muted)">
             Next project
           </span>
-          <span className="block truncate text-xs font-medium text-foreground">
+          <span className="block truncate text-xs sm:text-sm font-medium text-foreground">
             {nextProject.title}
           </span>
         </span>
@@ -305,7 +305,7 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
   return (
     <main
       className={cn(
-        "mx-auto w-full max-w-5xl mt-30 sm:mt-45 mb-15 sm:mb-20 px-4",
+        "mx-auto w-full max-w-5xl mt-30 sm:mt-45 mb-15 sm:mb-20 px-8",
         className,
       )}
     >
@@ -320,13 +320,13 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
               {project.description &&
                 (typeof project.description === "string" ? (
-                  <p className="max-w-3xl text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+                  <p className="max-w-3xl text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                     {project.description}
                   </p>
                 ) : (
                   <CaseStudyText
                     lines={project.description}
-                    className="max-w-3xl text-xs leading-6 text-(--color-surface-muted) dark:text-(--color-muted)"
+                    className="max-w-3xl text-xs sm:text-sm leading-6 text-(--color-surface-muted) dark:text-(--color-muted)"
                   />
                 ))}
             </div>
@@ -338,11 +338,11 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
                     key={`${item.label}-${item.value}`}
                     className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] gap-6 py-6"
                   >
-                    <dt className="text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+                    <dt className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                       {item.label}
                     </dt>
 
-                    <dd className="text-xs text-foreground">
+                    <dd className="text-xs sm:text-sm text-foreground">
                       {item.href ? (
                         <a
                           href={item.href}
@@ -363,17 +363,17 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
             {project.productVertical && (
               <section className="space-y-5">
-                <h2 className="text-xs uppercase text-foreground">
+                <h2 className="text-xs sm:text-sm uppercase text-foreground">
                   Product Vertical
                 </h2>
-                <p className="text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+                <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                   {project.productVertical.description}
                 </p>
                 <ul className="space-y-6 pt-2">
                   {project.productVertical.items.map((item, index) => (
                     <li key={`${item.label}-${index}`}>
                       {item.disabled ? (
-                        <span className="inline-flex items-center gap-3 text-xs text-(--color-surface-muted) dark:text-(--color-muted)">
+                        <span className="inline-flex items-center gap-3 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                           {item.label}
                           <span className="rounded-full bg-input dark:bg-(--color-surface-1) px-2 py-1 text-[10px] text-(--color-surface-muted) dark:text-(--color-muted)">
                             Coming soon
@@ -384,7 +384,7 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
                           href={item.href ?? "#"}
                           className={cn(
                             buttonVariants({ variant: "default", size: "lg" }),
-                            "rounded-lg bg-(--color-accent) text-xs text-white hover:bg-(--color-accent-hover)",
+                            "rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white hover:bg-(--color-accent-hover)",
                           )}
                         >
                           {item.label}
