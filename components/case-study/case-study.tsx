@@ -6,6 +6,7 @@ import { CaseStudyImage } from "./case-study-image";
 import { CaseStudyText, type TextLine } from "./case-study-text";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { Pill, type PillProps } from "@/components/ui/pill";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -18,11 +19,7 @@ export type ProjectMeta = {
 
 export type ProductVertical = {
   description: string;
-  items: {
-    label: string;
-    href?: string;
-    disabled?: boolean;
-  }[];
+  pills: PillProps[];
 };
 
 export type CaseStudySection =
@@ -305,13 +302,13 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
   return (
     <main
       className={cn(
-        "mx-auto w-full max-w-5xl mt-30 sm:mt-45 mb-15 sm:mb-20 px-8",
+        "mx-auto w-full max-w-6xl mt-30 sm:mt-45 mb-15 sm:mb-20 px-8",
         className,
       )}
     >
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.5fr_2fr] lg:gap-10">
         {/* Project information */}
-        <aside className="lg:sticky lg:top-32 lg:h-fit">
+        <aside className="lg:sticky lg:top-32 lg:h-fit lg:max-h-[calc(100svh-10rem)] lg:overflow-y-auto">
           <div className="space-y-10">
             <div className="space-y-4">
               <h1 className="text-xl font-medium uppercase text-foreground sm:text-2xl">
@@ -369,27 +366,10 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
                 <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                   {project.productVertical.description}
                 </p>
-                <ul className="space-y-6 pt-2">
-                  {project.productVertical.items.map((item, index) => (
-                    <li key={`${item.label}-${index}`}>
-                      {item.disabled ? (
-                        <span className="inline-flex items-center gap-3 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
-                          {item.label}
-                          <span className="rounded-full bg-input dark:bg-(--color-surface-1) px-2 py-1 text-[10px] text-(--color-surface-muted) dark:text-(--color-muted)">
-                            Coming soon
-                          </span>
-                        </span>
-                      ) : (
-                        <Link
-                          href={item.href ?? "#"}
-                          className={cn(
-                            buttonVariants({ variant: "default", size: "lg" }),
-                            "rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white hover:bg-(--color-accent-hover)",
-                          )}
-                        >
-                          {item.label}
-                        </Link>
-                      )}
+                <ul className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+                  {project.productVertical.pills.map((pill) => (
+                    <li key={pill.label}>
+                      <Pill {...pill} />
                     </li>
                   ))}
                 </ul>

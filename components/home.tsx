@@ -127,25 +127,27 @@ const year = date.getFullYear();
 export default function Home() {
   return (
     <main className="flex min-h-svh items-center justify-center bg-background px-8 sm:px-0 py-32 text-foreground transition-colors duration-300">
-      <div className="w-full max-w-xl">
+      <div className="w-full max-w-xl space-y-10">
         <section
           aria-labelledby="hero-heading"
-          className="flex flex-col sm:flex-row items-center sm:items-start gap-6"
+          className="flex flex-col items-center gap-6 sm:flex-row sm:items-stretch"
         >
-          <Image
-            src="/images/home/profile-image.png"
-            alt="Portrait of Stanley Chukwuma"
-            width={170}
-            height={170}
-            priority
-            className="object-cover object-center grayscale"
-          />
+          <div className="relative mx-auto aspect-square w-42.5 shrink-0 sm:mx-0 sm:aspect-auto">
+            <Image
+              src="/images/home/profile-image.png"
+              alt="Portrait of Stanley Chukwuma"
+              fill
+              sizes="170px"
+              priority
+              className="object-cover object-center grayscale rounded-lg"
+            />
+          </div>
 
           <div className="flex min-w-0 flex-col gap-3 text-center sm:text-left">
             <h1 className="text-2xl sm:text-3xl font-medium uppercase leading-6">
               Product Designer &amp;
             </h1>
-            <h1 className="text-2xl sm:text-3xl font-medium uppercase">
+            <h1 className="text-2xl sm:text-3xl font-medium uppercase leading-none">
               Design Engineer
             </h1>
 
@@ -187,7 +189,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section aria-labelledby="about-heading" className="mt-4 sm:mt-6">
+        <section aria-labelledby="about-heading" className="space-y-5">
           <div className="flex items-center gap-5">
             <h2
               id="about-heading"
@@ -202,7 +204,7 @@ export default function Home() {
             />
           </div>
 
-          <ul className="mt-4 space-y-4 sm:mt-6">
+          <ul className="space-y-2">
             {aboutItems.map((item) => {
               const Icon = item.icon;
 
@@ -222,7 +224,7 @@ export default function Home() {
 
         <footer
           id="contact"
-          className="flex flex-col gap-4 mt-6 sm:mt-8 rounded-lg bg-input p-4 dark:bg-(--color-surface-dark)"
+          className="flex flex-col gap-4 rounded-lg bg-input p-4 dark:bg-(--color-surface-dark)"
         >
           <SocialLinks />
 

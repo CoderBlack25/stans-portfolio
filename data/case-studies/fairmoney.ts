@@ -67,11 +67,23 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
   productVertical: {
     description:
-      "FairMoney serves different user groups through multiple product verticals, including the Merchant Portal, Mobile App, Sales Application, and POS Platform, each designed to support a specific user and their unique needs, and here are the once i supported in.",
-    items: [
-      { label: "Mobile Application", href: "https://fairmoney.io" },
-      { label: "Sales App", disabled: true },
-      { label: "POS Platform", disabled: true },
+      "FairMoney serves different user groups through multiple product verticals, including the Merchant Portal, Mobile App, Sales Application, and POS Platform, each designed to support a specific user and their unique needs.",
+    pills: [
+      {
+        label: "Mobile Application",
+        backgroundColor: "var(--color-accent)",
+        textColor: "#ffffff",
+      },
+      {
+        label: "Sales App",
+        backgroundColor: "var(--color-surface-dark)",
+        textColor: "var(--color-muted)",
+      },
+      {
+        label: "POS Platform",
+        backgroundColor: "var(--color-surface-dark)",
+        textColor: "var(--color-muted)",
+      },
     ],
   },
 

@@ -36,10 +36,17 @@ export const pruneCaseStudy: CaseStudyData = {
   productVertical: {
     description:
       "Prune Payment serves different end user through dual product verticals which include the Prune B2B Web Portal, and the Mobile App.",
-    items: [
-      { label: "Prune B2B Web Portal", href: "https://prunepayments.com" },
-      { label: "Prune Admin Portal | Back office", disabled: true },
-      { label: "Mobile Application", disabled: true },
+    pills: [
+      {
+        label: "Prune B2B Web Portal",
+        backgroundColor: "var(--color-accent)",
+        textColor: "#ffffff",
+      },
+      {
+        label: "Prune Admin Portal",
+        backgroundColor: "var(--color-surface-dark)",
+        textColor: "var(--color-muted)",
+      },
     ],
   },
 

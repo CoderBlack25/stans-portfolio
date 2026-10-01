@@ -14,7 +14,7 @@ type Capability = {
 
 const experiences: Experience[] = [
   {
-    company: "FailMoney MFB",
+    company: "FairMoney MFB",
     role: "Senior Product Designer",
     period: "2023 - Present",
   },
@@ -69,7 +69,7 @@ export function About() {
               I DESIGN PRODUCTS THAT MAKE COMPLEX THINGS FEEL SIMPLE.
             </h1>
 
-            <div className="flex flex-col max-w-lg gap-5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+            <div className="flex flex-col gap-5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
               <p>
                 I&apos;m a Senior Product Designer who loves figuring out how
                 things work, finding the messy parts, and turning them into
