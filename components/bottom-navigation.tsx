@@ -37,26 +37,8 @@ export function BottomNavigation() {
       aria-label="Main navigation"
       className="fixed inset-x-0 bottom-4 z-50 px-4 sm:bottom-6"
     >
-      <NavigationMenu
-        className="
-          mx-auto
-          w-full
-          max-w-sm
-          rounded-full
-          bg-input
-          p-2
-          dark:bg-(--color-surface-dark)
-        "
-      >
-        <NavigationMenuList
-          className="
-            flex
-            w-full
-            items-center
-            justify-between
-            gap-1
-          "
-        >
+      <NavigationMenu className="mx-auto w-full max-w-sm rounded-full bg-input p-2 dark:bg-(--color-surface-dark)">
+        <NavigationMenuList className="flex w-full items-center justify-between gap-1">
           {navigationItems.map((item) => {
             const isActive =
               item.href === "/"
@@ -68,26 +50,7 @@ export function BottomNavigation() {
                 <NavigationMenuLink
                   render={<Link href={item.href} />}
                   aria-current={isActive ? "page" : undefined}
-                  className={`
-                    flex
-                    min-h-6
-                    w-full
-                    items-center
-                    justify-center
-                    rounded-full
-                    px-2
-                    text-center
-                    text-xs sm:text-sm
-                    transition-colors
-                    duration-200
-                    sm:min-h-8
-                    sm:px-4
-                    ${
-                      isActive
-                        ? "bg-(--color-accent) text-white"
-                        : "text-(--color-surface-muted) dark:text-(--color-muted) hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white"
-                    }
-                  `}
+                  className={`flex min-h-6 w-full items-center justify-center rounded-full px-2 text-center text-xs sm:text-sm transition-colors duration-200 sm:min-h-8 sm:px-4 ${isActive ? "bg-(--color-accent) text-white" : "text-(--color-surface-muted) dark:text-(--color-muted) hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white"}`}
                 >
                   {item.label}
                 </NavigationMenuLink>
