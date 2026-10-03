@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { LiaPenNibSolid } from "react-icons/lia";
+import { BiMessage } from "react-icons/bi";
 import { PiBriefcase, PiBinoculars } from "react-icons/pi";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
@@ -174,6 +175,7 @@ export default function Home() {
                 size="lg"
                 className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
               >
+                <BiMessage aria-hidden="true" className="size-4.5" />
                 Let&apos;s Talk
               </Button>
 

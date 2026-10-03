@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { PiUser, PiArticleMedium, PiGraduationCap } from "react-icons/pi";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navigationItems = [
@@ -26,6 +26,16 @@ const navigationItems = [
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const updateScrollState = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", updateScrollState, { passive: true });
+    return () => window.removeEventListener("scroll", updateScrollState);
+  }, []);
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
@@ -35,7 +45,7 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50">
       <nav
         aria-label="Main navigation"
-        className="bg-background text-foreground px-4 py-6 sm:py-10 backdrop-blur-xl sm:px-6 lg:px-8"
+        className={`text-foreground px-4 py-6 sm:py-10 backdrop-blur-lg sm:px-6 lg:px-8 transition-colors duration-300 ${isScrolled ? "bg-background/85" : "bg-background"}`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <Link

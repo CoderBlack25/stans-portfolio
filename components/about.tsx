@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BiMessage } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
 
 type Experience = {
@@ -113,6 +114,7 @@ export function About() {
               size="lg"
               className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
             >
+              <BiMessage aria-hidden="true" className="size-4.5" />
               Let&apos;s Talk
             </Button>
 

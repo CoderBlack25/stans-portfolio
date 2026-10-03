@@ -44,8 +44,8 @@ export const pruneCaseStudy: CaseStudyData = {
       },
       {
         label: "Prune Admin Portal",
-        backgroundColor: "var(--color-surface-dark)",
-        textColor: "var(--color-muted)",
+        backgroundColor: "light-dark(var(--input), var(--color-surface-dark))",
+        textColor: "light-dark(var(--color-surface-muted), var(--color-muted))",
       },
     ],
   },
