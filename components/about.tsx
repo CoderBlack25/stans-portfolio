@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BiMessage } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
+import { MotionReveal } from "@/components/ui/motion-reveal";
 
 type Experience = {
   company: string;
@@ -64,7 +65,7 @@ export function About() {
       className="mx-auto w-full max-w-xl px-8 sm:px-0 mt-25 sm:mt-40 mb-10 sm:mb-20 bg-background text-foreground"
     >
       <div className="flex flex-col gap-8 sm:gap-10 py-4">
-        <div className="flex flex-col gap-6">
+        <MotionReveal className="flex flex-col gap-6">
           <div className="flex flex-col gap-5">
             <h1 className="text-2xl sm:text-[32px] font-medium">
               I DESIGN PRODUCTS THAT MAKE COMPLEX THINGS FEEL SIMPLE.
@@ -127,9 +128,9 @@ export function About() {
               Download Resume
             </Button>
           </div>
-        </div>
+        </MotionReveal>
 
-        <div className="flex flex-col gap-7">
+        <MotionReveal delay={0.14} className="flex flex-col gap-7">
           <SectionLabel>Experiences</SectionLabel>
 
           <div className="flex flex-col gap-5">
@@ -156,9 +157,9 @@ export function About() {
               </div>
             ))}
           </div>
-        </div>
+        </MotionReveal>
 
-        <div className="flex flex-col gap-7">
+        <MotionReveal delay={0.28} className="flex flex-col gap-7">
           <SectionLabel>Capabilities</SectionLabel>
 
           <div className="flex flex-col gap-5">
@@ -192,9 +193,9 @@ export function About() {
               ))}
             </div>
           </div>
-        </div>
+        </MotionReveal>
 
-        <div className="flex flex-col gap-7">
+        <MotionReveal delay={0.42} className="flex flex-col gap-7">
           <SectionLabel>Beyond the work</SectionLabel>
 
           <div className="flex flex-col gap-4">
@@ -217,7 +218,7 @@ export function About() {
               </p>
             </div>
           </div>
-        </div>
+        </MotionReveal>
       </div>
     </section>
   );

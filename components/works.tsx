@@ -1,4 +1,5 @@
 import WorksFolder from "@/components/works-folder";
+import { MotionReveal } from "@/components/ui/motion-reveal";
 
 const works = [
   {
@@ -32,8 +33,8 @@ const works = [
 
 export default function Works() {
   return (
-    <main className="mx-auto w-full max-w-7xl my-30 sm:my-45 flex flex-col items-center">
-      <div className="text-center mb-10 sm:mb-20 px-10">
+    <main className="mx-auto w-full max-w-6xl my-30 sm:my-45 flex flex-col items-center">
+      <MotionReveal className="text-center mb-10 sm:mb-20 px-10">
         <h1
           id="tech-stack-heading"
           className="text-xl font-medium sm:text-2xl uppercase"
@@ -45,13 +46,15 @@ export default function Works() {
           A small selection of my work since 2021. Currently, I'm a senior
           product designer at FairMoney Micro Finance Bank
         </p>
-      </div>
+      </MotionReveal>
 
-      <section className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-        {works.map((work) => (
-          <WorksFolder key={work.href} {...work} />
-        ))}
-      </section>
+      <MotionReveal delay={0.16} className="w-full">
+        <section className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          {works.map((work) => (
+            <WorksFolder key={work.href} {...work} />
+          ))}
+        </section>
+      </MotionReveal>
     </main>
   );
 }

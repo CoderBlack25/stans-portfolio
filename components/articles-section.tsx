@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PiArticleMedium } from "react-icons/pi";
+import { MotionReveal } from "@/components/ui/motion-reveal";
 
 type Article = {
   title: string;
@@ -78,7 +79,7 @@ export function ArticlesSection() {
       aria-labelledby="articles-heading"
       className="mx-auto w-full max-w-xl px-8 sm:px-0 mt-30 sm:mt-45 mb-10 sm:mb-20 bg-background text-foreground"
     >
-      <div className="text-center">
+      <MotionReveal className="text-center">
         <h2
           id="articles-heading"
           className="text-xl font-medium uppercase sm:text-2xl"
@@ -99,13 +100,15 @@ export function ArticlesSection() {
         >
           Head over to Medium
         </Link>
-      </div>
+      </MotionReveal>
 
-      <ul className="mt-10 divide-y divide-(--color-muted) dark:divide-(--color-surface-muted) sm:mt-20">
-        {articles.map((article) => (
-          <ArticleCard key={article.href} article={article} />
-        ))}
-      </ul>
+      <MotionReveal delay={0.16} className="mt-10 w-full sm:mt-20">
+        <ul className="divide-y divide-(--color-muted) dark:divide-(--color-surface-muted)">
+          {articles.map((article) => (
+            <ArticleCard key={article.href} article={article} />
+          ))}
+        </ul>
+      </MotionReveal>
     </section>
   );
 }

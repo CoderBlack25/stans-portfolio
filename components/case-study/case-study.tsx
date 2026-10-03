@@ -7,6 +7,7 @@ import { CaseStudyText, type TextLine } from "./case-study-text";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Pill, type PillProps } from "@/components/ui/pill";
+import { MotionReveal } from "@/components/ui/motion-reveal";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -114,6 +115,8 @@ function CaseStudyHeroMedia({
     return (
       <video
         src={hero.src}
+        width={hero.width}
+        height={hero.height}
         autoPlay
         loop
         muted
@@ -308,8 +311,8 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
     >
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.5fr_2fr] lg:gap-10">
         {/* Project information */}
-        <aside className="lg:sticky lg:top-32 lg:h-fit lg:max-h-[calc(100svh-10rem)] lg:overflow-y-auto">
-          <div className="space-y-10">
+        <aside className="lg:sticky lg:top-32 lg:h-fit">
+          <MotionReveal offsetY={0} initialScale={1} className="space-y-10">
             <div className="space-y-4">
               <h1 className="text-xl font-medium uppercase text-foreground sm:text-2xl">
                 {project.title}
@@ -375,30 +378,37 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
                 </ul>
               </section>
             )}
-          </div>
+          </MotionReveal>
         </aside>
 
         {/* Main case-study content */}
-        <article className="min-w-0">
-          <div className="mx-auto max-w-3xl space-y-10">
-            {project.heroIntro && (
-              <header className="space-y-3">
-                {project.heroIntro.title && (
-                  <h2 className="text-sm font-medium text-foreground sm:text-base">
-                    {project.heroIntro.title}
-                  </h2>
-                )}
-                <CaseStudyText lines={project.heroIntro.lines} />
-              </header>
-            )}
+        <MotionReveal
+          delay={0.16}
+          offsetY={0}
+          initialScale={1}
+          className="min-w-0"
+        >
+          <article className="min-w-0">
+            <div className="mx-auto max-w-3xl space-y-10">
+              {project.heroIntro && (
+                <header className="space-y-3">
+                  {project.heroIntro.title && (
+                    <h2 className="text-sm font-medium text-foreground sm:text-base">
+                      {project.heroIntro.title}
+                    </h2>
+                  )}
+                  <CaseStudyText lines={project.heroIntro.lines} />
+                </header>
+              )}
 
-            {project.hero && <CaseStudyHeroMedia hero={project.hero} />}
+              {project.hero && <CaseStudyHeroMedia hero={project.hero} />}
 
-            {project.sections.map(renderSection)}
-          </div>
+              {project.sections.map(renderSection)}
+            </div>
 
-          <ProjectNavigation />
-        </article>
+            <ProjectNavigation />
+          </article>
+        </MotionReveal>
       </div>
     </main>
   );
