@@ -4,6 +4,7 @@ import Link from "next/link";
 import { PiUser, PiArticleMedium, PiGraduationCap } from "react-icons/pi";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navigationItems = [
@@ -43,8 +44,12 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <nav
+      <motion.nav
         aria-label="Main navigation"
+        data-mobile-entry
+        initial={{ opacity: 0, y: -12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
         className={`text-foreground px-4 py-6 sm:py-10 backdrop-blur-lg sm:px-6 lg:px-8 transition-colors duration-300 ${isScrolled ? "bg-background/85" : "bg-background"}`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -75,7 +80,12 @@ export function Navbar() {
                     className="size-4.5 transition-transform duration-200 group-hover:scale-105"
                   />
 
-                  <span>{item.label}</span>
+                  <motion.span
+                    whileTap={{ scale: 0.96 }}
+                    transition={{ type: "spring", stiffness: 420, damping: 28 }}
+                  >
+                    {item.label}
+                  </motion.span>
                 </Link>
               );
             })}
@@ -92,7 +102,7 @@ export function Navbar() {
           <div className="flex items-center gap-2 md:hidden">
             <ThemeToggle />
 
-            <button
+            <motion.button
               type="button"
               onClick={() => setMobileMenuOpen((open) => !open)}
               aria-expanded={mobileMenuOpen}
@@ -100,6 +110,8 @@ export function Navbar() {
               aria-label={
                 mobileMenuOpen ? "Close navigation" : "Open navigation"
               }
+              whileTap={{ scale: 0.92 }}
+              transition={{ type: "spring", stiffness: 420, damping: 28 }}
               className="flex size-9 items-center justify-center rounded-full bg-input text-(--color-surface-dark) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:text-white dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-(--color-surface-strong)"
             >
               {mobileMenuOpen ? (
@@ -107,7 +119,7 @@ export function Navbar() {
               ) : (
                 <IoMenu aria-hidden="true" className="size-4" />
               )}
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -136,7 +148,7 @@ export function Navbar() {
             </div>
           </div>
         </div>
-      </nav>
+      </motion.nav>
     </header>
   );
 }

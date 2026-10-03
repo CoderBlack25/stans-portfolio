@@ -102,6 +102,14 @@ html {
   background-color: var(--background);
 }
 
+@media (max-width: 767px) {
+  [data-mobile-entry] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 body {
   font-family: var(--font-inter), sans-serif;
 }

@@ -7,22 +7,31 @@ type MotionRevealProps = {
   children: ReactNode;
   className?: string;
   delay?: number;
-  offsetY?: number;
-  initialScale?: number;
 };
 
 export function MotionReveal({
   children,
   className,
   delay = 0,
-  offsetY = 40,
-  initialScale = 0.98,
 }: MotionRevealProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: offsetY, scale: initialScale }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] }}
+      data-mobile-entry
+      initial={{
+        opacity: 0,
+        y: 24,
+        clipPath: "inset(0 0 100% 0)",
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        clipPath: "inset(0 0 0% 0)",
+      }}
+      transition={{
+        duration: 0.9,
+        delay,
+        ease: [0.16, 1, 0.3, 1],
+      }}
       className={className}
     >
       {children}
