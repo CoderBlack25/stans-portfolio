@@ -171,7 +171,7 @@ export default function Home() {
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 mt-2">
               <Button
                 nativeButton={false}
-                render={<Link href="mailto:example@gmail.com" />}
+                render={<Link href="https://cal.com/stanley-chukwuma-kcweco" />}
                 size="lg"
                 className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
               >

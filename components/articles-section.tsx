@@ -92,7 +92,7 @@ export function ArticlesSection() {
         </p>
 
         <Link
-          href="https://medium.com/@yourusername"
+          href="https://medium.com/@stanchiqa"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-2 inline-block text-xs sm:text-sm underline underline-offset-4 transition-colors hover:text-(--color-accent) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111214]"
