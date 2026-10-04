@@ -50,6 +50,7 @@ const WorksFolder = ({
             width={width}
             height={height}
             loading="eager"
+            priority
             sizes="(max-width: 768px) 100vw, 33vw"
             alt={alt}
             className="w-full"
