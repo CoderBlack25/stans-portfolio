@@ -11,6 +11,16 @@ type MotionRevealProps = {
   initialScale?: number;
 };
 
+// Start: fully clipped from the bottom, so the content wipes in downward.
+// Use explicit percentages on all four sides so Motion can interpolate them.
+const HIDDEN_CLIP = "inset(0% 0% 100% 0%)";
+
+// End: the clip region is larger than the element on every side.
+// The old end value was "inset(0 0 0% 0)", which kept clipping to the exact
+// box forever and cut off anything that scaled or tilted past its edges.
+// Negative insets grow the visible region, so hover effects can overflow freely.
+const REVEALED_CLIP = "inset(-20% -20% -20% -20%)";
+
 export function MotionReveal({
   children,
   className,
@@ -25,13 +35,13 @@ export function MotionReveal({
         opacity: 0,
         y: offsetY,
         scale: initialScale,
-        clipPath: "inset(0 0 100% 0)",
+        clipPath: HIDDEN_CLIP,
       }}
       animate={{
         opacity: 1,
         y: 0,
         scale: 1,
-        clipPath: "inset(0 0 0% 0)",
+        clipPath: REVEALED_CLIP,
       }}
       transition={{
         duration: 0.9,

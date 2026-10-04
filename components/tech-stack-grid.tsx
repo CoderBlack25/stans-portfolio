@@ -81,7 +81,7 @@ export function TechStackGrid({
           </h1>
 
           <p className="mt-1.5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
-            Tools I&apos;m proficient with are as follows:
+            Tools I&apos;m proficient with
           </p>
         </MotionReveal>
 
