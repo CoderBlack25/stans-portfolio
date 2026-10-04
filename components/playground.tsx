@@ -73,11 +73,7 @@ export default function Playground() {
                     src={project.image}
                     alt={project.alt}
                     fill
-                    loading={
-                      project.title === "Syrous Business Banking"
-                        ? "eager"
-                        : "lazy"
-                    }
+                    priority
                     sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc((100vw - 72px) / 2), (max-width: 1191px) calc((100vw - 136px) / 4), 264px"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
                   />

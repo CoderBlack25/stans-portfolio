@@ -1,5 +1,6 @@
 "use client";
 
+import { useCallback, useEffect, useState } from "react"; // CHANGED: new import
 import Image from "next/image";
 import Link from "next/link";
 import { LiaPenNibSolid } from "react-icons/lia";
@@ -20,6 +21,10 @@ type SocialLink = {
   href: string;
   external?: boolean;
 };
+
+// CHANGED: safety net. If the image hasn't loaded by then, reveal anyway
+// so a slow network never leaves the page blank.
+const HERO_REVEAL_TIMEOUT_MS = 1200;
 
 const aboutItems: AboutItem[] = [
   {
@@ -127,10 +132,22 @@ const date = new Date();
 const year = date.getFullYear();
 
 export default function Home() {
+  // CHANGED: gate the reveal on the hero image being loaded and decoded.
+  const [heroReady, setHeroReady] = useState(false);
+  const markHeroReady = useCallback(() => setHeroReady(true), []);
+
+  // CHANGED: fallback timer, so the page always reveals even if the image
+  // is slow or never fires onLoad.
+  useEffect(() => {
+    const timer = window.setTimeout(markHeroReady, HERO_REVEAL_TIMEOUT_MS);
+    return () => window.clearTimeout(timer);
+  }, [markHeroReady]);
+
   return (
     <main className="flex min-h-svh items-center justify-center bg-background px-8 sm:px-0 py-32 text-foreground transition-colors duration-300">
       <div className="w-full max-w-xl space-y-10">
-        <MotionReveal>
+        {/* CHANGED: ready={heroReady} */}
+        <MotionReveal ready={heroReady}>
           <section
             aria-labelledby="hero-heading"
             className="flex flex-col items-center gap-6 sm:flex-row sm:items-stretch"
@@ -142,6 +159,10 @@ export default function Home() {
                 fill
                 sizes="170px"
                 priority
+                // CHANGED: fires after the browser has decoded the image.
+                // onError also releases the reveal so a broken image can't block the page.
+                onLoad={markHeroReady}
+                onError={markHeroReady}
                 className="object-cover object-center grayscale rounded-lg"
               />
             </div>
@@ -196,7 +217,8 @@ export default function Home() {
           </section>
         </MotionReveal>
 
-        <MotionReveal delay={0.16}>
+        {/* CHANGED: ready={heroReady} keeps the stagger in order */}
+        <MotionReveal delay={0.16} ready={heroReady}>
           <section aria-labelledby="about-heading" className="space-y-5">
             <div className="flex items-center gap-5">
               <h2
@@ -231,7 +253,8 @@ export default function Home() {
           </section>
         </MotionReveal>
 
-        <MotionReveal delay={0.32}>
+        {/* CHANGED: ready={heroReady} */}
+        <MotionReveal delay={0.32} ready={heroReady}>
           <footer
             id="contact"
             className="flex flex-col gap-4 rounded-lg bg-input p-4 dark:bg-(--color-surface-dark)"
