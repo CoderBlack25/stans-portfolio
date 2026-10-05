@@ -58,7 +58,7 @@ export function Navbar() {
             aria-label="Stanley Chukwuma home"
             className="shrink-0"
           >
-            <p className="text-sm sm:text-base">Stanley Chukwuma</p>
+            <p className="text-xs sm:text-sm font-medium">Stanley Chukwuma</p>
 
             <p className="mt-2 text-xs sm:text-sm leading-none text-(--color-surface-muted) dark:text-(--color-muted)">
               Product Designer & Design Engineer
@@ -73,7 +73,7 @@ export function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="group inline-flex items-center gap-2 py-2 px-3 rounded-full text-sm text-(--color-surface-muted) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:bg-chart-5 dark:hover:text-white"
+                  className="group inline-flex items-center gap-2 py-2 px-3 rounded-full text-sm text-(--color-surface-muted) transition-colors hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:text-white"
                 >
                   <Icon
                     aria-hidden="true"

@@ -103,7 +103,7 @@ function ExternalLinkIcon() {
 
 function SocialLinks() {
   return (
-    <nav aria-label="Social links" className="flex flex-wrap gap-x-6 gap-y-4">
+    <nav aria-label="Social links" className="flex flex-wrap gap-x-5">
       {socialLinks.map((link) => {
         const isExternal = link.external;
 
@@ -225,7 +225,7 @@ export default function Home() {
                 id="about-heading"
                 className="shrink-0 text-xs sm:text-sm uppercase text-(--color-surface-muted) dark:text-(--color-muted)"
               >
-                More About Me
+                About Me
               </h2>
 
               <div

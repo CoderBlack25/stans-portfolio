@@ -31,6 +31,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+      </head>
       <body className="min-h-full flex flex-col">
         <ThemeProvider>
           <Navbar />

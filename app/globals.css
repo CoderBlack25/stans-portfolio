@@ -102,6 +102,27 @@ html {
   background-color: var(--background);
 }
 
+/* Circle-reveal theme transition.
+   Scoped to [data-theme-transition] (set by the toggle) so these overrides
+   never affect any other view transitions you add later, like route changes. */
+
+/* Turn off the default crossfade so the old and new snapshots are shown
+   as-is. The circle clip-path animation is driven from JS. */
+:root[data-theme-transition]::view-transition-old(root),
+:root[data-theme-transition]::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Old theme sits underneath, new theme is revealed on top of it. */
+:root[data-theme-transition]::view-transition-old(root) {
+  z-index: 1;
+}
+
+:root[data-theme-transition]::view-transition-new(root) {
+  z-index: 2;
+}
+
 @media (max-width: 767px) {
   [data-mobile-entry] {
     opacity: 1 !important;

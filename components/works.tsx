@@ -33,7 +33,7 @@ const works = [
 
 export default function Works() {
   return (
-    <main className="mx-auto w-full max-w-6xl my-30 sm:my-45 flex flex-col items-center">
+    <main className="mx-auto w-full max-w-5xl my-30 sm:my-45 flex flex-col items-center">
       <MotionReveal className="text-center mb-10 sm:mb-20 px-10">
         <h1
           id="tech-stack-heading"
