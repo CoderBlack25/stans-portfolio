@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
-
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { TechStackDrawer } from "@/components/tech-stack-drawer";
 
 const navigationItems = [
   {
@@ -24,11 +24,14 @@ const navigationItems = [
     label: "Playground",
     href: "/playground",
   },
-  {
-    label: "Stack",
-    href: "/stack",
-  },
 ] as const;
+
+// Shared by the links and the Stack button so they look identical.
+const itemBaseClassName =
+  "relative isolate flex min-h-6 w-full items-center justify-center rounded-full px-2 py-3 text-center text-xs sm:text-sm transition-colors duration-200 sm:min-h-8 sm:px-4";
+
+const itemIdleClassName =
+  "text-(--color-surface-muted) dark:text-(--color-muted) hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white";
 
 export function BottomNavigation() {
   const pathname = usePathname();
@@ -55,7 +58,9 @@ export function BottomNavigation() {
                 <NavigationMenuLink
                   render={<Link href={item.href} />}
                   aria-current={isActive ? "page" : undefined}
-                  className={`relative isolate flex min-h-6 w-full items-center justify-center rounded-full px-2 text-center text-xs sm:text-sm transition-colors duration-200 sm:min-h-8 sm:px-4 ${isActive ? "text-white" : "text-(--color-surface-muted) dark:text-(--color-muted) hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white"}`}
+                  className={`${itemBaseClassName} ${
+                    isActive ? "text-white" : itemIdleClassName
+                  }`}
                 >
                   {isActive && (
                     <motion.span
@@ -80,6 +85,20 @@ export function BottomNavigation() {
               </NavigationMenuItem>
             );
           })}
+
+          <NavigationMenuItem className="flex-1">
+            <TechStackDrawer
+              triggerClassName={`${itemBaseClassName} ${itemIdleClassName} cursor-pointer`}
+            >
+              <motion.span
+                whileTap={{ scale: 0.96 }}
+                transition={{ type: "spring", stiffness: 420, damping: 28 }}
+                className="relative z-10"
+              >
+                Stack
+              </motion.span>
+            </TechStackDrawer>
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </motion.nav>
