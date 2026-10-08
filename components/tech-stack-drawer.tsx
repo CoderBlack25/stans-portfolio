@@ -47,9 +47,9 @@ export function TechStackDrawer({
               </MotionReveal>
 
               <MotionReveal delay={0.16} className="mt-12 w-full">
-                <div className="grid w-full grid-cols-3 gap-x-8 gap-y-6 sm:grid-cols-4 sm:gap-x-2 sm:gap-y-6">
+                <ul className="grid w-full grid-cols-3 gap-x-8 gap-y-6 sm:grid-cols-4 sm:gap-x-2 sm:gap-y-6">
                   {tools.map((tool) => (
-                    <div
+                    <li
                       key={tool.name}
                       className="group flex min-w-0 flex-col items-center"
                     >
@@ -67,9 +67,9 @@ export function TechStackDrawer({
                       <span className="mt-2.5 text-center text-xs font-medium text-(--color-surface-muted) sm:text-sm dark:text-(--color-muted)">
                         {tool.name}
                       </span>
-                    </div>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </MotionReveal>
             </div>
           </div>

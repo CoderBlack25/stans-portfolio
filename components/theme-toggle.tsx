@@ -5,8 +5,8 @@ import { flushSync } from "react-dom";
 import { useTheme } from "next-themes";
 import { PiSun, PiMoon } from "react-icons/pi";
 
-const REVEAL_DURATION_MS = 1000;
-const REVEAL_EASING = "cubic-bezier(0.22, 1, 0.36, 1)";
+const REVEAL_DURATION_MS = 600;
+const REVEAL_EASING = "cubic-bezier(0.25, 0.25, 0.75, 0.75)";
 
 /**
  * Temporarily turns off CSS transitions on everything except the toggle

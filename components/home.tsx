@@ -120,7 +120,12 @@ function SocialLinks() {
             className="group inline-flex items-center text-xs sm:text-sm underline decoration-1 underline-offset-4 transition-colors hover:text-(--color-accent)"
           >
             {link.label}
-            {isExternal && <ExternalLinkIcon />}
+            {isExternal && (
+              <>
+                <ExternalLinkIcon />
+                <span className="sr-only"> (opens in a new tab)</span>
+              </>
+            )}
           </Link>
         );
       })}
@@ -168,11 +173,15 @@ export default function Home() {
             </div>
 
             <div className="flex min-w-0 flex-col gap-3 text-center sm:text-left">
-              <h1 className="text-2xl sm:text-3xl font-medium uppercase leading-6">
-                Product Designer &amp;
-              </h1>
-              <h1 className="text-2xl sm:text-3xl font-medium uppercase leading-none">
-                Design Engineer
+              <h1
+                id="hero-heading"
+                className="text-2xl sm:text-[32px] font-medium uppercase leading-tight"
+              >
+                <span className="block leading-6 mb-3">Product Designer</span>
+                <span className="block leading-none">
+                  {" "}
+                  &amp; Design Engineer
+                </span>
               </h1>
 
               <p className="text-(--color-surface-muted) dark:text-(--color-muted) text-xs sm:text-sm max-w-sm">
@@ -195,13 +204,18 @@ export default function Home() {
                 <Button
                   nativeButton={false}
                   render={
-                    <Link href="https://cal.com/stanley-chukwuma-kcweco" />
+                    <Link
+                      href="https://cal.com/stanley-chukwuma-kcweco"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
                   }
                   size="lg"
                   className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
                 >
                   <BiMessage aria-hidden="true" className="size-4.5" />
                   Let&apos;s Talk
+                  <span className="sr-only"> (opens in a new tab)</span>
                 </Button>
 
                 <Button
@@ -211,6 +225,7 @@ export default function Home() {
                   className="rounded-lg bg-input text-xs sm:text-sm text-foreground transition-colors hover:bg-chart-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
                 >
                   Download Resume
+                  <span className="sr-only"> (PDF)</span>
                 </Button>
               </div>
             </div>

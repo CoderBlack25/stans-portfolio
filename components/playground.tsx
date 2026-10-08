@@ -44,7 +44,7 @@ export default function Playground() {
     <main className="mx-auto flex w-full flex-col items-center gap-16 sm:gap-20 px-8 my-30 sm:my-45 sm:px-0">
       <MotionReveal className="max-w-md text-center">
         <header>
-          <h1 className="text-xl font-medium sm:text-2xl uppercase">
+          <h1 id="playground-heading" className="text-xl font-medium sm:text-2xl uppercase">
             Playground
           </h1>
           <p className="mt-1.5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
@@ -56,7 +56,7 @@ export default function Playground() {
 
       <MotionReveal delay={0.16} className="w-full">
         <section
-          aria-label="Playground projects"
+          aria-labelledby="playground-heading"
           className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
         >
           {projects.map((project) => (
@@ -81,6 +81,7 @@ export default function Playground() {
 
                 <h2 className="mt-3 text-sm sm:text-base font-medium">
                   {project.title}
+                  <span className="sr-only"> (opens in a new tab)</span>
                 </h2>
                 <p className="mt-1 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                   {project.description}

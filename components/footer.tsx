@@ -57,6 +57,9 @@ export function Footer() {
                 className="text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted) underline underline-offset-4 transition-colors hover:text-(--color-accent)   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 {link.label}
+                {isExternal && (
+                  <span className="sr-only"> (opens in a new tab)</span>
+                )}
               </Link>
             );
           })}

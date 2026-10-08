@@ -36,7 +36,7 @@ export default function Works() {
     <main className="mx-auto w-full max-w-5xl my-30 sm:my-45 flex flex-col items-center">
       <MotionReveal className="text-center mb-10 sm:mb-20 px-10">
         <h1
-          id="tech-stack-heading"
+          id="works-heading"
           className="text-xl font-medium sm:text-2xl uppercase"
         >
           Selected Works
@@ -49,7 +49,10 @@ export default function Works() {
       </MotionReveal>
 
       <MotionReveal delay={0.16} className="w-full">
-        <section className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <section
+          aria-labelledby="works-heading"
+          className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
+        >
           {works.map((work) => (
             <WorksFolder key={work.href} {...work} />
           ))}

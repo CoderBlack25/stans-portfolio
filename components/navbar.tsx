@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { PiUser, PiArticleMedium, PiGraduationCap } from "react-icons/pi";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion } from "motion/react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -26,6 +27,7 @@ const navigationItems = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -38,9 +40,20 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", updateScrollState);
   }, []);
 
-  const closeMobileMenu = () => {
+  const closeMobileMenu = useCallback(() => {
     setMobileMenuOpen(false);
-  };
+  }, []);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && mobileMenuOpen) {
+        closeMobileMenu();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [mobileMenuOpen, closeMobileMenu]);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
@@ -56,6 +69,7 @@ export function Navbar() {
           <Link
             href="/"
             aria-label="Stanley Chukwuma home"
+            aria-current={pathname === "/" ? "page" : undefined}
             className="shrink-0"
           >
             <p className="text-xs sm:text-sm font-medium">Stanley Chukwuma</p>
@@ -68,12 +82,18 @@ export function Navbar() {
           <div className="hidden items-center gap-3 md:flex">
             {navigationItems.map((item) => {
               const Icon = item.icon;
+              const isActive = pathname.startsWith(item.href);
 
               return (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="group inline-flex items-center gap-2 py-2 px-3 rounded-full text-sm text-(--color-surface-muted) transition-colors hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:text-white"
+                  aria-current={isActive ? "page" : undefined}
+                  className={`group inline-flex items-center gap-2 py-2 px-3 rounded-full text-sm transition-colors ${
+                    isActive
+                      ? "text-foreground font-medium"
+                      : "text-(--color-surface-muted) hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:text-white"
+                  }`}
                 >
                   <Icon
                     aria-hidden="true"
@@ -125,19 +145,27 @@ export function Navbar() {
 
         <div
           id="mobile-navigation"
-          className={`overflow-hidden transition-[max-height,opacity] duration-300 md:hidden pt-3 ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
+          aria-hidden={!mobileMenuOpen}
+          inert={!mobileMenuOpen ? true : undefined}
+          className={`overflow-hidden transition-[max-height,opacity] duration-300 md:hidden pt-3 ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 pointer-events-none"}`}
         >
           <div className="mx-auto max-w-[2048px] border-t border-(--color-muted) pt-3 dark:border-(--color-surface-muted)">
             <div className="flex flex-col gap-0.5">
               {navigationItems.map((item) => {
                 const Icon = item.icon;
+                const isActive = pathname.startsWith(item.href);
 
                 return (
                   <Link
                     key={item.label}
                     href={item.href}
                     onClick={closeMobileMenu}
-                    className="flex items-center gap-2 py-2 px-3 rounded-full text-xs text-(--color-surface-muted) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:text-(--color-muted) dark:hover:bg-chart-5 dark:hover:text-white"
+                    aria-current={isActive ? "page" : undefined}
+                    className={`flex items-center gap-2 py-2 px-3 rounded-full text-xs transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white ${
+                      isActive
+                        ? "font-medium text-foreground"
+                        : "text-(--color-surface-muted) dark:text-(--color-muted)"
+                    }`}
                   >
                     <Icon aria-hidden="true" className="size-4.5" />
 

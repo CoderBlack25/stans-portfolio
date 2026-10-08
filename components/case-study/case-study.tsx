@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, useRef, type ReactNode } from "react";
 //import { CaseStudyGallery, type GalleryImage } from "./case-study-gallery";
 import { CaseStudyImage } from "./case-study-image";
 import { CaseStudyText, type TextLine } from "./case-study-text";
@@ -111,20 +111,49 @@ function CaseStudyHeroMedia({
 }: {
   hero: NonNullable<CaseStudyData["hero"]>;
 }) {
+  const [isPlaying, setIsPlaying] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+    if (isPlaying) {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      videoRef.current.play();
+      setIsPlaying(true);
+    }
+  };
+
   if (hero.type === "video") {
     return (
-      <video
-        src={hero.src}
-        width={hero.width}
-        height={hero.height}
-        autoPlay
-        loop
-        muted
-        playsInline
-        controls={false}
-        preload="auto"
-        className="h-auto w-full object-cover"
-      />
+      <div className="relative group/video">
+        <video
+          ref={videoRef}
+          src={hero.src}
+          width={hero.width}
+          height={hero.height}
+          autoPlay
+          loop
+          muted
+          playsInline
+          controls={false}
+          preload="auto"
+          className="h-auto w-full object-cover"
+        />
+        <button
+          type="button"
+          onClick={togglePlay}
+          aria-label={isPlaying ? "Pause video" : "Play video"}
+          className="absolute bottom-4 right-4 z-10 flex size-9 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-opacity hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+        >
+          {isPlaying ? (
+            <span aria-hidden="true" className="text-xs font-semibold">❚❚</span>
+          ) : (
+            <span aria-hidden="true" className="text-xs font-semibold">▶</span>
+          )}
+        </button>
+      </div>
     );
   }
 
@@ -262,7 +291,6 @@ function ProjectNavigation() {
     >
       <Link
         href={previousProject.href}
-        aria-label={`Previous project: ${previousProject.title}`}
         className="group flex min-h-16 min-w-0 items-center gap-3 rounded-md px-3 py-3 text-left transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
       >
         <ArrowLeft
@@ -281,7 +309,6 @@ function ProjectNavigation() {
 
       <Link
         href={nextProject.href}
-        aria-label={`Next project: ${nextProject.title}`}
         className="group flex min-h-16 min-w-0 items-center justify-end gap-3 rounded-md px-3 py-3 text-right transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
       >
         <span className="min-w-0">

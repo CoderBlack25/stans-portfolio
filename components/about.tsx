@@ -49,11 +49,11 @@ const capabilities: Capability[] = [
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="shrink-0 text-xs sm:text-sm uppercase text-(--color-surface-muted) dark:text-(--color-muted)">
+      <h2 className="shrink-0 text-xs sm:text-sm uppercase text-(--color-surface-muted) dark:text-(--color-muted)">
         {children}
-      </span>
+      </h2>
 
-      <div className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)" />
+      <div aria-hidden="true" className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)" />
     </div>
   );
 }
@@ -111,12 +111,19 @@ export function About() {
           <div className="flex flex-col gap-3 pt-1 sm:flex-row">
             <Button
               nativeButton={false}
-              render={<Link href="https://cal.com/stanley-chukwuma-kcweco" />}
+              render={
+                <Link
+                  href="https://cal.com/stanley-chukwuma-kcweco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              }
               size="lg"
               className="rounded-lg bg-(--color-accent) text-xs sm:text-sm text-white transition-colors hover:bg-(--color-accent-hover) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-black"
             >
               <BiMessage aria-hidden="true" className="size-4.5" />
               Let&apos;s Talk
+              <span className="sr-only"> (opens in a new tab)</span>
             </Button>
 
             <Button
@@ -126,6 +133,7 @@ export function About() {
               className="rounded-lg bg-input text-xs sm:text-sm text-foreground transition-colors hover:bg-chart-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
             >
               Download Resume
+              <span className="sr-only"> (PDF)</span>
             </Button>
           </div>
         </MotionReveal>
@@ -133,9 +141,9 @@ export function About() {
         <MotionReveal delay={0.14} className="flex flex-col gap-7">
           <SectionLabel>Experiences</SectionLabel>
 
-          <div className="flex flex-col gap-5">
+          <ul className="flex flex-col gap-5">
             {experiences.map((experience) => (
-              <div
+              <li
                 key={`${experience.company}-${experience.period}`}
                 className="grid grid-cols-1 gap-1 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:gap-4"
               >
@@ -148,15 +156,15 @@ export function About() {
                     {experience.role}
                   </span>
 
-                  <div className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)" />
+                  <div aria-hidden="true" className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)" />
                 </div>
 
                 <span className="text-xs sm:text-sm sm:text-right">
                   {experience.period}
                 </span>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </MotionReveal>
 
         <MotionReveal delay={0.28} className="flex flex-col gap-7">
@@ -164,9 +172,9 @@ export function About() {
 
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-4">
-              <h2 className="text-xl sm:text-2xl font-medium">
+              <h3 className="text-xl sm:text-2xl font-medium">
                 I WORK ACROSS THE WHOLE PRODUCT.
-              </h2>
+              </h3>
 
               <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
                 I&apos;m comfortable moving between the big picture and the
@@ -176,9 +184,9 @@ export function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
               {capabilities.map((capability) => (
-                <div
+                <li
                   key={capability.number}
                   className="flex h-12 items-center gap-3 rounded-full bg-input dark:bg-(--color-surface-dark) px-4 py-3"
                 >
@@ -189,9 +197,9 @@ export function About() {
                   <span className="min-w-0 text-xs whitespace-nowrap sm:text-sm">
                     {capability.label}
                   </span>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </MotionReveal>
 
@@ -199,9 +207,9 @@ export function About() {
           <SectionLabel>Beyond the work</SectionLabel>
 
           <div className="flex flex-col gap-4">
-            <h2 className="text-xl sm:text-2xl font-medium">
+            <h3 className="text-xl sm:text-2xl font-medium">
               I&apos;M MORE THAN JUST A DESIGNER
-            </h2>
+            </h3>
 
             <div className="flex flex-col gap-5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
               <p>

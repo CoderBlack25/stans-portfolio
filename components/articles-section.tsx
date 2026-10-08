@@ -25,10 +25,12 @@ const articles: Article[] = [
     image: "/images/journal/image2.svg",
   },
   {
-    title: "Keep skipping these resources, if you’d rather stay stuck",
+    title:
+      "When Does an Engineering Problem Become a Design Problem? (Solving what matters through design.)",
     description:
-      "Two weeks ago we shipped an AI feature, and during a quick internal review we realized the screen fell short: the aesthetics didn’t feel “AI,” enough and everything felt static.",
-    href: "https://medium.com/@yourusername/keep-skipping-these-resources",
+      "What a failed transaction taught me about becoming a Product Designer who solves problems, not just designing screens in this AI age.",
+    href: "https://medium.com/@stanchiqa/when-does-an-engineering-problem-become-a-design-problem-5b17683d0e3c",
+    image: "/images/journal/image3.svg",
   },
 ];
 
@@ -42,7 +44,6 @@ function ArticleCard({ article }: { article: Article }) {
         target="_blank"
         rel="noopener noreferrer"
         className="group flex gap-3.5 py-6 outline-none sm:gap-4"
-        aria-label={`Read "${article.title}" on Medium`}
       >
         {hasImage ? (
           <img
@@ -62,6 +63,7 @@ function ArticleCard({ article }: { article: Article }) {
         <div className="min-w-0 flex-1">
           <h3 className="text-sm font-medium transition-all duration-200 sm:text-base hover:underline">
             {article.title}
+            <span className="sr-only"> (opens in a new tab)</span>
           </h3>
 
           <p className="mt-2 line-clamp-2 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">

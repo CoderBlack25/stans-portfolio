@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 
 type MotionRevealProps = {
   children: ReactNode;
@@ -31,19 +31,25 @@ export function MotionReveal({
   initialScale = 1,
   ready = true,
 }: MotionRevealProps) {
-  const hidden = {
-    opacity: 0,
-    y: offsetY,
-    scale: initialScale,
-    clipPath: HIDDEN_CLIP,
-  };
+  const shouldReduceMotion = useReducedMotion();
 
-  const revealed = {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    clipPath: REVEALED_CLIP,
-  };
+  const hidden = shouldReduceMotion
+    ? { opacity: 0 }
+    : {
+        opacity: 0,
+        y: offsetY,
+        scale: initialScale,
+        clipPath: HIDDEN_CLIP,
+      };
+
+  const revealed = shouldReduceMotion
+    ? { opacity: 1 }
+    : {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        clipPath: REVEALED_CLIP,
+      };
 
   return (
     <motion.div
