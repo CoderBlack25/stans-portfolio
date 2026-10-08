@@ -51,7 +51,7 @@ export default function Works() {
       <MotionReveal delay={0.16} className="w-full">
         <section
           aria-labelledby="works-heading"
-          className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-10 sm:grid-cols-2 px-8 lg:grid-cols-3"
         >
           {works.map((work) => (
             <WorksFolder key={work.href} {...work} />

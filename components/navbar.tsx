@@ -5,8 +5,10 @@ import { usePathname } from "next/navigation";
 import { PiUser, PiArticleMedium, PiGraduationCap } from "react-icons/pi";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useEffect, useState, useCallback } from "react";
-import { motion } from "motion/react";
+import { motion, useReducedMotion, type Variants } from "motion/react";
 import { ThemeToggle } from "@/components/theme-toggle";
+
+const MotionLink = motion.create(Link);
 
 const navigationItems = [
   {
@@ -30,6 +32,41 @@ export function Navbar() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
+
+  const navListVariants: Variants = {
+    open: {
+      transition: {
+        staggerChildren: shouldReduceMotion ? 0 : 0.045,
+        delayChildren: shouldReduceMotion ? 0 : 0.03,
+      },
+    },
+    closed: {
+      transition: {
+        staggerChildren: shouldReduceMotion ? 0 : 0.03,
+        staggerDirection: -1,
+      },
+    },
+  };
+
+  const navItemVariants: Variants = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: shouldReduceMotion ? 0.15 : 0.24,
+        ease: [0.22, 1, 0.36, 1] as const,
+      },
+    },
+    closed: {
+      opacity: 0,
+      y: shouldReduceMotion ? 0 : -8,
+      transition: {
+        duration: shouldReduceMotion ? 0.1 : 0.16,
+        ease: [0.22, 1, 0.36, 1] as const,
+      },
+    },
+  };
 
   useEffect(() => {
     const updateScrollState = () => {
@@ -150,17 +187,23 @@ export function Navbar() {
           className={`overflow-hidden transition-[max-height,opacity] duration-300 md:hidden pt-3 ${mobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 pointer-events-none"}`}
         >
           <div className="mx-auto max-w-[2048px] border-t border-(--color-muted) pt-3 dark:border-(--color-surface-muted)">
-            <div className="flex flex-col gap-0.5">
+            <motion.div
+              variants={navListVariants}
+              initial="closed"
+              animate={mobileMenuOpen ? "open" : "closed"}
+              className="flex flex-col gap-0.5"
+            >
               {navigationItems.map((item) => {
                 const Icon = item.icon;
                 const isActive = pathname.startsWith(item.href);
 
                 return (
-                  <Link
+                  <MotionLink
                     key={item.label}
                     href={item.href}
                     onClick={closeMobileMenu}
                     aria-current={isActive ? "page" : undefined}
+                    variants={navItemVariants}
                     className={`flex items-center gap-2 py-2 px-3 rounded-full text-xs transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white ${
                       isActive
                         ? "font-medium text-foreground"
@@ -170,10 +213,10 @@ export function Navbar() {
                     <Icon aria-hidden="true" className="size-4.5" />
 
                     <span>{item.label}</span>
-                  </Link>
+                  </MotionLink>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.nav>
