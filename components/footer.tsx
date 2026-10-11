@@ -28,11 +28,13 @@ export function Footer() {
 
   return (
     <footer className="bg-background text-foreground">
-      <div className="mx-auto flex w-full max-w-7xl flex-col sm:flex-row justify-between gap-6 sm:gap-8 xl:gap-10 px-4 sm:px-6 xl:px-0 py-6 sm:py-10 border-t-[0.5px] border-t-(--color-muted) dark:border-t-(--color-surface-muted)">
+      <div className="mx-auto flex w-full max-w-7xl flex-col sm:flex-row justify-between gap-6 sm:gap-8 xl:gap-10 px-4 sm:px-6 xl:px-0 py-6 sm:py-10 border-t-[0.5px] border-t-(--color-muted-light) dark:border-t-(--color-surface-muted)">
         <div className="flex flex-col gap-2">
-          <p className="text-sm sm:text-base font-medium">Stanley Chukwuma</p>
+          <p className="text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white">
+            Stanley Chukwuma
+          </p>
 
-          <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
             © {currentYear} Stanley Chukwuma. All rights reserved
           </p>
         </div>
@@ -54,7 +56,7 @@ export function Footer() {
                       rel: "noopener noreferrer",
                     }
                   : {})}
-                className="text-xs sm:text-sm font-medium text-(--color-surface-muted) dark:text-(--color-muted) underline underline-offset-4 transition-colors hover:text-(--color-accent)   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="text-xs sm:text-sm font-medium text-(--color-muted-dark) dark:text-(--color-muted) underline underline-offset-4 transition-colors hover:text-(--color-accent) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 {link.label}
                 {isExternal && (

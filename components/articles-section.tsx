@@ -61,12 +61,12 @@ function ArticleCard({ article }: { article: Article }) {
         )}
 
         <div className="min-w-0 flex-1">
-          <h3 className="text-sm font-medium transition-all duration-200 sm:text-base hover:underline">
+          <h3 className="text-sm text-(--color-surface-1) dark:text-white font-medium transition-all duration-200 sm:text-base hover:underline">
             {article.title}
             <span className="sr-only"> (opens in a new tab)</span>
           </h3>
 
-          <p className="mt-2 line-clamp-2 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="mt-2 line-clamp-2 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
             {article.description}
           </p>
         </div>
@@ -84,12 +84,12 @@ export function ArticlesSection() {
       <MotionReveal className="text-center">
         <h2
           id="articles-heading"
-          className="text-xl font-medium uppercase sm:text-2xl"
+          className="text-xl font-medium uppercase sm:text-2xl text-(--color-surface-1) dark:text-white"
         >
           Articles and Insights
         </h2>
 
-        <p className="mx-auto mt-2 max-w-md text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+        <p className="mx-auto mt-2 max-w-md text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
           Thoughts on design process, inclusive UX, design systems, and the
           craft of building products people love.
         </p>
@@ -98,14 +98,14 @@ export function ArticlesSection() {
           href="https://medium.com/@stanchiqa"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-block text-xs sm:text-sm underline underline-offset-4 transition-colors hover:text-(--color-accent) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111214]"
+          className="mt-2 inline-block text-xs sm:text-sm text-(--color-surface-1) dark:text-white underline underline-offset-4 transition-colors hover:text-(--color-accent) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111214]"
         >
           Head over to Medium
         </Link>
       </MotionReveal>
 
       <MotionReveal delay={0.16} className="mt-10 w-full sm:mt-20">
-        <ul className="divide-y divide-(--color-muted) dark:divide-(--color-surface-muted)">
+        <ul className="divide-y divide-(--color-muted-light) dark:divide-(--color-surface-muted)">
           {articles.map((article) => (
             <ArticleCard key={article.href} article={article} />
           ))}
