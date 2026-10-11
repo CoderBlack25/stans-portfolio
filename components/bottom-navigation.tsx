@@ -31,7 +31,7 @@ const itemBaseClassName =
   "relative isolate flex min-h-6 w-full items-center justify-center rounded-full px-2 py-3 text-center text-xs sm:text-sm transition-colors duration-200 sm:min-h-8 sm:px-4";
 
 const itemIdleClassName =
-  "text-(--color-surface-muted) dark:text-(--color-muted) hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white";
+  "text-(--color-surface-muted) dark:text-(--color-muted) hover:bg-input hover:text-(--color-background-dark) dark:hover:bg-chart-5 dark:hover:text-white";
 
 export function BottomNavigation() {
   const pathname = usePathname();
@@ -45,7 +45,7 @@ export function BottomNavigation() {
       transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
       className="fixed inset-x-0 bottom-4 z-50 px-4 sm:bottom-6"
     >
-      <NavigationMenu className="mx-auto w-full max-w-sm rounded-full bg-input p-2 dark:bg-(--color-surface-dark)">
+      <NavigationMenu className="mx-auto w-full max-w-sm rounded-full bg-(--color-surface-light) p-2 dark:bg-(--color-surface-dark)">
         <NavigationMenuList className="flex w-full items-center justify-between gap-1">
           {navigationItems.map((item) => {
             const isActive =

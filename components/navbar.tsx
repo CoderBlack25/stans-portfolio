@@ -109,9 +109,11 @@ export function Navbar() {
             aria-current={pathname === "/" ? "page" : undefined}
             className="shrink-0"
           >
-            <p className="text-xs sm:text-sm font-medium">Stanley Chukwuma</p>
+            <p className="text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white">
+              Stanley Chukwuma
+            </p>
 
-            <p className="mt-2 text-xs sm:text-sm leading-none text-(--color-surface-muted) dark:text-(--color-muted)">
+            <p className="mt-2 text-xs sm:text-sm leading-none text-(--color-muted-dark) dark:text-(--color-muted)">
               Product Designer & Design Engineer
             </p>
           </Link>
@@ -149,7 +151,7 @@ export function Navbar() {
 
             <div
               aria-hidden="true"
-              className="h-6 w-px bg-(--color-muted) dark:bg-(--color-surface-muted)"
+              className="h-6 w-px bg-(--color-surface-muted) dark:bg-(--color-surface-muted)"
             />
 
             <ThemeToggle />
@@ -169,7 +171,7 @@ export function Navbar() {
               }
               whileTap={{ scale: 0.92 }}
               transition={{ type: "spring", stiffness: 420, damping: 28 }}
-              className="flex size-9 items-center justify-center rounded-full bg-input text-(--color-surface-dark) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) dark:hover:text-white dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-(--color-surface-strong)"
+              className="flex size-9 items-center justify-center rounded-full bg-(--color-surface-light) text-(--color-surface-muted) transition-colors hover:bg-input hover:text-(--color-background-dark) dark:hover:text-white dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-(--color-surface-strong)"
             >
               {mobileMenuOpen ? (
                 <IoClose aria-hidden="true" className="size-4" />

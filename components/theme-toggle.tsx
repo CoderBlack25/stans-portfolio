@@ -149,7 +149,7 @@ export function ThemeToggle() {
       data-theme-toggle=""
       aria-label="Change theme"
       title="Change theme"
-      className="relative flex size-9 items-center justify-center overflow-hidden rounded-full bg-input text-(--color-surface-dark) transition-colors hover:bg-chart-1 hover:text-(--color-background-dark) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30 dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-(--color-surface-strong) dark:hover:text-white"
+      className="relative flex size-9 items-center justify-center overflow-hidden rounded-full bg-(--color-surface-light) text-(--color-surface-muted) transition-colors hover:bg-input hover:text-(--color-background-dark) focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black/30 dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-(--color-surface-strong) dark:hover:text-white"
     >
       {/*
         Both icons are always mounted and stacked in the same spot, so there is

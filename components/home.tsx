@@ -117,7 +117,7 @@ function SocialLinks() {
                   rel: "noopener noreferrer",
                 }
               : {})}
-            className="group inline-flex items-center text-xs sm:text-sm underline decoration-1 underline-offset-4 transition-colors hover:text-(--color-accent)"
+            className="group inline-flex items-center text-xs sm:text-sm text-(--color-surface-muted) dark:text-white underline decoration-1 underline-offset-4 transition-colors hover:text-(--color-accent)"
           >
             {link.label}
             {isExternal && (
@@ -175,7 +175,7 @@ export default function Home() {
             <div className="flex min-w-0 flex-col gap-3 text-center sm:text-left">
               <h1
                 id="hero-heading"
-                className="text-2xl sm:text-[32px] font-medium uppercase leading-tight"
+                className="text-2xl sm:text-[32px] font-medium uppercase leading-tight text-(--color-surface-1) dark:text-white"
               >
                 <span className="block leading-6 mb-3">Product Designer</span>
                 <span className="block leading-none">
@@ -184,20 +184,27 @@ export default function Home() {
                 </span>
               </h1>
 
-              <p className="text-(--color-surface-muted) dark:text-(--color-muted) text-xs sm:text-sm max-w-sm">
+              <p className="text-(--color-muted-dark) dark:text-(--color-muted) text-xs sm:text-sm max-w-sm">
                 I help startups and enterprise businesses turn{" "}
-                <span className="text-foreground">complex ideas</span> into{" "}
-                <span className="text-foreground">
+                <span className="text-(--color-surface-muted) dark:text-white">
+                  complex ideas
+                </span>{" "}
+                into{" "}
+                <span className="text-(--color-surface-muted) dark:text-white">
                   simple, scalable digital products.
                 </span>{" "}
                 With{" "}
-                <span className="text-foreground">5 years of experience,</span>{" "}
+                <span className="text-(--color-surface-muted) dark:text-white">
+                  5 years of experience,
+                </span>{" "}
                 I&apos;ve designed across{" "}
-                <span className="text-foreground">
+                <span className="text-(--color-surface-muted) dark:text-white">
                   AI, B2B SaaS, fintech, digital banking, lending, healthcare,
                 </span>{" "}
                 and{" "}
-                <span className="text-foreground">emerging technologies.</span>
+                <span className="text-(--color-surface-muted) dark:text-white">
+                  emerging technologies.
+                </span>
               </p>
 
               <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4 mt-2">
@@ -222,7 +229,7 @@ export default function Home() {
                   nativeButton={false}
                   render={<Link href="/resume.pdf" download />}
                   size="lg"
-                  className="rounded-lg bg-input text-xs sm:text-sm text-foreground transition-colors hover:bg-chart-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
+                  className="rounded-lg bg-(--color-surface-light) text-xs sm:text-sm text-(--color-surface-muted) dark:text-white transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-(--color-surface-dark) dark:hover:bg-(--color-surface-strong) dark:focus-visible:ring-offset-black"
                 >
                   Download Resume
                   <span className="sr-only"> (PDF)</span>
@@ -245,7 +252,7 @@ export default function Home() {
 
               <div
                 aria-hidden="true"
-                className="h-[0.5px] flex-1 bg-(--color-muted) dark:bg-(--color-surface-muted)"
+                className="h-[0.5px] flex-1 bg-(--color-muted-light) dark:bg-(--color-surface-muted)"
               />
             </div>
 
@@ -258,9 +265,14 @@ export default function Home() {
                     key={item.id}
                     className="flex items-center gap-2 text-xs sm:text-sm"
                   >
-                    <Icon aria-hidden="true" className="h-4.5 w-4.5 shrink-0" />
+                    <Icon
+                      aria-hidden="true"
+                      className="h-5 w-5 text-(--color-surface-muted) dark:text-white shrink-0"
+                    />
 
-                    <span className="min-w-0">{item.content}</span>
+                    <span className="min-w-0 text-(--color-muted-dark) dark:text-white">
+                      {item.content}
+                    </span>
                   </li>
                 );
               })}
@@ -272,15 +284,15 @@ export default function Home() {
         <MotionReveal delay={0.32} ready={heroReady}>
           <footer
             id="contact"
-            className="flex flex-col gap-4 rounded-lg bg-input p-4 dark:bg-(--color-surface-dark)"
+            className="flex flex-col gap-4 rounded-lg bg-(--color-surface-light) p-4 dark:bg-(--color-surface-dark)"
           >
             <SocialLinks />
 
-            <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+            <p className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
               Last Update: January 12, 2026, 3:34 PM (GMT +2)
             </p>
 
-            <p className="text-xs sm:text-sm">
+            <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-white">
               ©{year} Stanley Chukwuma. All rights reserved
             </p>
           </footer>
