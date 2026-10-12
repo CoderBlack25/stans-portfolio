@@ -46,11 +46,11 @@ export default function Playground() {
         <header>
           <h1
             id="playground-heading"
-            className="text-xl font-medium sm:text-2xl uppercase"
+            className="text-xl font-medium sm:text-2xl uppercase text-(--color-surface-1) dark:text-white"
           >
             Playground
           </h1>
-          <p className="mt-1.5 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+          <p className="mt-1.5 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
             As an inquisitive mind, here are other designs and things I had
             dabbled into along the way.
           </p>
@@ -82,11 +82,11 @@ export default function Playground() {
                   />
                 </div>
 
-                <h2 className="mt-3 text-sm sm:text-base font-medium">
+                <h2 className="mt-3 text-sm sm:text-base font-medium text-(--color-surface-1) dark:text-white">
                   {project.title}
                   <span className="sr-only"> (opens in a new tab)</span>
                 </h2>
-                <p className="mt-1 text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+                <p className="mt-1 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
                   {project.description}
                 </p>
                 <ul
@@ -96,7 +96,7 @@ export default function Playground() {
                   {project.disciplines.map((discipline) => (
                     <li
                       key={discipline}
-                      className="rounded-full bg-input px-2 py-1.5 text-[10px] text-foreground dark:bg-(--color-surface-dark)"
+                      className="rounded-full bg-(--color-surface-light) px-2 py-1.5 text-[10px] text-(--color-muted-dark) dark:text-white dark:bg-(--color-surface-dark)"
                     >
                       {discipline}
                     </li>

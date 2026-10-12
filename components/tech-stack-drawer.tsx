@@ -7,6 +7,21 @@ import { X } from "lucide-react";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { tools } from "@/components/tech-stack-tools";
 
+const LIGHT_THEME_BLACK_ICONS = new Set([
+  "Rive",
+  "Framer",
+  "Cursor",
+  "v0",
+  "V0",
+  "ChatGPT",
+  "Supernova",
+  "Maze",
+  "Voiceflow",
+  "Davinci",
+  "DaVinci Resolve",
+  "Botpress",
+]);
+
 type TechStackDrawerProps = {
   triggerClassName?: string;
   children: ReactNode;
@@ -24,7 +39,7 @@ export function TechStackDrawer({
         <Dialog.Popup className="fixed inset-y-0 right-0 z-60 flex h-dvh w-full max-w-md flex-col bg-background shadow-md text-foreground outline-none transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none data-starting-style:translate-x-full data-ending-style:translate-x-full">
           <Dialog.Close
             aria-label="Close tech stack"
-            className="absolute top-4 right-4 z-10 flex size-9 items-center justify-center rounded-full bg-input text-(--color-surface-muted) transition-colors duration-200 hover:bg-chart-1 hover:text-(--color-background-dark) dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-chart-5 dark:hover:text-white"
+            className="absolute top-4 right-4 z-10 flex size-9 items-center justify-center rounded-full bg-(--color-surface-light) text-(--color-surface-muted) transition-colors duration-200 hover:bg-input hover:text-(--color-background-dark) dark:bg-(--color-surface-dark) dark:text-(--color-muted) dark:hover:bg-chart-5 dark:hover:text-white"
           >
             <X className="size-4" aria-hidden="true" />
           </Dialog.Close>
@@ -37,11 +52,11 @@ export function TechStackDrawer({
                 short ones instead of getting cut off. */}
             <div className="flex min-h-full flex-col justify-center">
               <MotionReveal className="w-full text-center">
-                <Dialog.Title className="text-xl font-medium sm:text-2xl">
+                <Dialog.Title className="text-xl font-medium sm:text-2xl text-(--color-surface-1) dark:text-white">
                   STACK
                 </Dialog.Title>
 
-                <Dialog.Description className="mt-1.5 text-xs text-(--color-surface-muted) sm:text-sm dark:text-(--color-muted)">
+                <Dialog.Description className="mt-1.5 text-xs text-(--color-muted-dark) sm:text-sm dark:text-(--color-muted)">
                   Tools I&apos;m proficient with
                 </Dialog.Description>
               </MotionReveal>
@@ -53,18 +68,22 @@ export function TechStackDrawer({
                       key={tool.name}
                       className="group flex min-w-0 flex-col items-center"
                     >
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-chart-4 transition-all duration-200 ease-out group-hover:scale-105 group-hover:bg-chart-5 dark:bg-(--color-surface-dark) dark:group-hover:bg-(--color-surface-strong)">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-(--color-surface-light) transition-all duration-200 ease-out group-hover:scale-105 group-hover:bg-input dark:bg-(--color-surface-dark) dark:group-hover:bg-(--color-surface-strong)">
                         <Image
                           src={tool.icon}
                           alt=""
                           width={28}
                           height={28}
                           loading="eager"
-                          className="object-contain"
+                          className={
+                            LIGHT_THEME_BLACK_ICONS.has(tool.name)
+                              ? "object-contain invert dark:invert-0"
+                              : "object-contain"
+                          }
                         />
                       </div>
 
-                      <span className="mt-2.5 text-center text-xs font-medium text-(--color-surface-muted) sm:text-sm dark:text-(--color-muted)">
+                      <span className="mt-2.5 text-center text-xs font-medium text-(--color-muted-dark) sm:text-sm dark:text-(--color-muted)">
                         {tool.name}
                       </span>
                     </li>
