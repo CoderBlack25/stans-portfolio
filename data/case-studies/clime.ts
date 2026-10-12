@@ -36,7 +36,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-1",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -72,7 +72,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-2",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -88,7 +88,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "International payments are powerful, but rarely feel simple.",
             },
           ],
-          className: "text-sm text-foreground font-medium",
+          className:
+            "text-sm text-(--color-surface-1) dark:text-white font-medium",
         },
         {
           parts: [
@@ -123,7 +124,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "We needed to create an experience where:",
             },
           ],
-          className: "mt-4 text-sm text-foreground font-medium",
+          className:
+            "mt-4 text-sm text-(--color-surface-1) dark:text-white font-medium",
         },
         {
           parts: [
@@ -131,7 +133,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "• Complexity stays underneath the interface.",
             },
           ],
-          className: "ml-1 text-xs sm:text-sm font-medium text-foreground",
+          className:
+            "ml-1 text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -148,7 +151,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "• Trust stays visible.",
             },
           ],
-          className: "ml-1 text-xs sm:text-sm font-medium text-foreground",
+          className:
+            "ml-1 text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -165,7 +169,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "• Security doesn't become friction.",
             },
           ],
-          className: "ml-1 text-xs sm:text-sm font-medium text-foreground",
+          className:
+            "ml-1 text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -182,7 +187,8 @@ export const climeCaseStudy: CaseStudyData = {
               text: "• The experience continues after the transaction.",
             },
           ],
-          className: "ml-1 text-xs sm:text-sm font-medium text-foreground",
+          className:
+            "ml-1 text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -199,14 +205,15 @@ export const climeCaseStudy: CaseStudyData = {
               text: "The design question",
             },
           ],
-          className: "mt-8 text-sm text-foreground font-medium",
+          className:
+            "mt-8 text-sm text-(--color-surface-1) dark:text-white font-medium",
         },
         {
           content: createElement(
             "blockquote",
             {
               className:
-                "bg-input dark:bg-(--color-surface-dark) p-4 italic text-xs sm:text-sm text-foreground rounded-lg",
+                "bg-(--color-surface-light) dark:bg-(--color-surface-dark) p-4 italic text-xs sm:text-sm text-(--color-surface-1) dark:text-white rounded-lg",
             },
             "How might we make cross-border banking feel as simple and predictable as sending money locally?",
           ),
@@ -228,7 +235,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-3",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -251,7 +258,7 @@ export const climeCaseStudy: CaseStudyData = {
           parts: [
             {
               text: "1. Simplify the decision, not the information: ",
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               bold: true,
             },
             {
@@ -265,7 +272,7 @@ export const climeCaseStudy: CaseStudyData = {
           parts: [
             {
               text: "2. Transparency is part of the experience: ",
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               bold: true,
             },
             {
@@ -279,7 +286,7 @@ export const climeCaseStudy: CaseStudyData = {
           parts: [
             {
               text: "3. Onboarding should feel progressive: ",
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               bold: true,
             },
             {
@@ -293,7 +300,7 @@ export const climeCaseStudy: CaseStudyData = {
           parts: [
             {
               text: "4. The first transaction shouldn't define every transaction: ",
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               bold: true,
             },
             {
@@ -307,7 +314,7 @@ export const climeCaseStudy: CaseStudyData = {
           parts: [
             {
               text: "5. The happy path isn't the whole product: ",
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               bold: true,
             },
             {
@@ -334,7 +341,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-4",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -356,7 +363,7 @@ export const climeCaseStudy: CaseStudyData = {
         {
           text: "1. A Consistent Design Language",
           bold: true,
-          color: "text-foreground",
+          color: "text-(--color-surface-1) dark:text-white",
           className: "mt-8 text-sm",
         },
         {
@@ -376,7 +383,7 @@ export const climeCaseStudy: CaseStudyData = {
         {
           text: "2. Onboarding (Identity & Address Verification)",
           bold: true,
-          color: "text-foreground",
+          color: "text-(--color-surface-1) dark:text-white",
           className: "mt-8 text-sm",
         },
         {
@@ -388,7 +395,7 @@ export const climeCaseStudy: CaseStudyData = {
           parts: [
             {
               text: "The journey: ",
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Choose amount → Select recipient → Choose payment method → Review → Authenticate → Complete",
@@ -419,7 +426,7 @@ export const climeCaseStudy: CaseStudyData = {
         {
           text: "3. Send Money",
           bold: true,
-          color: "text-foreground",
+          color: "text-(--color-surface-1) dark:text-white",
           className: "mt-8 text-sm",
         },
         {
@@ -431,7 +438,7 @@ export const climeCaseStudy: CaseStudyData = {
           parts: [
             {
               text: "The journey: ",
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Choose amount → Select recipient → Choose payment method → Review → Authenticate → Complete",
@@ -457,7 +464,7 @@ export const climeCaseStudy: CaseStudyData = {
         {
           text: "4. Recipients",
           bold: true,
-          color: "text-foreground",
+          color: "text-(--color-surface-1) dark:text-white",
           className: "mt-8 text-sm",
         },
         {
@@ -477,7 +484,7 @@ export const climeCaseStudy: CaseStudyData = {
         {
           text: "5. Transactions",
           bold: true,
-          color: "text-foreground",
+          color: "text-(--color-surface-1) dark:text-white",
           className: "mt-8 text-sm",
         },
         {
@@ -502,7 +509,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-5",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -529,7 +536,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "From discovery to product",
-          className: "font-medium text-foreground underline text-xs sm:text-sm",
+          className:
+            "font-medium text-(--color-surface-1) dark:text-white underline text-xs sm:text-sm",
         },
         {
           text: "The website wasn't designed as a standalone marketing asset. It was designed as the front door to the Clime ecosystem",
@@ -592,7 +600,7 @@ export const climeCaseStudy: CaseStudyData = {
       id: "clime-custom-6",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -614,14 +622,15 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "Throughout the project, I kept coming back to one question:",
-          className: "mt-4 text-xs sm:text-sm text-foreground font-medium",
+          className:
+            "mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white font-medium",
         },
         {
           content: createElement(
             "blockquote",
             {
               className:
-                "bg-input dark:bg-(--color-surface-dark) p-4 italic text-xs sm:text-sm text-foreground rounded-lg",
+                "bg-(--color-surface-light) dark:bg-(--color-surface-dark) p-4 italic text-xs sm:text-sm text-(--color-surface-1) dark:text-white rounded-lg",
             },
             "What does the user need to know right now?",
           ),
@@ -633,7 +642,8 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           text: "The key takeaway",
-          className: "mt-8 text-sm sm:text-base font-medium text-foreground",
+          className:
+            "mt-8 text-sm sm:text-base font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           text: "Hide the complexity, not the control.",

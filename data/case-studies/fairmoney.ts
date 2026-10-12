@@ -103,7 +103,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
           {
             text: "mobility, flexibility, and ease of use,",
             bold: true,
-            color: "text-foreground",
+            color: "text-(--color-surface-1) dark:text-white",
           },
           {
             text: " enabling them to manage and carry out their business activities seamlessly, wherever they are.",
@@ -128,7 +128,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-1",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -146,7 +146,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             {
               text: "Merchant lending (The most important aspect of the product). ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "As capabilities expanded over time, the experience became less cohesive across modules. The redesign initiative was launched to modernize the app and create a consistent, intuitive, scalable experience that improves usability, engagement, and retention while strengthening competitive positioning.⁠",
@@ -172,7 +172,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-2",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -194,11 +194,11 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Fragmented experience ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "caused by inconsistent UI patterns, navigation, layouts, interaction models, and visual styling across modules (built at different times), resulting in a disconnected product experience.",
@@ -209,11 +209,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Declining engagement/retention signals, ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "including an approximate 11% MAU decline over the last 5 months (per the redesign document), suggesting usability and experience issues may be contributing to disengagement.",
@@ -224,11 +228,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Customer insight validating UX as a churn driver: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "a survey of churned users found 68% cited “better user experience” as the major reason for switching to competitors.",
@@ -239,11 +247,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Competitor parity gaps, ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "where competitor apps offered experience patterns and features FairMoney lacked (e.g., stronger interactivity, clearer summaries, and more consistent design systems), raising the bar for “expected” usability.",
@@ -269,11 +281,11 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-3",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
-    /**DISCOVERY & STAKEHOLDER ALIGNMENT AND IMAGE */
+    /**DISCOVERY & STAKEHOLDER ALIGNMENT */
     {
       type: "text",
       id: "fairmoney-text-3",
@@ -291,11 +303,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Product audit of the existing app experience ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "to identify core pain points (e.g., inconsistent patterns, navigation friction, transaction-history usability issues, outdated UI).⁠",
@@ -306,11 +322,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Cross-functional definition of redesign scope ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "(what will change vs what won’t) and explicit exclusions (e.g., not introducing new financial products, not rebuilding backend services unless required).⁠",
@@ -321,11 +341,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Launch and readiness alignment ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "across Product, Engineering, QA, Design for rollout phases, exit criteria, and monitoring requirements.",
@@ -336,11 +360,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Go-to-market alignment ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "(Marketing/Comms/Support) that communications should begin only after the redesigned app reaches full rollout and passes stability checks; plus defining segmentation, suppression rules, and contact policy principles.⁠",
@@ -366,7 +394,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-4",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -388,11 +416,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Quantitative product signals: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "declining MAU/usage trends and the need to improve retention and engagement.⁠⁠",
@@ -403,11 +435,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Qualitative feedback: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "customer issues associated with UX friction, plus churn survey insight showing UX as a major switching reason.⁠⁠",
@@ -418,11 +454,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Competitive benchmark: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "parity review vs competitors (e.g., gaps in interaction design patterns and experience capabilities).⁠ ",
@@ -430,14 +470,14 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             {
               text: "Moniepoint MFB⁠ ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               underline: true,
             },
             { text: "and " },
             {
               text: "Opay MFB⁠ ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               underline: true,
             },
             { text: "was a major subject for analysis." },
@@ -447,11 +487,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Operational learnings for adoption: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "the plan acknowledges the risk of users being unfamiliar with the new UI and mitigates via beta/pilot, phased rollout, onboarding modals, and comms/education.⁠⁠",
@@ -477,7 +521,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-5",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -499,14 +543,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 1 */
         {
           parts: [
-            { text: "1. ", color: "text-foreground" },
+            { text: "1. ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Design system & unified UI patterns to eliminate inconsistency across modules.",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
 
         {
@@ -532,14 +577,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 2 */
         {
           parts: [
-            { text: "2. ", color: "text-foreground" },
+            { text: "2. ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Home | Dashboard (the control centre)",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
 
         {
@@ -587,14 +633,19 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 3 */
         {
           parts: [
-            { text: "3. ", bold: true, color: "text-foreground" },
+            {
+              text: "3. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Transaction History & Transaction Details (tracking money clearly)",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
 
         { parts: [{ text: "Transaction History" }] },
@@ -681,14 +732,19 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 4 */
         {
           parts: [
-            { text: "4. ", bold: true, color: "text-foreground" },
+            {
+              text: "4. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Transfers Flow (send money faster, with fewer errors)",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -709,7 +765,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Improve beneficiary experience:⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -746,7 +803,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Strengthen trust and clarity:⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -800,14 +858,19 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 5 */
         {
           parts: [
-            { text: "5. ", bold: true, color: "text-foreground" },
+            {
+              text: "5. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Bill Payments (repeat purchases, fewer taps, more confidence)",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -817,7 +880,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
               text: "Redesign bill-pay journeys (airtime/data/utilities/etc.) with:⁠⁠",
             },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -889,14 +953,19 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 6 */
         {
           parts: [
-            { text: "6. ", bold: true, color: "text-foreground" },
+            {
+              text: "6. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Savings (discoverability & clearer actions and history)",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -945,14 +1014,19 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 7 */
         {
           parts: [
-            { text: "7. ", bold: true, color: "text-foreground" },
+            {
+              text: "7. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Loans | Lending surfaces (make lending easier to find, understand, and act on)",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -962,7 +1036,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             {
               text: "loan offer and acceptance flow, Active loan flow with upcoming repayment, Repayment Schedule, Loan Agreement, loan history, loan schedule, and the different loan states like overdue etc ",
               bold: true,
-              color: "text-foreground ",
+              color: "text-(--color-surface-1) dark:text-white ",
             },
             { text: "by:" },
           ],
@@ -993,12 +1067,12 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
 
             {
               text: "In FMB, lending is a core pillar⁠⁠⁠⁠⁠⁠⁠",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: ", so the redesign supports the goal of improving how merchants apply, track, and repay by reducing UX friction across the app experience.",
@@ -1021,14 +1095,19 @@ export const fairMoneyCaseStudy: CaseStudyData = {
         /**SOLUTION 8 */
         {
           parts: [
-            { text: "8. ", bold: true, color: "text-foreground" },
+            {
+              text: "8. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "In-app guidance for adoption (so users understand what changed)",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -1070,7 +1149,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
       id: "fairmoney-custom-6",
       content: createElement("div", {
         className:
-          "h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -1085,7 +1164,8 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             { text: "1. " },
             { text: "UX consistency is a business lever" },
           ],
-          className: "ml-2 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -1094,14 +1174,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs sm:text-sm font-medium text-(--color-muted-dark) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "2. " },
             { text: "UX can be a significant churn driver" },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -1110,14 +1191,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs sm:text-sm font-medium text-(--color-muted-dark) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "3. " },
             { text: "Users benchmark experiences, not just features" },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -1126,14 +1208,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs sm:text-sm font-medium text-(--color-muted-dark) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "4. " },
             { text: "A redesign is also a change-management exercise" },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -1142,14 +1225,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs sm:text-sm font-medium text-(--color-muted-dark) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "5. " },
             { text: "Real tasks reveal more than opinions" },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -1158,14 +1242,15 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs sm:text-sm font-medium text-(--color-muted-dark) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
         {
           parts: [
             { text: "6. " },
             { text: "Design systems create leverage beyond the redesign" },
           ],
-          className: "ml-2 mt-4 text-xs sm:text-sm text-foreground",
+          className:
+            "ml-2 mt-4 text-xs sm:text-sm text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -1174,7 +1259,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
             },
           ],
           className:
-            "ml-2 text-xs sm:text-sm font-medium text-(--color-muted-dark) dark:text-(--color-muted)",
+            "ml-2 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
       ],
     },

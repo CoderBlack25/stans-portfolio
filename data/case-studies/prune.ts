@@ -81,7 +81,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-1",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -105,7 +105,7 @@ export const pruneCaseStudy: CaseStudyData = {
             {
               text: "Through a secure and scalable API layer, Prune delivers:",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               underline: true,
             },
           ],
@@ -197,7 +197,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-2",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -230,7 +230,8 @@ export const pruneCaseStudy: CaseStudyData = {
         /**SOLUTION */
         {
           parts: [{ text: "Solution:" }],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -243,11 +244,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "1. ", bold: true, color: "text-foreground" },
+            {
+              text: "1. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Simplifying Information Gathering: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: `Breaking down "Business Information", "Documents", "Directors", and "Shareholders" into distinct, manageable stages.`,
@@ -258,11 +263,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "2. ", bold: true, color: "text-foreground" },
+            {
+              text: "2. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Improving Usability of Uploads: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Implementing clear drag-and-drop zones for essential documents (e.g., CAC Certificate, AML Framework), reducing confusion.",
@@ -273,11 +282,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "3. ", bold: true, color: "text-foreground" },
+            {
+              text: "3. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Providing In-Context Help: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: `Integrating "Quick Tips" directly within the interface to guide users on optimal data entry and document preparation.`,
@@ -288,11 +301,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "4. ", bold: true, color: "text-foreground" },
+            {
+              text: "4. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Enabling Service Customization: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Allowing businesses to proactively select desired API services (e.g., Account, Payout, Lookup) from the onset.",
@@ -303,11 +320,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "5. ", bold: true, color: "text-foreground" },
+            {
+              text: "5. ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Ensuring Transparency: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: `Clear presentation of "Terms of Use" and real-time application status updates.`,
@@ -319,7 +340,8 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "Impact:" }],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -348,7 +370,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-3",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -399,7 +421,8 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "My Approach & Key Contributions" }],
-          className: "mt-8 text-sm font-medium text-foreground",
+          className:
+            "mt-8 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -412,7 +435,8 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [{ text: "Centralized Account Overview" }],
-          className: "mt-6 text-sm font-medium text-foreground",
+          className:
+            "mt-6 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -425,7 +449,8 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [{ text: "Modular and Granular Insights" }],
-          className: "mt-6 text-sm font-medium text-foreground",
+          className:
+            "mt-6 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -484,7 +509,8 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "Intuitive Navigation for Core Functions" }],
-          className: "mt-6 text-sm font-medium text-foreground",
+          className:
+            "mt-6 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -534,7 +560,8 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "Financial Visualization" }],
-          className: "mt-6 text-sm font-medium text-foreground",
+          className:
+            "mt-6 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -548,7 +575,8 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "Action-Oriented Design" }],
-          className: "mt-6 text-sm font-medium text-foreground",
+          className:
+            "mt-6 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -562,7 +590,8 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "Full API Endpoint Coverage" }],
-          className: "mt-6 text-sm font-medium text-foreground",
+          className:
+            "mt-6 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -575,11 +604,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Account Creation and Management: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Request Individual/Corporate Account, Track and Update Requests⁠⁠",
@@ -590,11 +619,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Issued Accounts: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "List and View Accounts⁠⁠",
@@ -605,11 +634,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Financial Transactions: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Check Balances, Initiate Transfers, Validate IBANs⁠⁠",
@@ -620,11 +649,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Transaction Oversight: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "View and Track Transactions⁠",
@@ -635,11 +664,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Compliance Support: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Fetch Acceptable IDs for KYC⁠",
@@ -651,7 +680,8 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           parts: [{ text: "Outcome" }],
-          className: "mt-6 text-sm font-medium text-foreground",
+          className:
+            "mt-6 text-sm font-medium text-(--color-surface-1) dark:text-white",
         },
         {
           parts: [
@@ -680,7 +710,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-4",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -770,7 +800,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-5",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -788,14 +818,18 @@ export const pruneCaseStudy: CaseStudyData = {
         {
           parts: [
             { text: "The " },
-            { text: "payout ", bold: true, color: "text-foreground" },
+            {
+              text: "payout ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "feature enables businesses to **disburse funds to recipients** via API or dashboard in multiple currencies like ",
             },
             {
               text: "EUR, GBP, and NGN.",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
           className:
@@ -803,17 +837,21 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "Core Capabilities", bold: true, color: "text-foreground" },
+            {
+              text: "Core Capabilities",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
           ],
           className: "text-xs sm:text-sm sm:text-sm",
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Fund Disbursement: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Initiate payouts from virtual accounts using the endpoint⁠⁠",
@@ -824,11 +862,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Live Tracking: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Check disbursement status via API or dashboard.⁠",
@@ -839,11 +877,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Account Overview: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "View account balance, transaction history, and beneficiary details.⁠",
@@ -854,11 +892,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Go Live Option: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Schedule a go-live date post-integration testing.⁠",
@@ -869,11 +907,11 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", color: "text-foreground" },
+            { text: "• ", color: "text-(--color-surface-1) dark:text-white" },
             {
               text: "Secure & Scalable: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Designed for business-grade financial operations with real-time visibility and access control.⁠",
@@ -908,7 +946,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-6",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -932,7 +970,7 @@ export const pruneCaseStudy: CaseStudyData = {
             {
               text: "Payout Service Sandbox",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               underline: true,
             },
           ],
@@ -940,11 +978,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Simulate Account Deposit: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Test adding funds to an issued account.⁠⁠",
@@ -955,11 +997,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Simulate Transaction Confirmation: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Test successful transaction processing.⁠⁠",
@@ -970,11 +1016,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Simulate Transaction Failure: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Test failed or rejected transactions.⁠⁠",
@@ -988,7 +1038,7 @@ export const pruneCaseStudy: CaseStudyData = {
             {
               text: "Account Service Sandbox",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
               underline: true,
             },
           ],
@@ -996,11 +1046,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Simulate Account Issuance Approval: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Test account approval flow.⁠⁠",
@@ -1011,11 +1065,15 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           parts: [
-            { text: "• ", bold: true, color: "text-foreground" },
+            {
+              text: "• ",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
             {
               text: "Simulate Account Issuance Rejection: ",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
             {
               text: "Test rejection scenarios for account requests.⁠⁠",
@@ -1041,7 +1099,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-7",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
@@ -1053,7 +1111,11 @@ export const pruneCaseStudy: CaseStudyData = {
       lines: [
         {
           parts: [
-            { text: "The Challenge:", bold: true, color: "text-foreground" },
+            {
+              text: "The Challenge:",
+              bold: true,
+              color: "text-(--color-surface-1) dark:text-white",
+            },
           ],
           className: "text-sm",
         },
@@ -1071,7 +1133,7 @@ export const pruneCaseStudy: CaseStudyData = {
             {
               text: "My Approach & Key Contributions:",
               bold: true,
-              color: "text-foreground",
+              color: "text-(--color-surface-1) dark:text-white",
             },
           ],
           className: "text-sm",
@@ -1120,7 +1182,7 @@ export const pruneCaseStudy: CaseStudyData = {
       id: "prune-custom-8",
       content: createElement("div", {
         className:
-          "my-10 h-[0.5px] w-full bg-(--color-muted) dark:bg-(--color-surface-1)",
+          "my-10 h-[0.5px] w-full bg-(--color-muted-light) dark:bg-(--color-surface-1)",
       }),
     },
 
