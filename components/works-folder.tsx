@@ -26,22 +26,22 @@ const WorksFolder = ({
   return (
     <OptimizedTiltCard className={`mx-auto max-w-xs rounded-lg ${className}`}>
       <Link href={href} className="group block">
-        <div className="rounded-t-lg bg-input dark:bg-(--color-surface-dark) px-4 pt-4 transition-colors duration-300 ease-out group-hover:bg-(--color-accent)">
+        <div className="rounded-t-lg bg-(--color-surface-light) dark:bg-(--color-surface-dark) px-4 pt-4 transition-colors duration-300 ease-out group-hover:bg-(--color-accent)">
           <div className="flex flex-col gap-2">
-            <h2 className="text-sm sm:text-base font-medium uppercase text-foreground group-hover:text-white">
+            <h2 className="text-sm sm:text-base font-medium uppercase  text-(--color-surface-1) dark:text-white group-hover:text-white">
               {title}
             </h2>
 
-            <p className="max-w-xs text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted) group-hover:text-white">
+            <p className="max-w-xs text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted) group-hover:text-white">
               {description}
             </p>
           </div>
 
-          <div className="my-6 h-[0.5px] bg-(--color-muted) dark:bg-(--color-surface-2) transition-colors duration-300 ease-out group-hover:bg-(--color-accent-light)" />
+          <div className="my-6 h-px bg-(--color-muted-light) dark:bg-(--color-surface-2) transition-colors duration-300 ease-out group-hover:bg-(--color-accent-light)" />
 
-          <div className="mx-4 h-4 rounded-t-lg bg-(--chart-6) dark:bg-(--color-surface-3) transition-colors duration-300 ease-out group-hover:bg-(--color-accent-soft)" />
+          <div className="mx-4 h-4 rounded-t-lg bg-(--color-muted-lighter) dark:bg-(--color-surface-3) transition-colors duration-300 ease-out group-hover:bg-(--color-accent-soft)" />
 
-          <div className="h-6 rounded-t-lg bg-chart-1 dark:bg-(--color-surface-4) transition-colors duration-300 ease-out group-hover:bg-(--color-accent-lighter)" />
+          <div className="h-6 rounded-t-lg bg-(--color-border-light) dark:bg-(--color-surface-4) transition-colors duration-300 ease-out group-hover:bg-(--color-accent-lighter)" />
         </div>
 
         <div className="rounded-lg relative -top-2">

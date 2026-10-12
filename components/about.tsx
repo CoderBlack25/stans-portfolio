@@ -26,6 +26,11 @@ const experiences: Experience[] = [
     period: "2026",
   },
   {
+    company: "C80 Limited",
+    role: "Senior Product Designer",
+    period: "2024 - 2026",
+  },
+  {
     company: "Prune Payment LTD",
     role: "Senior Product Designer",
     period: "2024 - 2025",

@@ -100,7 +100,7 @@ type CaseStudyProps = {
 
 function SectionTitle({ title }: { title: string }) {
   return (
-    <h2 className="mb-3 text-sm sm:text-base font-medium text-foreground">
+    <h2 className="mb-3 text-sm sm:text-base font-medium text-(--color-surface-1) dark:text-white">
       {title}
     </h2>
   );
@@ -148,9 +148,13 @@ function CaseStudyHeroMedia({
           className="absolute bottom-4 right-4 z-10 flex size-9 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-opacity hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
           {isPlaying ? (
-            <span aria-hidden="true" className="text-xs font-semibold">❚❚</span>
+            <span aria-hidden="true" className="text-xs font-semibold">
+              ❚❚
+            </span>
           ) : (
-            <span aria-hidden="true" className="text-xs font-semibold">▶</span>
+            <span aria-hidden="true" className="text-xs font-semibold">
+              ▶
+            </span>
           )}
         </button>
       </div>
@@ -298,10 +302,10 @@ function ProjectNavigation() {
           className="size-4 shrink-0 text-(--color-muted) transition-transform group-hover:-translate-x-1"
         />
         <span className="min-w-0">
-          <span className="block text-[10px] text-(--color-muted)">
+          <span className="block text-[10px] text-(--color-muted-dark) dark:text-(--color-muted)">
             Previous project
           </span>
-          <span className="block truncate text-xs sm:text-sm font-medium text-foreground">
+          <span className="block truncate text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white">
             {previousProject.title}
           </span>
         </span>
@@ -312,10 +316,10 @@ function ProjectNavigation() {
         className="group flex min-h-16 min-w-0 items-center justify-end gap-3 rounded-md px-3 py-3 text-right transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
       >
         <span className="min-w-0">
-          <span className="block text-[10px] text-(--color-muted)">
+          <span className="block text-[10px] text-(--color-muted-dark) dark:text-(--color-muted)">
             Next project
           </span>
-          <span className="block truncate text-xs sm:text-sm font-medium text-foreground">
+          <span className="block truncate text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white">
             {nextProject.title}
           </span>
         </span>
@@ -341,35 +345,35 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
         <aside className="lg:sticky lg:top-32 lg:h-fit">
           <MotionReveal offsetY={0} initialScale={1} className="space-y-10">
             <div className="space-y-4">
-              <h1 className="text-xl font-medium uppercase text-foreground sm:text-2xl">
+              <h1 className="text-xl font-medium uppercase text-(--color-surface-1) dark:text-white sm:text-2xl">
                 {project.title}
               </h1>
 
               {project.description &&
                 (typeof project.description === "string" ? (
-                  <p className="max-w-3xl text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+                  <p className="max-w-3xl text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
                     {project.description}
                   </p>
                 ) : (
                   <CaseStudyText
                     lines={project.description}
-                    className="max-w-3xl text-xs sm:text-sm leading-6 text-(--color-surface-muted) dark:text-(--color-muted)"
+                    className="max-w-3xl text-xs sm:text-sm leading-6 text-(--color-muted-dark) dark:text-(--color-muted)"
                   />
                 ))}
             </div>
 
             {project.meta && project.meta.length > 0 && (
-              <dl className="divide-y divide-(--color-muted) dark:divide-(--color-surface-1) border-y border-(--color-muted) dark:border-(--color-surface-1)">
+              <dl className="divide-y divide-(--color-muted-light) dark:divide-(--color-surface-1) border-y border-(--color-muted-light) dark:border-(--color-surface-1)">
                 {project.meta.map((item) => (
                   <div
                     key={`${item.label}-${item.value}`}
                     className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] gap-6 py-6"
                   >
-                    <dt className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+                    <dt className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
                       {item.label}
                     </dt>
 
-                    <dd className="text-xs sm:text-sm text-foreground">
+                    <dd className="text-xs sm:text-sm text-(--color-surface-1) dark:text-white">
                       {item.href ? (
                         <a
                           href={item.href}
@@ -390,10 +394,10 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
 
             {project.productVertical && (
               <section className="space-y-5">
-                <h2 className="text-xs sm:text-sm uppercase text-foreground">
+                <h2 className="text-xs sm:text-sm uppercase text-(--color-surface-1) dark:text-white">
                   Product Vertical
                 </h2>
-                <p className="text-xs sm:text-sm text-(--color-surface-muted) dark:text-(--color-muted)">
+                <p className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
                   {project.productVertical.description}
                 </p>
                 <ul className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
@@ -420,7 +424,7 @@ export function CaseStudy({ project, className = "" }: CaseStudyProps) {
               {project.heroIntro && (
                 <header className="space-y-3">
                   {project.heroIntro.title && (
-                    <h2 className="text-sm font-medium text-foreground sm:text-base">
+                    <h2 className="text-sm font-medium text-(--color-surface-1) dark:text-white sm:text-base">
                       {project.heroIntro.title}
                     </h2>
                   )}
