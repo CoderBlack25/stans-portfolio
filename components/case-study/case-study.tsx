@@ -286,12 +286,12 @@ function ProjectNavigation() {
     >
       <Link
         href={previousProject.href}
-        className="group flex min-h-16 min-w-0 items-center gap-3 rounded-md px-3 py-3 text-left transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
+        className="group flex min-h-16 min-w-0 items-center gap-3 rounded-md px-3 py-3 text-left sm:gap-4 sm:px-4"
       >
-        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) group-hover:bg-(--color-accent) p-3 rounded-full">
+        <div className="bg-(--color-surface-light) dark:bg-(--color-surface-dark) group-hover:bg-(--color-accent) p-3 rounded-full">
           <ArrowLeft
             aria-hidden="true"
-            className="size-4 shrink-0 text-(--color-muted-lighter) dark:text-(--color-muted) transition-transform group-hover:-translate-x-1"
+            className="size-4 shrink-0 text-(--color-surface-muted) dark:text-(--color-muted) transition-transform group-hover:text-white group-hover:-translate-x-1"
           />
         </div>
         <span className="min-w-0">
@@ -306,7 +306,7 @@ function ProjectNavigation() {
 
       <Link
         href={nextProject.href}
-        className="group flex min-h-16 min-w-0 items-center justify-end gap-3 rounded-md px-3 py-3 text-right transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
+        className="group flex min-h-16 min-w-0 items-center justify-end gap-3 rounded-md px-3 py-3 text-right sm:gap-4 sm:px-4"
       >
         <span className="min-w-0">
           <span className="block text-[10px] text-(--color-muted-dark) dark:text-(--color-muted)">
@@ -316,10 +316,10 @@ function ProjectNavigation() {
             {nextProject.title}
           </span>
         </span>
-        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) group-hover:bg-(--color-accent) p-3 rounded-full">
+        <div className="bg-(--color-surface-light) dark:bg-(--color-surface-dark) group-hover:bg-(--color-accent) p-3 rounded-full">
           <ArrowRight
             aria-hidden="true"
-            className="size-4 shrink-0 text-(--color-muted-lighter) dark:text-(--color-muted) transition-transform group-hover:translate-x-1"
+            className="size-4 shrink-0 text-(--color-surface-muted) dark:text-(--color-muted) transition-transform group-hover:text-white group-hover:translate-x-1"
           />
         </div>
       </Link>
