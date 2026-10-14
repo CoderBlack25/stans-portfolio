@@ -288,7 +288,7 @@ function ProjectNavigation() {
         href={previousProject.href}
         className="group flex min-h-16 min-w-0 items-center gap-3 rounded-md px-3 py-3 text-left transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
       >
-        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) p-3 rounded-full">
+        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) group-hover:bg-(--color-accent) p-3 rounded-full">
           <ArrowLeft
             aria-hidden="true"
             className="size-4 shrink-0 text-(--color-muted-lighter) dark:text-(--color-muted) transition-transform group-hover:-translate-x-1"
@@ -316,7 +316,7 @@ function ProjectNavigation() {
             {nextProject.title}
           </span>
         </span>
-        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) p-3 rounded-full">
+        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) group-hover:bg-(--color-accent) p-3 rounded-full">
           <ArrowRight
             aria-hidden="true"
             className="size-4 shrink-0 text-(--color-muted-lighter) dark:text-(--color-muted) transition-transform group-hover:translate-x-1"
