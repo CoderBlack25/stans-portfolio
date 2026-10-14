@@ -259,7 +259,7 @@ function renderSection(section: CaseStudySection) {
 }
 
 const projectNavigation = [
-  { title: "FairMoney", href: "/works/fairmoney" },
+  { title: "FairMoney MFB", href: "/works/fairmoney" },
   { title: "Prune Payment", href: "/works/prune" },
   { title: "Clime Payment", href: "/works/clime" },
 ] as const;
