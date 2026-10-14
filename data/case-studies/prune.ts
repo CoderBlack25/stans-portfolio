@@ -15,7 +15,7 @@ export const pruneCaseStudy: CaseStudyData = {
         {
           text: "Designed frictionless, compliant cross-border payment flows and transaction tracking interfaces",
           bold: true,
-          color: "text-white",
+          color: "text-(--color-surface-1) dark:text-white",
         },
         {
           text: " that simplified global money transfers from corridors like the UK to West Africa, significantly reducing user drop-off during complex international verification stages.",

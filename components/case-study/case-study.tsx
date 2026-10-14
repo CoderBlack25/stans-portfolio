@@ -1,9 +1,18 @@
 "use client";
 
-import { useState, useRef, type ReactNode } from "react";
-//import { CaseStudyGallery, type GalleryImage } from "./case-study-gallery";
+import { type ReactNode } from "react";
+import {
+  CaseStudyGallery,
+  type GalleryItem,
+  type GalleryImage,
+} from "./case-study-gallery";
 import { CaseStudyImage } from "./case-study-image";
+import { CaseStudyVideo } from "./case-study-video";
 import { CaseStudyText, type TextLine } from "./case-study-text";
+import {
+  CaseStudyLightboxProvider,
+  useCaseStudyLightbox,
+} from "./case-study-lightbox";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Pill, type PillProps } from "@/components/ui/pill";
@@ -41,13 +50,22 @@ export type CaseStudySection =
       className?: string;
       priority?: boolean;
     }
-  // | {
-  //     type: "gallery";
-  //     id?: string;
-  //     images: GalleryImage[];
-  //     columns?: 1 | 2 | 3;
-  //     className?: string;
-  //   }
+  | {
+      type: "video";
+      id?: string;
+      src: string;
+      alt?: string;
+      width?: number;
+      height?: number;
+      className?: string;
+    }
+  | {
+      type: "gallery";
+      id?: string;
+      images: GalleryItem[];
+      columns?: 1 | 2 | 3;
+      className?: string;
+    }
   | {
       type: "text-image";
       id?: string;
@@ -111,53 +129,14 @@ function CaseStudyHeroMedia({
 }: {
   hero: NonNullable<CaseStudyData["hero"]>;
 }) {
-  const [isPlaying, setIsPlaying] = useState(true);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const togglePlay = () => {
-    if (!videoRef.current) return;
-    if (isPlaying) {
-      videoRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
-
   if (hero.type === "video") {
     return (
-      <div className="relative group/video">
-        <video
-          ref={videoRef}
-          src={hero.src}
-          width={hero.width}
-          height={hero.height}
-          autoPlay
-          loop
-          muted
-          playsInline
-          controls={false}
-          preload="auto"
-          className="h-auto w-full object-cover"
-        />
-        <button
-          type="button"
-          onClick={togglePlay}
-          aria-label={isPlaying ? "Pause video" : "Play video"}
-          className="absolute bottom-4 right-4 z-10 flex size-9 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-opacity hover:bg-black/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-        >
-          {isPlaying ? (
-            <span aria-hidden="true" className="text-xs font-semibold">
-              ❚❚
-            </span>
-          ) : (
-            <span aria-hidden="true" className="text-xs font-semibold">
-              ▶
-            </span>
-          )}
-        </button>
-      </div>
+      <CaseStudyVideo
+        src={hero.src}
+        alt={hero.alt}
+        width={hero.width}
+        height={hero.height}
+      />
     );
   }
 
@@ -196,12 +175,24 @@ function renderSection(section: CaseStudySection) {
         </section>
       );
 
-    // case "gallery":
-    //   return (
-    //     <section key={section.id} className={section.className}>
-    //       <CaseStudyGallery images={section.images} columns={section.columns} />
-    //     </section>
-    //   );
+    case "video":
+      return (
+        <section key={section.id} className={section.className}>
+          <CaseStudyVideo
+            src={section.src}
+            alt={section.alt}
+            width={section.width}
+            height={section.height}
+          />
+        </section>
+      );
+
+    case "gallery":
+      return (
+        <section key={section.id} className={section.className}>
+          <CaseStudyGallery images={section.images} columns={section.columns} />
+        </section>
+      );
 
     case "text-image":
       return (
@@ -297,10 +288,12 @@ function ProjectNavigation() {
         href={previousProject.href}
         className="group flex min-h-16 min-w-0 items-center gap-3 rounded-md px-3 py-3 text-left transition-colors hover:bg-input focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-(--color-accent) dark:hover:bg-(--color-surface-dark) sm:gap-4 sm:px-4"
       >
-        <ArrowLeft
-          aria-hidden="true"
-          className="size-4 shrink-0 text-(--color-muted) transition-transform group-hover:-translate-x-1"
-        />
+        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) p-3 rounded-full">
+          <ArrowLeft
+            aria-hidden="true"
+            className="size-4 shrink-0 text-(--color-muted-lighter) dark:text-(--color-muted) transition-transform group-hover:-translate-x-1"
+          />
+        </div>
         <span className="min-w-0">
           <span className="block text-[10px] text-(--color-muted-dark) dark:text-(--color-muted)">
             Previous project
@@ -323,10 +316,12 @@ function ProjectNavigation() {
             {nextProject.title}
           </span>
         </span>
-        <ArrowRight
-          aria-hidden="true"
-          className="size-4 shrink-0 text-(--color-muted) transition-transform group-hover:translate-x-1"
-        />
+        <div className="bg-(--color-muted) dark:bg-(--color-surface-elevated) p-3 rounded-full">
+          <ArrowRight
+            aria-hidden="true"
+            className="size-4 shrink-0 text-(--color-muted-lighter) dark:text-(--color-muted) transition-transform group-hover:translate-x-1"
+          />
+        </div>
       </Link>
     </nav>
   );
@@ -334,113 +329,123 @@ function ProjectNavigation() {
 
 export function CaseStudy({ project, className = "" }: CaseStudyProps) {
   return (
-    <main
-      className={cn(
-        "mx-auto w-full max-w-6xl mt-30 sm:mt-45 mb-15 sm:mb-20 px-8",
-        className,
-      )}
-    >
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.5fr_2fr] lg:gap-10">
-        {/* Project information */}
-        <aside className="lg:sticky lg:top-32 lg:h-fit">
-          <MotionReveal offsetY={0} initialScale={1} className="space-y-10">
-            <div className="space-y-4">
-              <h1 className="text-xl font-medium uppercase text-(--color-surface-1) dark:text-white sm:text-2xl">
-                {project.title}
-              </h1>
+    <CaseStudyLightboxProvider>
+      <main
+        className={cn(
+          "mx-auto w-full max-w-6xl mt-30 sm:mt-45 mb-15 sm:mb-20 px-8",
+          className,
+        )}
+      >
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.5fr_2fr] lg:gap-10">
+          {/* Project information */}
+          <aside className="lg:sticky lg:top-32 lg:h-fit">
+            <MotionReveal offsetY={0} initialScale={1} className="space-y-10">
+              <div className="space-y-4">
+                <h1 className="text-xl font-medium uppercase text-(--color-surface-1) dark:text-white sm:text-2xl">
+                  {project.title}
+                </h1>
 
-              {project.description &&
-                (typeof project.description === "string" ? (
-                  <p className="max-w-3xl text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
-                    {project.description}
-                  </p>
-                ) : (
-                  <CaseStudyText
-                    lines={project.description}
-                    className="max-w-3xl text-xs sm:text-sm leading-6 text-(--color-muted-dark) dark:text-(--color-muted)"
-                  />
-                ))}
-            </div>
-
-            {project.meta && project.meta.length > 0 && (
-              <dl className="divide-y divide-(--color-muted-light) dark:divide-(--color-surface-1) border-y border-(--color-muted-light) dark:border-(--color-surface-1)">
-                {project.meta.map((item) => (
-                  <div
-                    key={`${item.label}-${item.value}`}
-                    className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] gap-6 py-6"
-                  >
-                    <dt className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
-                      {item.label}
-                    </dt>
-
-                    <dd className="text-xs sm:text-sm text-(--color-surface-1) dark:text-white">
-                      {item.href ? (
-                        <a
-                          href={item.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="underline underline-offset-4 hover:text-(--color-accent)"
-                        >
-                          {item.value}
-                        </a>
-                      ) : (
-                        item.value
-                      )}
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            )}
-
-            {project.productVertical && (
-              <section className="space-y-5">
-                <h2 className="text-xs sm:text-sm uppercase text-(--color-surface-1) dark:text-white">
-                  Product Vertical
-                </h2>
-                <p className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
-                  {project.productVertical.description}
-                </p>
-                <ul className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
-                  {project.productVertical.pills.map((pill) => (
-                    <li key={pill.label}>
-                      <Pill {...pill} />
-                    </li>
+                {project.description &&
+                  (typeof project.description === "string" ? (
+                    <p className="max-w-3xl text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
+                      {project.description}
+                    </p>
+                  ) : (
+                    <CaseStudyText
+                      lines={project.description}
+                      className="max-w-3xl text-xs sm:text-sm leading-6 text-(--color-muted-dark) dark:text-(--color-muted)"
+                    />
                   ))}
-                </ul>
-              </section>
-            )}
-          </MotionReveal>
-        </aside>
+              </div>
 
-        {/* Main case-study content */}
-        <MotionReveal
-          delay={0.16}
-          offsetY={0}
-          initialScale={1}
-          className="min-w-0"
-        >
-          <article className="min-w-0">
-            <div className="mx-auto max-w-3xl space-y-10">
-              {project.heroIntro && (
-                <header className="space-y-3">
-                  {project.heroIntro.title && (
-                    <h2 className="text-sm font-medium text-(--color-surface-1) dark:text-white sm:text-base">
-                      {project.heroIntro.title}
-                    </h2>
-                  )}
-                  <CaseStudyText lines={project.heroIntro.lines} />
-                </header>
+              {project.meta && project.meta.length > 0 && (
+                <dl className="divide-y divide-(--color-muted-light) dark:divide-(--color-surface-1) border-y border-(--color-muted-light) dark:border-(--color-surface-1)">
+                  {project.meta.map((item) => (
+                    <div
+                      key={`${item.label}-${item.value}`}
+                      className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] gap-6 py-6"
+                    >
+                      <dt className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
+                        {item.label}
+                      </dt>
+
+                      <dd className="text-xs sm:text-sm text-(--color-surface-1) dark:text-white">
+                        {item.href ? (
+                          <a
+                            href={item.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline underline-offset-4 hover:text-(--color-accent)"
+                          >
+                            {item.value}
+                          </a>
+                        ) : (
+                          item.value
+                        )}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
               )}
 
-              {project.hero && <CaseStudyHeroMedia hero={project.hero} />}
+              {project.productVertical && (
+                <section className="space-y-5">
+                  <h2 className="text-xs sm:text-sm uppercase text-(--color-surface-1) dark:text-white">
+                    Product Vertical
+                  </h2>
+                  <p className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
+                    {project.productVertical.description}
+                  </p>
+                  <ul className="flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+                    {project.productVertical.pills.map((pill) => (
+                      <li key={pill.label}>
+                        <Pill {...pill} />
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )}
+            </MotionReveal>
+          </aside>
 
-              {project.sections.map(renderSection)}
-            </div>
+          {/* Main case-study content */}
+          <MotionReveal
+            delay={0.16}
+            offsetY={0}
+            initialScale={1}
+            className="min-w-0"
+          >
+            <article className="min-w-0">
+              <div className="mx-auto max-w-3xl space-y-10">
+                {project.heroIntro && (
+                  <header className="space-y-3">
+                    {project.heroIntro.title && (
+                      <h2 className="text-sm font-medium text-(--color-surface-1) dark:text-white sm:text-base">
+                        {project.heroIntro.title}
+                      </h2>
+                    )}
+                    <CaseStudyText lines={project.heroIntro.lines} />
+                  </header>
+                )}
 
-            <ProjectNavigation />
-          </article>
-        </MotionReveal>
-      </div>
-    </main>
+                {project.hero && <CaseStudyHeroMedia hero={project.hero} />}
+
+                {project.sections.map(renderSection)}
+              </div>
+
+              <ProjectNavigation />
+            </article>
+          </MotionReveal>
+        </div>
+      </main>
+    </CaseStudyLightboxProvider>
   );
 }
+
+export {
+  CaseStudyGallery,
+  CaseStudyImage,
+  CaseStudyVideo,
+  CaseStudyLightboxProvider,
+  useCaseStudyLightbox,
+};

@@ -1,15 +1,19 @@
 import { CaseStudyImage } from "./case-study-image";
+import { CaseStudyVideo } from "./case-study-video";
 import { cn } from "@/lib/utils";
 
-export type GalleryImage = {
+export type GalleryItem = {
   src: string;
   alt: string;
   width?: number;
   height?: number;
+  type?: "image" | "video";
 };
 
+export type GalleryImage = GalleryItem;
+
 type CaseStudyGalleryProps = {
-  images: GalleryImage[];
+  images: GalleryItem[];
   columns?: 1 | 2 | 3;
   className?: string;
 };
@@ -27,15 +31,25 @@ export function CaseStudyGallery({
 
   return (
     <div className={cn("grid gap-4", columnClass, className)}>
-      {images.map((image, index) => (
-        <CaseStudyImage
-          key={`${image.src}-${index}`}
-          src={image.src}
-          alt={image.alt}
-          width={image.width}
-          height={image.height}
-        />
-      ))}
+      {images.map((item, index) =>
+        item.type === "video" ? (
+          <CaseStudyVideo
+            key={`${item.src}-${index}`}
+            src={item.src}
+            alt={item.alt}
+            width={item.width}
+            height={item.height}
+          />
+        ) : (
+          <CaseStudyImage
+            key={`${item.src}-${index}`}
+            src={item.src}
+            alt={item.alt}
+            width={item.width}
+            height={item.height}
+          />
+        ),
+      )}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { createElement } from "react";
 import type { CaseStudyData } from "@/components/case-study/case-study";
 import { CaseStudyImage } from "@/components/case-study/case-study-image";
+import { CaseStudyVideo } from "@/components/case-study/case-study-video";
 
 export const climeCaseStudy: CaseStudyData = {
   /**LEFT-SIDE */
@@ -545,15 +546,10 @@ export const climeCaseStudy: CaseStudyData = {
             "text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
         {
-          content: createElement("video", {
+          content: createElement(CaseStudyVideo, {
             src: "/videos/clime-video2.mp4",
-            autoPlay: true,
-            loop: true,
-            muted: true,
-            playsInline: true,
-            controls: false,
-            preload: "auto",
-            className: "mt-8 h-auto w-full object-cover",
+            alt: "Clime website preview",
+            className: "mt-8",
           }),
         },
         {
