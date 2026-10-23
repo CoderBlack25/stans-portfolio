@@ -3,3 +3,7 @@ allowBuilds:
   unrs-resolver: false
 minimumReleaseAgeExclude:
   - '@types/node@22.20.2'
+  - framer-motion@14.6.0
+  - motion-dom@14.6.0
+  - motion-utils@14.6.0
+  - motion@14.6.0

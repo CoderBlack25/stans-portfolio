@@ -1,14 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image, { type ImageProps } from "next/image";
 import OptimizedTiltCard from "@/components/ui/optimized-tilt-card";
 
 export interface WorksFolderProps {
   href: string;
   title: string;
   description: string;
-  src: string;
-  width: number;
-  height: number;
+  src: ImageProps["src"];
   alt?: string;
   className?: string;
 }
@@ -18,8 +16,6 @@ const WorksFolder = ({
   title,
   description,
   src,
-  width,
-  height,
   alt = "",
   className = "",
 }: WorksFolderProps) => {
@@ -47,11 +43,9 @@ const WorksFolder = ({
         <div className="rounded-lg relative -top-2">
           <Image
             src={src}
-            width={width}
-            height={height}
-            loading="eager"
             priority
             sizes="(max-width: 768px) 100vw, 33vw"
+            placeholder="blur"
             alt={alt}
             className="w-full"
           />

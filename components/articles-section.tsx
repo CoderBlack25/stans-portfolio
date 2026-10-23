@@ -1,4 +1,8 @@
 import Link from "next/link";
+import Image, { type StaticImageData } from "next/image";
+import image1 from "@/public/images/journal/image1.svg";
+import image2 from "@/public/images/journal/image2.svg";
+import image3 from "@/public/images/journal/image3.svg";
 import { PiArticleMedium } from "react-icons/pi";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 
@@ -6,7 +10,7 @@ type Article = {
   title: string;
   description: string;
   href: string;
-  image?: string;
+  image?: StaticImageData;
 };
 
 const articles: Article[] = [
@@ -15,14 +19,14 @@ const articles: Article[] = [
     description:
       "AI is making interfaces, prototypes and even code cheaper to produce. The real question is where a product designer should create value next.",
     href: "https://medium.com/@stanchiqa/if-ai-can-design-the-product-what-is-a-product-designer-for-5e87062dbb33?sharedUserId=stanchiqa",
-    image: "/images/journal/image1.svg",
+    image: image1,
   },
   {
     title: "Stop Trying to Get Rid of Impostor Syndrome",
     description:
       "The biggest thing standing between you and the next level of your growth may not be a lack of confidence.",
     href: "https://medium.com/@stanchiqa/stop-trying-to-get-rid-of-impostor-syndrome-bb019acddd34?sharedUserId=stanchiqa",
-    image: "/images/journal/image2.svg",
+    image: image2,
   },
   {
     title:
@@ -30,7 +34,7 @@ const articles: Article[] = [
     description:
       "What a failed transaction taught me about becoming a Product Designer who solves problems, not just designing screens in this AI age.",
     href: "https://medium.com/@stanchiqa/when-does-an-engineering-problem-become-a-design-problem-5b17683d0e3c",
-    image: "/images/journal/image3.svg",
+    image: image3,
   },
 ];
 
@@ -46,8 +50,8 @@ function ArticleCard({ article }: { article: Article }) {
         className="group flex gap-3.5 py-6 outline-none sm:gap-4"
       >
         {hasImage ? (
-          <img
-            src={article.image}
+          <Image
+            src={article.image!}
             alt=""
             className="size-21 shrink-0 rounded-lg object-cover"
           />

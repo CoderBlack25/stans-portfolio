@@ -1,4 +1,8 @@
 import Image from "next/image";
+import syrous from "@/public/images/playground/syrous.webp";
+import qwikserve from "@/public/images/playground/qwikserve-logistics.webp";
+import reacher from "@/public/images/playground/reacher-messaging.webp";
+import patingeo from "@/public/images/playground/patingeo-realty.webp";
 import Link from "next/link";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 
@@ -8,7 +12,7 @@ const projects = [
     href: "https://www.behance.net/gallery/198852581/Syreos-Business-Banking",
     description:
       "A business banking platform catering to merchants of all sizes",
-    image: "/images/playground/syrous.png",
+    image: syrous,
     alt: "Syrous business banking app displayed on a phone",
     disciplines: ["UI UX Design", "Branding"],
   },
@@ -16,7 +20,7 @@ const projects = [
     title: "Qwikserve Logistics",
     href: "https://www.behance.net/gallery/196762453/Qwikserve-Logistics",
     description: "One app for ordering everyday goods and services",
-    image: "/images/playground/qwikserve-logistics.png",
+    image: qwikserve,
     alt: "Qwikserve logistics app displayed on a phone",
     disciplines: ["UI UX Design"],
   },
@@ -25,7 +29,7 @@ const projects = [
     href: "https://www.behance.net/gallery/196285371/Reacher-Messenger",
     description:
       "A communication platform designed around user control, and privacy",
-    image: "/images/playground/reacher-messaging.png",
+    image: reacher,
     alt: "Reacher messaging app displayed on a phone",
     disciplines: ["UI UX Design", "Branding"],
   },
@@ -33,7 +37,7 @@ const projects = [
     title: "Patingeo Realty",
     href: "https://www.behance.net/gallery/186783519/Patingeo-Realty",
     description: "Helping people turn their property ambitions into reality",
-    image: "/images/playground/patingeo-realty.png",
+    image: patingeo,
     alt: "Patingeo realty app displayed on a phone",
     disciplines: ["Branding"],
   },
@@ -77,6 +81,7 @@ export default function Playground() {
                     alt={project.alt}
                     fill
                     priority
+                    placeholder="blur"
                     sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc((100vw - 72px) / 2), (max-width: 1191px) calc((100vw - 136px) / 4), 264px"
                     className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
                   />
