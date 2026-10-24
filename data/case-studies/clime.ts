@@ -24,7 +24,7 @@ export const climeCaseStudy: CaseStudyData = {
 
   /**HERO VIDEO AND TEXT */
   hero: {
-    src: "/videos/clime-videoV2.mp4",
+    src: "/videos/clime-video.mp4",
     alt: "FairMoney mobile application",
     width: 1200,
     height: 900,
