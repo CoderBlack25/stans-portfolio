@@ -62,7 +62,7 @@ export const climeCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "clime-image-1",
-      src: "/images/clime/image1.png",
+      src: "/images/clime/image1.webp",
       alt: "",
       width: 1400,
       height: 900,
@@ -225,7 +225,7 @@ export const climeCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "clime-image-2",
-      src: "/images/clime/image2.png",
+      src: "/images/clime/image2.webp",
       alt: "",
       width: 1400,
       height: 900,
@@ -331,7 +331,7 @@ export const climeCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "clime-image-3",
-      src: "/images/clime/image3.png",
+      src: "/images/clime/image3.webp",
       alt: "",
       width: 1400,
       height: 900,
@@ -374,7 +374,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image4.png",
+            src: "/images/clime/image4.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -388,36 +388,13 @@ export const climeCaseStudy: CaseStudyData = {
           className: "mt-8 text-sm",
         },
         {
-          text: "The transfer experience sits at the centre of Clime, designed to reduce the cognitive load of currencies, exchange rates, fees, and recipient details.",
+          text: "KYC is woven into the product rather than feeling like a separate compliance detour. Identity and address verification each have their own guided flow, and successful verification is reflected back through notifications and account status — making compliance feel connected, not bolted on.",
           className:
             "text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
         },
         {
-          parts: [
-            {
-              text: "The journey: ",
-              color: "text-(--color-surface-1) dark:text-white",
-            },
-            {
-              text: "Choose amount → Select recipient → Choose payment method → Review → Authenticate → Complete",
-            },
-          ],
-          className:
-            "mt-4 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
-        },
-        {
-          text: "The Home screen doubles as a lightweight currency calculator, letting users gauge value before committing. The transfer summary then keeps all critical info together, amount sent, amount received, currencies, exchange rate, and charges, so users never have to do the math themselves.",
-          className:
-            "mt-4 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
-        },
-        {
-          text: "KYC is woven into the product rather than feeling like a separate compliance detour. Identity and address verification each have their own guided flow, and successful verification is reflected back through notifications and account status — making compliance feel connected, not bolted on.",
-          className:
-            "mt-4 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)",
-        },
-        {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image5.png",
+            src: "/images/clime/image5.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -455,7 +432,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image6.png",
+            src: "/images/clime/image6.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -475,7 +452,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image7.png",
+            src: "/images/clime/image7.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -495,7 +472,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image8.png",
+            src: "/images/clime/image8.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -554,7 +531,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image9.png",
+            src: "/images/clime/image9.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -563,7 +540,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image10.png",
+            src: "/images/clime/image10.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -572,7 +549,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image11.png",
+            src: "/images/clime/image11.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -581,7 +558,7 @@ export const climeCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/clime/image12.png",
+            src: "/images/clime/image12.webp",
             alt: "",
             width: 1400,
             height: 900,

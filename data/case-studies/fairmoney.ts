@@ -161,7 +161,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-1",
-      src: "/images/fairmoney/image1.png",
+      src: "/images/fairmoney/image1.webp",
       alt: "",
       width: 1400,
       height: 900,
@@ -270,7 +270,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-2",
-      src: "/images/fairmoney/image2.png",
+      src: "/images/fairmoney/image2.webp",
       alt: "",
       width: 1400,
       height: 900,
@@ -383,7 +383,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-3",
-      src: "/images/fairmoney/image3.png",
+      src: "/images/fairmoney/image3.webp",
       alt: "",
       width: 1400,
       height: 900,
@@ -510,7 +510,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-4",
-      src: "/images/fairmoney/image4.png",
+      src: "/images/fairmoney/image4.webp",
       alt: "",
       width: 1400,
       height: 900,
@@ -566,7 +566,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image5.png",
+            src: "/images/fairmoney/image5.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -622,7 +622,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image6.png",
+            src: "/images/fairmoney/image6.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -721,7 +721,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image7.png",
+            src: "/images/fairmoney/image7.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -847,7 +847,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image8.png",
+            src: "/images/fairmoney/image8.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -942,7 +942,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image8.png",
+            src: "/images/fairmoney/image8.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -1003,7 +1003,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image9.png",
+            src: "/images/fairmoney/image9.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -1084,7 +1084,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image10.png",
+            src: "/images/fairmoney/image10.webp",
             alt: "",
             width: 1400,
             height: 900,
@@ -1134,7 +1134,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image11.png",
+            src: "/images/fairmoney/image11.webp",
             alt: "",
             width: 1400,
             height: 900,
