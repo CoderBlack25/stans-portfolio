@@ -1,9 +1,10 @@
 import { CaseStudyImage } from "./case-study-image";
 import { CaseStudyVideo } from "./case-study-video";
+import { type StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 
 export type GalleryItem = {
-  src: string;
+  src: string | StaticImageData;
   alt: string;
   width?: number;
   height?: number;
@@ -35,7 +36,7 @@ export function CaseStudyGallery({
         item.type === "video" ? (
           <CaseStudyVideo
             key={`${item.src}-${index}`}
-            src={item.src}
+            src={item.src as string}
             alt={item.alt}
             width={item.width}
             height={item.height}
@@ -43,7 +44,7 @@ export function CaseStudyGallery({
         ) : (
           <CaseStudyImage
             key={`${item.src}-${index}`}
-            src={item.src}
+            src={item.src as StaticImageData}
             alt={item.alt}
             width={item.width}
             height={item.height}

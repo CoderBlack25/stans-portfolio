@@ -19,6 +19,7 @@ import { Pill, type PillProps } from "@/components/ui/pill";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { type StaticImageData } from "next/image";
 import { usePathname } from "next/navigation";
 
 export type ProjectMeta = {
@@ -43,7 +44,7 @@ export type CaseStudySection =
   | {
       type: "image";
       id?: string;
-      src: string;
+      src: StaticImageData;
       alt: string;
       width?: number;
       height?: number;
@@ -72,7 +73,7 @@ export type CaseStudySection =
       title?: string;
       lines: TextLine[];
       image: {
-        src: string;
+        src: StaticImageData;
         alt: string;
         width?: number;
         height?: number;
@@ -102,7 +103,7 @@ export type CaseStudyData = {
     lines: TextLine[];
   };
   hero?: {
-    src: string;
+    src: string | StaticImageData;
     alt: string;
     width?: number;
     height?: number;
@@ -132,7 +133,7 @@ function CaseStudyHeroMedia({
   if (hero.type === "video") {
     return (
       <CaseStudyVideo
-        src={hero.src}
+        src={hero.src as string}
         alt={hero.alt}
         width={hero.width}
         height={hero.height}
@@ -142,7 +143,7 @@ function CaseStudyHeroMedia({
 
   return (
     <CaseStudyImage
-      src={hero.src}
+      src={hero.src as StaticImageData}
       alt={hero.alt}
       width={hero.width}
       height={hero.height}

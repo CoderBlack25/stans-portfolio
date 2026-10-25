@@ -10,13 +10,13 @@ import {
   type ReactNode,
 } from "react";
 import { createPortal } from "react-dom";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { motion, AnimatePresence, useReducedMotion } from "motion/react";
 import { X } from "lucide-react";
 
 export type CaseStudyMediaItem = {
   type: "image" | "video";
-  src: string;
+  src: string | StaticImageData;
   alt?: string;
   width?: number;
   height?: number;
@@ -53,7 +53,8 @@ export function CaseStudyLightboxModal() {
   // Save previous active element and trap focus when opened
   useEffect(() => {
     if (activeMedia) {
-      previousActiveElement.current = document.activeElement as HTMLElement | null;
+      previousActiveElement.current =
+        document.activeElement as HTMLElement | null;
       // Focus close button on next tick
       const timer = setTimeout(() => {
         closeButtonRef.current?.focus();
@@ -171,9 +172,9 @@ export function CaseStudyLightboxModal() {
           >
             {activeMedia.type === "video" ? (
               <video
-                key={activeMedia.src}
+                key={activeMedia.src as string}
                 ref={videoRef}
-                src={activeMedia.src}
+                src={activeMedia.src as string}
                 controls
                 autoPlay
                 playsInline
@@ -211,7 +212,9 @@ export function CaseStudyLightboxProvider({
 }: {
   children: ReactNode;
 }) {
-  const [activeMedia, setActiveMedia] = useState<CaseStudyMediaItem | null>(null);
+  const [activeMedia, setActiveMedia] = useState<CaseStudyMediaItem | null>(
+    null,
+  );
 
   const openMedia = useCallback((item: CaseStudyMediaItem) => {
     setActiveMedia(item);
@@ -230,4 +233,3 @@ export function CaseStudyLightboxProvider({
     </CaseStudyLightboxContext.Provider>
   );
 }
-

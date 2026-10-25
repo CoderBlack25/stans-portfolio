@@ -1,6 +1,16 @@
 import { createElement } from "react";
 import type { CaseStudyData } from "@/components/case-study/case-study";
 import { CaseStudyImage } from "@/components/case-study/case-study-image";
+import image1 from "@/public/images/prune/image1.webp";
+import image2 from "@/public/images/prune/image2.webp";
+import image3 from "@/public/images/prune/image3.webp";
+import image4 from "@/public/images/prune/image4.webp";
+import image5 from "@/public/images/prune/image5.webp";
+import image6 from "@/public/images/prune/image6.webp";
+import image7 from "@/public/images/prune/image7.webp";
+import image8 from "@/public/images/prune/image8.webp";
+import image9 from "@/public/images/prune/image9.webp";
+import image10 from "@/public/images/prune/image10.webp";
 
 export const pruneCaseStudy: CaseStudyData = {
   /**LEFT-SIDE */
@@ -186,7 +196,7 @@ export const pruneCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "prune-image-1",
-      src: "/images/prune/image1.webp",
+      src: image1,
       alt: "",
       width: 1400,
       height: 900,
@@ -219,7 +229,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/prune/image2.webp",
+            src: image2,
             alt: "",
             width: 1400,
             height: 900,
@@ -355,7 +365,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/prune/image3.webp",
+            src: image3,
             alt: "",
             width: 1400,
             height: 900,
@@ -411,7 +421,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/prune/image4.webp",
+            src: image4,
             alt: "",
             width: 1400,
             height: 900,
@@ -695,7 +705,7 @@ export const pruneCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/prune/image5.webp",
+            src: image5,
             alt: "",
             width: 1400,
             height: 900,
@@ -789,7 +799,7 @@ export const pruneCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "prune-image-2",
-      src: "/images/prune/image6.webp",
+      src: image6,
       alt: "",
       width: 1400,
       height: 900,
@@ -935,7 +945,7 @@ export const pruneCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "prune-image-3",
-      src: "/images/prune/image7.webp",
+      src: image7,
       alt: "",
       width: 1400,
       height: 900,
@@ -1088,7 +1098,7 @@ export const pruneCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "prune-image-4",
-      src: "/images/prune/image8.webp",
+      src: image8,
       alt: "",
       width: 1400,
       height: 900,
@@ -1149,7 +1159,7 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/prune/image9.webp",
+            src: image9,
             alt: "",
             width: 1400,
             height: 900,
@@ -1167,7 +1177,7 @@ export const pruneCaseStudy: CaseStudyData = {
         },
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/prune/image10.webp",
+            src: image10,
             alt: "",
             width: 1400,
             height: 900,

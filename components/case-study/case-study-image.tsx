@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { Maximize2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useCaseStudyLightbox } from "./case-study-lightbox";
 
 export type CaseStudyImageProps = {
-  src: string;
+  src: StaticImageData;
   alt: string;
   width?: number;
   height?: number;

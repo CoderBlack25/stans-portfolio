@@ -1,6 +1,17 @@
 import { createElement } from "react";
 import type { CaseStudyData } from "@/components/case-study/case-study";
 import { CaseStudyImage } from "@/components/case-study/case-study-image";
+import image1 from "@/public/images/fairmoney/image1.webp";
+import image2 from "@/public/images/fairmoney/image2.webp";
+import image3 from "@/public/images/fairmoney/image3.webp";
+import image4 from "@/public/images/fairmoney/image4.webp";
+import image5 from "@/public/images/fairmoney/image5.webp";
+import image6 from "@/public/images/fairmoney/image6.webp";
+import image7 from "@/public/images/fairmoney/image7.webp";
+import image8 from "@/public/images/fairmoney/image8.webp";
+import image9 from "@/public/images/fairmoney/image9.webp";
+import image10 from "@/public/images/fairmoney/image10.webp";
+import image11 from "@/public/images/fairmoney/image11.webp";
 
 export const fairMoneyCaseStudy: CaseStudyData = {
   /**LEFT-SIDE */
@@ -161,7 +172,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-1",
-      src: "/images/fairmoney/image1.webp",
+      src: image1,
       alt: "",
       width: 1400,
       height: 900,
@@ -270,7 +281,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-2",
-      src: "/images/fairmoney/image2.webp",
+      src: image2,
       alt: "",
       width: 1400,
       height: 900,
@@ -383,7 +394,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-3",
-      src: "/images/fairmoney/image3.webp",
+      src: image3,
       alt: "",
       width: 1400,
       height: 900,
@@ -510,7 +521,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
     {
       type: "image",
       id: "fairmoney-image-4",
-      src: "/images/fairmoney/image4.webp",
+      src: image4,
       alt: "",
       width: 1400,
       height: 900,
@@ -566,7 +577,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image5.webp",
+            src: image5,
             alt: "",
             width: 1400,
             height: 900,
@@ -622,7 +633,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image6.webp",
+            src: image6,
             alt: "",
             width: 1400,
             height: 900,
@@ -721,7 +732,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image7.webp",
+            src: image7,
             alt: "",
             width: 1400,
             height: 900,
@@ -847,7 +858,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image8.webp",
+            src: image8,
             alt: "",
             width: 1400,
             height: 900,
@@ -942,7 +953,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image8.webp",
+            src: image8,
             alt: "",
             width: 1400,
             height: 900,
@@ -1003,7 +1014,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image9.webp",
+            src: image9,
             alt: "",
             width: 1400,
             height: 900,
@@ -1084,7 +1095,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image10.webp",
+            src: image10,
             alt: "",
             width: 1400,
             height: 900,
@@ -1134,7 +1145,7 @@ export const fairMoneyCaseStudy: CaseStudyData = {
 
         {
           content: createElement(CaseStudyImage, {
-            src: "/images/fairmoney/image11.webp",
+            src: image11,
             alt: "",
             width: 1400,
             height: 900,
