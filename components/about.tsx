@@ -9,6 +9,12 @@ type Experience = {
   period: string;
 };
 
+type Contract = {
+  company: string;
+  role: string;
+  period: string;
+};
+
 type Capability = {
   number: string;
   label: string;
@@ -21,6 +27,19 @@ const experiences: Experience[] = [
     period: "2023 - Present",
   },
   {
+    company: "Payforce MFB",
+    role: "Product Designer",
+    period: "2022 - 2023",
+  },
+  {
+    company: "Televerse Limited",
+    role: "Product Designer",
+    period: "2021 - 2022",
+  },
+];
+
+const contracts: Contract[] = [
+  {
     company: "Clime Payment LTD",
     role: "Senior Product Designer",
     period: "2026",
@@ -28,17 +47,12 @@ const experiences: Experience[] = [
   {
     company: "C80 Limited",
     role: "Senior Product Designer",
-    period: "2024 - 2026",
+    period: "2025 - 2026",
   },
   {
     company: "Prune Payment LTD",
     role: "Senior Product Designer",
     period: "2024 - 2025",
-  },
-  {
-    company: "Payforce MFB",
-    role: "Product Designer",
-    period: "2022 - 2023",
   },
 ];
 
@@ -147,7 +161,7 @@ export function About() {
         </MotionReveal>
 
         <MotionReveal delay={0.14} className="flex flex-col gap-7">
-          <SectionLabel>Experiences</SectionLabel>
+          <SectionLabel>Employment Experiences</SectionLabel>
 
           <ul className="flex flex-col gap-5">
             {experiences.map((experience) => (
@@ -172,6 +186,38 @@ export function About() {
 
                 <span className="text-xs sm:text-sm sm:text-right text-(--color-surface-1) dark:text-white">
                   {experience.period}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </MotionReveal>
+
+        <MotionReveal delay={0.14} className="flex flex-col gap-7">
+          <SectionLabel>Selected Contract & Consulting</SectionLabel>
+
+          <ul className="flex flex-col gap-5">
+            {contracts.map((contract) => (
+              <li
+                key={`${contract.company}-${contract.period}`}
+                className="grid grid-cols-1 gap-1 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:gap-4"
+              >
+                <div className="flex min-w-0 flex-col gap-1 sm:flex-row sm:items-center sm:gap-3">
+                  <span className="truncate text-xs sm:text-sm text-(--color-surface-1) dark:text-white">
+                    {contract.company}
+                  </span>
+
+                  <span className="text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
+                    {contract.role}
+                  </span>
+
+                  <div
+                    aria-hidden="true"
+                    className="h-[0.5px] flex-1 bg-(--color-muted-light) dark:bg-(--color-surface-muted)"
+                  />
+                </div>
+
+                <span className="text-xs sm:text-sm sm:text-right text-(--color-surface-1) dark:text-white">
+                  {contract.period}
                 </span>
               </li>
             ))}

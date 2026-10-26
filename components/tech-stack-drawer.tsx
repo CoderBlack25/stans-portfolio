@@ -20,6 +20,7 @@ const LIGHT_THEME_BLACK_ICONS = new Set([
   "Davinci",
   "DaVinci Resolve",
   "Botpress",
+  "Codex",
 ]);
 
 type TechStackDrawerProps = {

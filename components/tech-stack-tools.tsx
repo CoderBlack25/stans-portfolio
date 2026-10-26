@@ -37,17 +37,25 @@ export const tools: TechTool[] = [
     icon: "/icons/stack/cursor-icon.svg",
   },
   {
-    name: "Claude",
-    icon: "/icons/stack/claude-icon.svg",
+    name: "Claude Code",
+    icon: "/icons/stack/claude-code-icon.svg",
   },
+  // {
+  //   name: "Claude",
+  //   icon: "/icons/stack/claude-icon.svg",
+  // },
   {
     name: "V0",
     icon: "/icons/stack/v0-icon.svg",
   },
   {
-    name: "ChatGPT",
-    icon: "/icons/stack/openai-icon.svg",
+    name: "Codex",
+    icon: "/icons/stack/codex-icon.svg",
   },
+  // {
+  //   name: "ChatGPT",
+  //   icon: "/icons/stack/openai-icon.svg",
+  // },
   {
     name: "Lovable",
     icon: "/icons/stack/lovable-icon.svg",
@@ -56,26 +64,26 @@ export const tools: TechTool[] = [
     name: "After Effect",
     icon: "/icons/stack/adobe-after-effect-icon.svg",
   },
-  {
-    name: "Supernova",
-    icon: "/icons/stack/supernova-icon.svg",
-  },
-  {
-    name: "Maze",
-    icon: "/icons/stack/maze-icon.svg",
-  },
-  {
-    name: "Voiceflow",
-    icon: "/icons/stack/voiceflow-icon.svg",
-  },
+  // {
+  //   name: "Supernova",
+  //   icon: "/icons/stack/supernova-icon.svg",
+  // },
+  // {
+  //   name: "Maze",
+  //   icon: "/icons/stack/maze-icon.svg",
+  // },
+  // {
+  //   name: "Voiceflow",
+  //   icon: "/icons/stack/voiceflow-icon.svg",
+  // },
   {
     name: "Jitter",
     icon: "/icons/stack/jitter-icon.svg",
   },
-  {
-    name: "Rotato",
-    icon: "/icons/stack/rotato-icon.svg",
-  },
+  // {
+  //   name: "Rotato",
+  //   icon: "/icons/stack/rotato-icon.svg",
+  // },
   {
     name: "Premiere",
     icon: "/icons/stack/adobe-premiere-pro-icon.svg",
@@ -85,19 +93,27 @@ export const tools: TechTool[] = [
     icon: "/icons/stack/davinci-resolve-icon.svg",
   },
   {
-    name: "Botpress",
-    icon: "/icons/stack/botpress-icon.svg",
+    name: "Antigravity",
+    icon: "/icons/stack/antigravity-icon.svg",
   },
   {
-    name: "Jira",
-    icon: "/icons/stack/jira-icon.svg",
+    name: "React",
+    icon: "/icons/stack/react-icon.svg",
   },
-  {
-    name: "Linear",
-    icon: "/icons/stack/linear-icon.svg",
-  },
-  {
-    name: "Webflow",
-    icon: "/icons/stack/webflow-icon.svg",
-  },
+  // {
+  //   name: "Botpress",
+  //   icon: "/icons/stack/botpress-icon.svg",
+  // },
+  // {
+  //   name: "Jira",
+  //   icon: "/icons/stack/jira-icon.svg",
+  // },
+  // {
+  //   name: "Linear",
+  //   icon: "/icons/stack/linear-icon.svg",
+  // },
+  // {
+  //   name: "Webflow",
+  //   icon: "/icons/stack/webflow-icon.svg",
+  // },
 ];
