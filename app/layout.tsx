@@ -21,9 +21,62 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://www.stanchiqa.com";
+
+const description =
+  "I help startups and enterprise businesses turn complex ideas into simple, scalable digital products. Product Designer and Design Engineer portfolio spanning AI, B2B SaaS, fintech, digital banking, lending, and healthcare.";
+
 export const metadata: Metadata = {
-  title: "Stanchiqa-Product Designer & Design Engineer",
-  description: "Product Designer & Design Engineer",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default:
+      "Stanley Chukwuma (Stanchiqa) — Product Designer & Design Engineer",
+    template: "%s | Stanchiqa",
+  },
+  description,
+  applicationName: "Stanchiqa",
+  keywords: [
+    "Stanley Chukwuma",
+    "Stanchiqa",
+    "Product Designer",
+    "Design Engineer",
+    "Product Design Portfolio",
+    "UI/UX Design",
+    "Digital Product Design",
+    "Fintech Product Design",
+    "Design Engineering",
+    "User Experience Design",
+  ],
+  authors: [{ name: "Stanley Chukwuma", url: siteUrl }],
+  creator: "Stanley Chukwuma",
+  publisher: "Stanley Chukwuma",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Stanchiqa",
+    title: "Stanley Chukwuma (Stanchiqa) — Product Designer & Design Engineer",
+    description,
+    locale: "en_US",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stanley Chukwuma (Stanchiqa) — Product Designer & Design Engineer",
+    description,
+    images: ["/twitter-image"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -37,6 +90,26 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <link rel="icon" href="/favicon.svg" />
       </head>
       <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Stanley Chukwuma",
+              url: siteUrl,
+              jobTitle: "Product Designer & Design Engineer",
+              description,
+              image: `${siteUrl}/images/home/profile-image.webp`,
+              sameAs: [
+                "https://github.com/Chiqa-Design",
+                "https://x.com/chiqastanley",
+                "https://www.linkedin.com/in/stanley-chukwuma-89a9b8202/",
+                "https://medium.com/@stanchiqa",
+              ],
+            }),
+          }}
+        />
         <ThemeProvider>
           <Navbar />
           {children}
