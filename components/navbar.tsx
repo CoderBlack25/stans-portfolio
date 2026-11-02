@@ -97,8 +97,8 @@ export function Navbar() {
       <motion.nav
         aria-label="Main navigation"
         data-mobile-entry
-        initial={{ opacity: 0, y: -12 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
         className={`text-foreground px-4 py-6 sm:py-10 backdrop-blur-lg sm:px-6 lg:px-8 transition-colors duration-300 ${isScrolled ? "bg-background/85" : "bg-background"}`}
       >

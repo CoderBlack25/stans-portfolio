@@ -7,6 +7,7 @@ import { PiBriefcase, PiBinoculars } from "react-icons/pi";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import { MotionReveal } from "@/components/ui/motion-reveal";
+import { SelectedWorks } from "@/components/selected-works";
 
 type AboutItem = {
   id: string;
@@ -132,10 +133,9 @@ const year = date.getFullYear();
 
 export default function Home() {
   return (
-    <main className="flex min-h-svh items-center justify-center bg-background px-8 sm:px-0 py-32 text-foreground transition-colors duration-300">
-      <div className="w-full max-w-xl space-y-10">
-        {/* ready removed */}
-        <MotionReveal>
+    <main className="min-h-svh bg-background px-8 py-40 text-foreground transition-colors duration-300 sm:px-0">
+      <div className="mx-auto w-full max-w-xl space-y-10">
+        <MotionReveal offsetY={0}>
           <section
             aria-labelledby="hero-heading"
             className="flex flex-col items-center gap-6 sm:flex-row sm:items-stretch"
@@ -219,7 +219,7 @@ export default function Home() {
           </section>
         </MotionReveal>
 
-        <MotionReveal delay={0.16}>
+        <MotionReveal delay={0.16} offsetY={0}>
           <section aria-labelledby="about-heading" className="space-y-5">
             <div className="flex items-center gap-5">
               <h2
@@ -259,7 +259,9 @@ export default function Home() {
           </section>
         </MotionReveal>
 
-        <MotionReveal delay={0.32}>
+        <SelectedWorks />
+
+        <MotionReveal delay={0.48} offsetY={0}>
           <footer
             id="contact"
             className="flex flex-col gap-4 rounded-lg bg-(--color-surface-light) p-4 dark:bg-(--color-surface-dark)"

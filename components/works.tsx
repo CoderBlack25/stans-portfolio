@@ -1,32 +1,6 @@
 import WorksFolder from "@/components/works-folder";
 import { MotionReveal } from "@/components/ui/motion-reveal";
-import fairmoney from "@/public/images/works/fairmoney.webp";
-import prune from "@/public/images/works/prune.webp";
-import clime from "@/public/images/works/clime.webp";
-
-const works = [
-  {
-    href: "/works/fairmoney",
-    title: "Fairmoney Micro Finance",
-    description:
-      "Business Banking system that gives businesses access to tools, funding and support to scale",
-    src: fairmoney,
-  },
-  {
-    href: "/works/prune",
-    title: "Prune Payment",
-    description:
-      "Fintech platform for international money transfers and remittances, plus business payouts, virtual accounts, & SaaS offerings",
-    src: prune,
-  },
-  {
-    href: "/works/clime",
-    title: "Clime Payment Ltd",
-    description:
-      "Remittance-focused fintech enabling fast, low/no-fee GBP-to-Naira transfers (personal and business) to Nigeria",
-    src: clime,
-  },
-];
+import { works } from "@/data/works";
 
 export default function Works() {
   return (
