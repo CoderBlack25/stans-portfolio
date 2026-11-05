@@ -84,7 +84,7 @@ export function ArticlesSection() {
   return (
     <section
       aria-labelledby="articles-heading"
-      className="mx-auto w-full max-w-xl px-8 sm:px-0 mt-30 sm:mt-45 mb-10 sm:mb-20 bg-background text-foreground"
+      className="mx-auto w-full max-w-xl px-8 sm:px-0 mt-30 sm:mt-45 mb-10 sm:mb-20 text-foreground"
     >
       <MotionReveal className="text-center">
         <h2

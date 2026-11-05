@@ -134,7 +134,7 @@ const year = date.getFullYear();
 
 export default function Home() {
   return (
-    <main className="min-h-svh bg-background px-8 py-40 text-foreground transition-colors duration-300 sm:px-0">
+    <main className="min-h-svh px-8 py-40 text-foreground transition-colors duration-300 sm:px-0">
       <div className="mx-auto w-full max-w-xl space-y-10">
         <MotionReveal offsetY={0}>
           <section

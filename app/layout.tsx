@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
+import { DotPattern } from "@/components/ui/dot-pattern";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -89,7 +90,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <link rel="icon" href="/favicon.svg" />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="isolate min-h-full flex flex-col">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -111,6 +112,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           }}
         />
         <ThemeProvider>
+          <DotPattern
+            aria-hidden="true"
+            className="pointer-events-none fixed inset-0 z-[-1]"
+            dotColor="color-mix(in oklab, var(--muted-foreground) 18%, transparent)"
+            dotSize={1}
+            gap={28}
+            interactive={false}
+            speed={0}
+          />
           <Navbar />
           {children}
           <Analytics />

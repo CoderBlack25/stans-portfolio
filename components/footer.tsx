@@ -27,7 +27,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-background text-foreground">
+    <footer className="text-foreground">
       <div className="mx-auto flex w-full max-w-7xl flex-col sm:flex-row justify-between gap-6 sm:gap-8 xl:gap-10 px-4 sm:px-6 xl:px-0 py-6 sm:py-10 border-t-[0.5px] border-t-(--color-muted-light) dark:border-t-(--color-surface-muted)">
         <div className="flex flex-col gap-2">
           <p className="text-xs sm:text-sm font-medium text-(--color-surface-1) dark:text-white">
