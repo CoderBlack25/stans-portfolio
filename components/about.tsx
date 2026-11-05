@@ -84,7 +84,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="mx-auto w-full max-w-xl px-8 sm:px-0 mt-25 sm:mt-40 mb-10 sm:mb-20 text-foreground"
+      className="mx-auto w-full max-w-xl px-8 sm:px-0 mt-25 sm:mt-40 mb-10 sm:mb-20 bg-background text-foreground"
     >
       <div className="flex flex-col gap-8 sm:gap-10 py-4">
         <MotionReveal className="flex flex-col gap-6">

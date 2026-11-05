@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useInView, useReducedMotion } from "motion/react";
+import { useEffect, useState } from "react";
+import { useReducedMotion } from "motion/react";
 
 const FRAME_COUNT = 24;
 const FRAME_DURATION = 40;
@@ -13,13 +13,6 @@ interface DecryptTextProps {
 }
 
 export function DecryptText({ text }: DecryptTextProps) {
-  const containerRef = useRef<HTMLSpanElement>(null);
-
-  const isInView = useInView(containerRef, {
-    once: true,
-    amount: 0.3,
-  });
-
   const shouldReduceMotion = useReducedMotion();
 
   const [frame, setFrame] = useState(FRAME_COUNT);
@@ -45,9 +38,6 @@ export function DecryptText({ text }: DecryptTextProps) {
       return;
     }
 
-    // Wait until the component enters the viewport.
-    if (!isInView) return;
-
     let currentFrame = 0;
 
     setFrame(0);
@@ -66,7 +56,7 @@ export function DecryptText({ text }: DecryptTextProps) {
     return () => {
       window.clearInterval(timer);
     };
-  }, [isInView, shouldReduceMotion]);
+  }, [shouldReduceMotion]);
 
   // Keep track of the position of each animated character.
   let animatedIndex = 0;
@@ -105,11 +95,11 @@ export function DecryptText({ text }: DecryptTextProps) {
     .join("");
 
   return (
-    <span ref={containerRef}>
+    <span>
       <span className="sr-only">{text}</span>
 
       <span aria-hidden="true">
-        {shouldReduceMotion === false && isInView ? decodedText : text}
+        {shouldReduceMotion === false ? decodedText : text}
       </span>
     </span>
   );

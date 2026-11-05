@@ -15,16 +15,19 @@ const navigationItems = [
     label: "About",
     href: "/about",
     icon: PiUser,
+    external: false,
   },
   {
     label: "Journal",
     href: "/journal",
     icon: PiArticleMedium,
+    external: false,
   },
   {
     label: "Mentorship",
     href: "https://adplist.org/mentors/stanley-chukwuma",
     icon: PiGraduationCap,
+    external: true,
   },
 ];
 
@@ -127,6 +130,8 @@ export function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
                   aria-current={isActive ? "page" : undefined}
                   className={`group inline-flex items-center gap-2 py-2 px-3 rounded-full text-sm transition-colors ${
                     isActive
@@ -144,6 +149,9 @@ export function Navbar() {
                     transition={{ type: "spring", stiffness: 420, damping: 28 }}
                   >
                     {item.label}
+                    {item.external && (
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    )}
                   </motion.span>
                 </Link>
               );
@@ -203,6 +211,8 @@ export function Navbar() {
                   <MotionLink
                     key={item.label}
                     href={item.href}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noopener noreferrer" : undefined}
                     onClick={closeMobileMenu}
                     aria-current={isActive ? "page" : undefined}
                     variants={navItemVariants}
@@ -215,6 +225,9 @@ export function Navbar() {
                     <Icon aria-hidden="true" className="size-4.5" />
 
                     <span>{item.label}</span>
+                    {item.external && (
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    )}
                   </MotionLink>
                 );
               })}
