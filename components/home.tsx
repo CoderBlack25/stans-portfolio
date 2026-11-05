@@ -6,6 +6,7 @@ import { BiMessage } from "react-icons/bi";
 import { PiBriefcase, PiBinoculars } from "react-icons/pi";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import { BinaryDecodeText } from "@/components/ui/binary-decode-text";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { SelectedWorks } from "@/components/selected-works";
 
@@ -226,7 +227,7 @@ export default function Home() {
                 id="about-heading"
                 className="shrink-0 text-xs sm:text-sm uppercase text-(--color-surface-muted) dark:text-(--color-muted)"
               >
-                About Me
+                <BinaryDecodeText text="About Me" />
               </h2>
 
               <div

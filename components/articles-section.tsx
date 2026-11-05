@@ -5,6 +5,7 @@ import image2 from "@/public/images/journal/image2.svg";
 import image3 from "@/public/images/journal/image3.svg";
 import { PiArticleMedium } from "react-icons/pi";
 import { MotionReveal } from "@/components/ui/motion-reveal";
+import { DecryptText } from "@/components/ui/decrypt-text";
 
 type Article = {
   title: string;
@@ -90,7 +91,7 @@ export function ArticlesSection() {
           id="articles-heading"
           className="text-xl font-medium uppercase sm:text-2xl text-(--color-surface-1) dark:text-white"
         >
-          Articles and Insights
+          <DecryptText text="Articles and Insights" />
         </h2>
 
         <p className="mx-auto mt-2 max-w-md text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">

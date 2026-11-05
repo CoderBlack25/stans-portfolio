@@ -23,7 +23,7 @@ const navigationItems = [
   },
   {
     label: "Mentorship",
-    href: "/mentorship",
+    href: "https://adplist.org/mentors/stanley-chukwuma",
     icon: PiGraduationCap,
   },
 ];
