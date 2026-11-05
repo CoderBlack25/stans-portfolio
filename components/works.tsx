@@ -1,4 +1,5 @@
 import WorksFolder from "@/components/works-folder";
+import { DecryptText } from "@/components/ui/decrypt-text";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { works } from "@/data/works";
 
@@ -10,7 +11,7 @@ export default function Works() {
           id="works-heading"
           className="text-xl font-medium sm:text-2xl uppercase text-(--color-surface-1) dark:text-white"
         >
-          Selected Works
+          <DecryptText text="Selected Works" />
         </h1>
 
         <p className="mt-1.5 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted) max-w-md">

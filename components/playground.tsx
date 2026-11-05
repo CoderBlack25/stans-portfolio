@@ -4,6 +4,7 @@ import qwikserve from "@/public/images/playground/qwikserve-logistics.webp";
 import reacher from "@/public/images/playground/reacher-messaging.webp";
 import patingeo from "@/public/images/playground/patingeo-realty.webp";
 import Link from "next/link";
+import { DecryptText } from "@/components/ui/decrypt-text";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 
 const projects = [
@@ -52,7 +53,7 @@ export default function Playground() {
             id="playground-heading"
             className="text-xl font-medium sm:text-2xl uppercase text-(--color-surface-1) dark:text-white"
           >
-            Playground
+            <DecryptText text="Playground" />
           </h1>
           <p className="mt-1.5 text-xs sm:text-sm text-(--color-muted-dark) dark:text-(--color-muted)">
             As an inquisitive mind, here are other designs and things I had

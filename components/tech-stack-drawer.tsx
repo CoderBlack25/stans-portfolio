@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 import { Dialog } from "@base-ui/react/dialog";
 import { X } from "lucide-react";
+import { DecryptText } from "@/components/ui/decrypt-text";
 import { MotionReveal } from "@/components/ui/motion-reveal";
 import { tools } from "@/components/tech-stack-tools";
 
@@ -54,7 +55,7 @@ export function TechStackDrawer({
             <div className="flex min-h-full flex-col justify-center">
               <MotionReveal className="w-full text-center">
                 <Dialog.Title className="text-xl font-medium sm:text-2xl text-(--color-surface-1) dark:text-white">
-                  STACK
+                  <DecryptText text="STACK" />
                 </Dialog.Title>
 
                 <Dialog.Description className="mt-1.5 text-xs text-(--color-muted-dark) sm:text-sm dark:text-(--color-muted)">
